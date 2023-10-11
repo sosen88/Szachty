@@ -1,0 +1,48 @@
+body{
+    background-color: #F2F2F2;
+}
+
+.nav-link{
+    color: #202426;
+    font-weight:bold;
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+.picturecon{
+    display: grid;
+    grid-auto-rows: minmax(200px, auto);
+
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+.gallery{
+    width: 100%;
+    height: auto;
+    text-align: center;
+    margin: auto;
+}
+.gallery img{
+    width: 400px;
+    height:auto;
+    transition: 0.5s;
+    margin-top: 4px;  
+}
+.gallery img:hover{
+    filter: grayscale(80%);
+    transform: scale(1.01);
+}
+
+h2{
+    text-align: center;
+}
+
+.dojazd{
+    text-align: justify;
+}
