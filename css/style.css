@@ -3,6 +3,12 @@ body{
     background-color: #F5E8B7;*/
 }
 
+@media (max-width: 1080px) {
+    body{
+        font-size: x-large;
+    }
+}
+
 .nav-link{
     color: #202426;
     font-weight:bold;
@@ -60,12 +66,17 @@ body{
 .obraz{
     float: left;
     width: 100%;
+    border-radius: 5%;
 }
 
 .mapa{
     width: 100%;
     text-align: center;
     float:left;
+}
+
+.content{
+    max-width: 920px;
 }
 
 @media (min-width: 769px) {
@@ -77,9 +88,6 @@ body{
         flex-direction: row;
     }
 
-    .content{
-        width: 75%;
-    }
 
     .gallery img{
         width: 300px;
@@ -92,10 +100,6 @@ body{
 }
 
 @media (max-width: 768px) {
-
-    .calosc{
-        flex-direction: column;
-    }
 
     .gallery img{
         width: 100%;
@@ -113,7 +117,7 @@ body{
 }
 
 a{
-    color: #99A799;
+    color: #6A9C89;
     text-decoration: none;
 }
 
@@ -124,7 +128,11 @@ a{
     border: thin silver solid;
     margin: 0 1em 1em 0;
     padding: 0.5em;
+    border-color: #6A9C89;
+    border-radius: 5%;
+    
 }
+
 
 .scrollup
 {
