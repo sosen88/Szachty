@@ -7,12 +7,13 @@
 	<meta name="Description" content="Przejdź się po szachtach, zajrzyj w każdy kąt i obejrzyć najlepsze ujęcia z każdej pory roku!" />
 	<meta name="Keywords" content="szachty, poznań, stawy, glinianki, wieża widokowa, natura, ptaki, zieleń, natura, spacer, rezerwat, zachód słońca, wschód słońca, fotograria" /> 
 	<meta name="author" content="Michał Sosnowski" />
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="./css/lightbox.min.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
 	<script src="./js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	<script src="js/jquery.scrollTo.min.js"></script>
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-	<link rel="stylesheet" href="css/style.css">
 
 	<script>
 	
@@ -54,9 +55,10 @@
 
         p{
             text-align: justify;
+			margin-bottom: 0;
         }
 
-		h3{
+		h3,h4{
 			margin-top: 10px;
 		}
 
@@ -64,16 +66,10 @@
 			color: #3A4D39;
 		}
 
-
 		p + p {
 			text-indent: 1.5em;
 		}
 
-		.calosc{
-			display: flex;
-			justify-content: center;
-			flex-wrap: wrap;
-		}
 
     </style>
 </head>
@@ -82,7 +78,7 @@
 
 	<a href="#" class="scrollup" style="display: inline;"><h1 style="text-align: center;">↑</h1></a>
 
-	<div class="container px-5">
+	<div class="container-lg px-2">
 		<header class="d-flex flex-wrap justify-content-start py-3 mb-4 border-bottom">
 		  <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
 			<span class="fs-4"><b><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16">
@@ -123,9 +119,9 @@
 		</header>
 	</div>
 
-   	<div class="container px-5">
+   	<div class="container-lg px-2 mb-5">
 		<div class="calosc">
-			<div class="spislewa">
+			<div class="spislewa item">
 				<div class="spistresci">
 					<ul>
 						<li><a id="link1" href="#">Wprowadzenie</a></li>
@@ -144,8 +140,8 @@
 
 				</div>
 			</div>
-			<div class="content">
-				<h2 style="padding-bottom: 10px; float: left;">Fauna dawnych użytków ekologicznych	„Kopanina I” i „Kopanina II”</h2>
+			<div class="content item">
+				<h2 style="display: inline; padding-bottom: 10px; float: left;">Fauna dawnych użytków ekologicznych	„Kopanina I” i „Kopanina II”</h2>
 
 				<h3>Magdalena Kluza-Wieloch, Sławomir Janyszek</h3>
 				<i style="font-size: small;">Rozdział 18 (s. 340-348) opublikowany w książce pt. <a href="https://wngig.amu.edu.pl/__data/assets/pdf_file/0018/410634/srodowisko-geograficzne-zlewni-junikowskiego-strumienia_.pdf" target="_blank">Środowisko geograficzne zlewni Junikowskiego Strumienia</a> pod red. <b>Małgorzaty Mazurek i Dawida Abramowicza</b> (Bogucki Wydawnictwo Naukowe, Poznań, 2022).</i>
@@ -174,15 +170,14 @@
 
 					<div class="container px-0">
 						<div class="gallery" style="margin-left: auto; margin-right: auto;">
-						<a href="./img/Fauna/Attulus.jpg" data-lightbox='mygallery' data-title="Skoczek lilipuci (fot. Adrian Truchta)"><img src="./img/Fauna/Attulus.jpg"></a>
-						<a href="./img/Fauna/Drassyllus lutetianus.png" data-lightbox='mygallery' data-title="Drassyllus lutetianus"><img src="./img/Fauna/Drassyllus lutetianus.png"></a>
-						<a href="./img/Fauna/Ero.jpg" data-lightbox='mygallery' data-title="Guzoń garbusek (fot. Sebastian Nowosad)"><img src="./img/Fauna/Ero.jpg"></a>
+						<a href="./img/fauna/Attulus.jpg" data-lightbox='mygallery' data-title="Skoczek lilipuci (fot. Adrian Truchta)"><img src="./img/fauna/Attulus.jpg"></a>
+						<a href="./img/fauna/Drassyllus lutetianus.png" data-lightbox='mygallery' data-title="Drassyllus lutetianus"><img src="./img/fauna/Drassyllus lutetianus.png"></a>
+						<a href="./img/fauna/Ero.jpg" data-lightbox='mygallery' data-title="Guzoń garbusek (fot. Sebastian Nowosad)"><img src="./img/fauna/Ero.jpg"></a>
 						</div>
 					</div>  
 					<p class="podpis">Rzadkie w P/E pająki użytku ek. "Strumień Junikowski"(2012-2016): 1)Skoczek lilipuci(fot. Adrian Truchta), 2)Drassyllus lutetianus, 3)Guzoń Garbusek (fot. Sebastian Nowosad).</p>
 					<b>*</b>W latach 1973-2002 oraz 2012-2016 badany był dawny użytek ekologiczny "Strumień Junikowski", który jest użytkiem o zbliżonej charakterystyce - jego wody tworzą Szachty. Wyszczególniono tam 256 gatunków, z czego 23 to najcenniejsze gatunki pająków, rzadkich w Europie i/lub w Polsce
 						z uwagami na preferowane siedliska i wymagania autekologiczne(Paweł Szymkowiak, Tomasz Rutkowski). Na przestrzeni 50 lat jednak zauważono zmniejszenie się ilości gatunków, głównie poprzez degradację torfowisk, która ma różne przyczyny(zarastanie przez drzewa, eutrofizacja, zmniejszanie się ).
-
 					</p>
 					
 					<p id="owad" style="margin-bottom: 0;"><b>Owady.</b> Rodzaje siedlisk na obu użytkach stwarzają odpowiednie warunki do
@@ -199,12 +194,12 @@
 								
 					<div class="container px-0">
 						<div class="gallery">
-						<a href="./img/Fauna/Campaea margaritaria.jpg" data-lightbox='mygallery' data-title="Ostrolot muszlowiak"><img src="./img/Fauna/Campaea margaritaria.jpg"></a>
-						<a href="./img/Fauna/wazka.jpg" data-lightbox='mygallery' data-title="Ważka różnoskrzydła"><img src="./img/Fauna/wazka low.jpg"></a>
-						<a href="./img/Fauna/Trociniarka czerwica.jpg" data-lightbox='mygallery' data-title="Trociniarka czerwica(larwa)"><img src="./img/Fauna/Trociniarka czerwica.jpg"></a>
+						<a href="./img/fauna/slimak zaroslowy low.jpg" data-lightbox='mygallery' data-title="Ostrolot muszlowiak"><img src="./img/fauna/Campaea margaritaria.jpg"></a>
+						<a href="./img/fauna/wazka.jpg" data-lightbox='mygallery' data-title="Ważka czteroplama"><img src="./img/fauna/wazka low.jpg"></a>
+						<a href="./img/fauna/Trociniarka czerwica.jpg" data-lightbox='mygallery' data-title="Trociniarka czerwica(larwa)"><img src="./img/fauna/Trociniarka czerwica.jpg"></a>
 						</div>
 					</div>  
-					<p class="podpis">1) <a href="https://insektarium.net/lepidoptera-2/geometridae-miernikowcowate/campaea-margaritaria-ostrolot-muszlowiak/">Ostrolot muszlowiak</a>Ostrolot muszlowiak(fot. własne), 2)Ważka różnoskrzydła (fot. własne), 3)Trociniarka czerwica(larwa) (fot. własne).</p>
+					<p class="podpis">1) <a href="https://insektarium.net/lepidoptera-2/geometridae-miernikowcowate/campaea-margaritaria-ostrolot-muszlowiak/">Ostrolot muszlowiak</a> (fot. własne), 2)Ważka czteroplama (fot. własne), 3)Trociniarka czerwica(larwa) (fot. własne).</p>
 								
 					<p>W trakcie inwentaryzacji w roku 2006 (Kluza-Wieloch i in. 2006) w obrębie
 					obu użytków stwierdzono obecność 24 gatunków <b>motyli dziennych</b>. Obszar ten
@@ -247,6 +242,18 @@
 					bezzębną Columella edentula. Wymienione taksony są typowymi elementami fauny
 					terenów otwartych bądź półotwartych, o gęstej roślinności zielnej, w większości
 					przypadków, preferującymi gleby wapienne (Kluza-Wieloch i in. 2006).
+
+					<div class="container px-0">
+						<div class="gallery" style="margin-left: auto; margin-right: auto;">
+						<a href="./img/fauna/slimak zaroslowy.JPG" data-lightbox='mygallery' data-title="Ślimak zaroślowy"><img src="./img/fauna/slimak zaroslowy.JPG"></a>
+						<a href="./img/fauna/" data-lightbox='mygallery' data-title="Drassyllus lutetianus"><img src="./img/fauna/"></a>
+						<a href="./img/fauna/" data-lightbox='mygallery' data-title="Guzoń garbusek (fot. Sebastian Nowosad)"><img src="./img/fauna/"></a>
+						</div>
+					</div>  
+					<p class="podpis">1)Brak, 2)Ślimak zaroślowy (fot. własne) 3)Brak</p>
+					
+
+
 					Bardzo dokładne, wieloletnie badania nad malakofauną wodną opisywanego
 					terenu wykazały postępujący spadek liczby gatunków oraz liczebności tej grupy zwierząt (Ptaszyk i in. 2002). W trakcie ostatnich badań inwentaryzacyjnych
 					(Kluza-Wieloch i  in. 2006) w  Junikowskim Strumieniu stwierdzono występowanie 4 gatunków ślimaków wodnych: błotniarki jajowatej Lymnaea peregra oraz
@@ -301,9 +308,9 @@
 					
 					<div class="container px-0">
 						<div class="gallery">
-						<a href="./img/Fauna/ropucha szara.JPG" data-lightbox='mygallery' data-title="Ampleksus u ropuchy szarej"><img src="./img/Fauna/ropucha szara.JPG"></a>
-						<a href="./img/Fauna/zaskroniec zwyczajny.jpg" data-lightbox='mygallery' data-title="Zaskroniec zwyczajny"><img src="./img/Fauna/zaskroniec zwyczajny.jpg"></a>
-						<a href="./img/Fauna/żaba jeziorkowa.JPG" data-lightbox='mygallery' data-title="Żaba jeziorkowa"><img src="./img/Fauna/żaba jeziorkowa.JPG"></a>
+						<a href="./img/fauna/ropucha szara.JPG" data-lightbox='mygallery' data-title="Ampleksus u ropuchy szarej"><img src="./img/fauna/ropucha szara.JPG"></a>
+						<a href="./img/fauna/zaskroniec zwyczajny.jpg" data-lightbox='mygallery' data-title="Zaskroniec zwyczajny"><img src="./img/fauna/zaskroniec zwyczajny.jpg"></a>
+						<a href="./img/fauna/żaba jeziorkowa.JPG" data-lightbox='mygallery' data-title="Żaba jeziorkowa"><img src="./img/fauna/żaba jeziorkowa.JPG"></a>
 						</div>
 					</div>  
 					<p class="podpis">1)Ampleksus u ropuchy szarej(fot. M. Sosnowski), 2)Zaskroniec zwyczajny(fot. xulescu_g na licencji <a href="https://en.wikipedia.org/wiki/Creative_Commons">Creative Commons Attribution-Share Alike 2.0 Generic</a>), 3)Żaba jeziorkowa (fot. M. Sosnowski).</p>
@@ -325,22 +332,45 @@
 					omawianym obszarze stwierdzono zatem do tej pory gniazdowanie 44 gatunków
 					ptaków. Spośród pierwszej z wymienionych grup odnotowano gniazdowanie następujących taksonów: strzyżyk Troglodytes troglodytes, rudzik Erithacus rubecula,
 					słowik rdzawy Luscinia megarhynchos, drozd śpiewak Turdus philomelos, kapturka
-					Sylvia atricapilla, cierniówka Curruca communis, piegża C. curruca, kwiczoł T. pilaris
-					<b>(ryc. 3)</b> , kos T. merula, szpak Sturnus vulgaris, grzywacz Columba palumbus, sierpówka Streptopelia decaocto, bogatka Parus major, modraszka Cyanistes caeruleus,
+					Sylvia atricapilla, cierniówka Curruca communis, piegża C. curruca, kwiczoł T. pilaris, kos T. merula, szpak Sturnus vulgaris, 
+					grzywacz Columba palumbus, sierpówka Streptopelia decaocto, bogatka Parus major, modraszka Cyanistes caeruleus,
 					trznadel Emberiza citrinella, zięba Fringilla coelebs, sroka Pica pica, wrona Corvus
-					corone, sójka Garullus glandarius, mazurek Passer montanus. Są to gatunki pospolite na terenie miasta, często spotykane na obszarach podmiejskich i parkach.
+					corone, sójka Garullus glandarius, mazurek Passer montanus. 
+					
+					<div class="container px-0">
+						<div class="gallery" style="margin-left: auto; margin-right: auto;">
+						<a href="./img/fauna/baczek.jpg" data-lightbox='mygallery' data-title="Bączek"><img src="./img/fauna/baczek.jpg"></a>
+						<a href="./img/fauna/lyska.jpg" data-lightbox='mygallery' data-title="Łyska"><img src="./img/fauna/lyska.jpg"></a>
+						<a href="./img/fauna/mewa.jpg" data-lightbox='mygallery' data-title="Mewa"><img src="./img/fauna/mewa.jpg"></a>
+						</div>
+					</div>  
+					<p class="podpis">1)Bączek (fot. Łukasz Stemler), 2)Łyska (fot. Łukasz Stemler, 3)Mewa (fot. Łukasz Stemler).</p>
+					
+					Są to gatunki pospolite na terenie miasta, często spotykane na obszarach podmiejskich i parkach.
 					W skład grupy gatunków związanych z obszarami podmokłymi zaliczyć można:
 					perkozy – dwuczubego Podiceps cristatus i  rdzawoszyjego P. grisegena, perkozka Tachybaptus ruficollis, bąka Botaurus stellaris, bączka Ixobrychus minutus, krzyżówkę
 					Anas platyrhynchos, głowienkę Aythya ferina, czernicę A. fuligula, łabędzia niemego
 					Cygnus olor, łyskę Fulica atra, kokoszkę Gallinula chloropus, mewy: śmieszkę Chroicocephalus ridibundus (ryc. 4) i siwą Larus canus, rybitwy: rzeczną Sterna hirundo
-					i czarną Chlidonias niger, podróżniczka Luscinia svecica, czarnogłówkę Poecile montanus, łozówkę Acrocephalus palustris, trzciniaka A. arundinaceus, trzcinniczka A. scirpaceus, rokitniczkę A. schoenobaenus, remiza Remiz pendulinus, potrzosa Schoeniclus
+					i czarną Chlidonias niger, podróżniczka Luscinia svecica, czarnogłówkę Poecile montanus, łozówkę Acrocephalus palustris, 
+					trzciniaka A. arundinaceus, trzcinniczka A. scirpaceus, rokitniczkę A. schoenobaenus, remiza Remiz pendulinus, potrzosa Schoeniclus
 					schoeniclus, zimorodka Alcedo attyhis (Kluza-Wieloch i in. 2006). Natomiast na terenach otwartych bytuje gąsiorek Lanius collurio. Spotkać na tym obszarze można
 					też szybujące ptaki drapieżne, zalatujące w poszukiwaniu pokarmu, a wśród nich
 					błotniaka stawowego Circus aeruginosus, myszołowa Buteo buteo, krogulca Accipiter
 					nisus oraz pustułkę Falco tinnunculus (Ptaszyk i in. 2002, Ptaszyk 2003). Ze względu na zróżnicowanie biotopów wodnych i szuwarowych, cały obszar obu użytków
 					jest bardzo wartościowym siedliskiem dla ptaków wodno-błotnych, które poza
 					omawianym terenem nie znajdują równie wartościowych siedlisk w  granicach
-					Poznania. Najbardziej wartościowym ornitologicznie obiektem omawianego obszaru jest bez wątpienia kolonia lęgowa mewy śmieszki, położona w południowej części opisywanego terenu, na obszarze Stawu Glabisia. W  kolonii tej co
+					Poznania. 
+					
+					<div class="container px-0">
+						<div class="gallery" style="margin-left: auto; margin-right: auto;">
+						<a href="./img/fauna/labedz.jpg" data-lightbox='mygallery' data-title="Łabędź"><img src="./img/fauna/labedz.jpg"></a>
+						<a href="./img/fauna/trzciniak.jpg" data-lightbox='mygallery' data-title="Trzciniak"><img src="./img/fauna/trzciniak.jpg"></a>
+						<a href="./img/fauna/remiz.jpg" data-lightbox='mygallery' data-title="Remiz"><img src="./img/fauna/remiz.jpg"></a>
+						</div>
+					</div>  
+					<p class="podpis">1)Łabędź (fot. Łukasz Stemler), 2)Trzciniak (fot. Łukasz Stemler) 3)Remiz (fot. Łukasz Stemler)</p>
+					
+					Najbardziej wartościowym ornitologicznie obiektem omawianego obszaru jest bez wątpienia kolonia lęgowa mewy śmieszki, położona w południowej części opisywanego terenu, na obszarze Stawu Glabisia. W  kolonii tej co
 					roku odbywa lęgi około 100 par śmieszki, a pod osłoną kolonii gniazdują liczne
 					inne gatunki wodne, np. perkozy, kokoszka, krzyżówka czy łyska. Większość wymienionych tu gatunków ptaków, poza taksonami najbardziej pospolitymi oraz
 					łownymi kaczkami, znajduje się w Polsce pod ścisłą ochroną, a ponadto chronią		
@@ -378,33 +408,26 @@
 					Autorzy serdecznie dziękują wszystkim osobom których dane zostały wykorzystane w niniejszym opracowaniu – Piotrowi Klimaszykowi, Bogusławowi Bałuce, Pawłowi Sienkiewiczowi, Marii Urbańskiej i Pawłowi Śliwie oraz innym, niewymienionym z nazwiska,
 					których dane składają się na obecną wiedzę o opisywanym terenie.</p>
 
-				<section>Źródła: 
-					<br><a href="https://wngig.amu.edu.pl/__data/assets/pdf_file/0018/410634/srodowisko-geograficzne-zlewni-junikowskiego-strumienia_.pdf">https://wngig.amu.edu.pl/__data/assets/pdf_file/0018/410634/srodowisko-geograficzne-zlewni-junikowskiego-strumienia_.pdf</a>
-					<br><a href="http://geokompleks.amu.edu.pl/wp-content/uploads/2023/01/Wspolczesne-i-przyszle-wyzwania.pdf">http://geokompleks.amu.edu.pl/wp-content/uploads/2023/01/Wspolczesne-i-przyszle-wyzwania.pdf</a>
-					<br><a href="https://www.gbif.org/species/2133021">https://www.gbif.org/species/2133021</a>
-					<br><a href="https://insektarium.net/araneae-2/salticidae-skakunowate/attulus-saltatus-skoczek-lilipuci/">https://insektarium.net/araneae-2/salticidae-skakunowate/attulus-saltatus-skoczek-lilipuci/</a>
-					<br><a href="https://insektarium.net/araneae-2/mimetidae-nasladownikowate/ero-aphana-guzon/">https://insektarium.net/araneae-2/mimetidae-nasladownikowate/ero-aphana-guzon/</a>
-				</section>
+				<p><a href="/źródła.html">Źródła</a>
+				</p>
 			</div>	
 		</div>	
 	</div>
 
-	<div class="container">
-		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+	<div class="container-lg px-2">
+		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-1 border-top">
 			<div class="col-md-4 d-flex align-items-center">
-			  <a href="/" class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1">
+			  <!--<a href="/" class="mb-3 me-0 mb-md-0 text-body-secondary text-decoration-none lh-1">
 				<svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
-			  </a>
-			  <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Michał Sosnowski</span>
+			  </a>-->
+			  <span class="mb-1 mb-md-0 text-body-secondary">© 2023 Michał Sosnowski</span>
 			</div>
 		
 			<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-			  <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/mikes_photo_travels/" target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-instagram" viewBox="0 0 16 16">
-				  <path d="M8 0C5.829 0 5.556.01 4.703.048 3.85.088 3.269.222 2.76.42a3.917 3.917 0 0 0-1.417.923A3.927 3.927 0 0 0 .42 2.76C.222 3.268.087 3.85.048 4.7.01 5.555 0 5.827 0 8.001c0 2.172.01 2.444.048 3.297.04.852.174 1.433.372 1.942.205.526.478.972.923 1.417.444.445.89.719 1.416.923.51.198 1.09.333 1.942.372C5.555 15.99 5.827 16 8 16s2.444-.01 3.298-.048c.851-.04 1.434-.174 1.943-.372a3.916 3.916 0 0 0 1.416-.923c.445-.445.718-.891.923-1.417.197-.509.332-1.09.372-1.942C15.99 10.445 16 10.173 16 8s-.01-2.445-.048-3.299c-.04-.851-.175-1.433-.372-1.941a3.926 3.926 0 0 0-.923-1.417A3.911 3.911 0 0 0 13.24.42c-.51-.198-1.092-.333-1.943-.372C10.443.01 10.172 0 7.998 0h.003zm-.717 1.442h.718c2.136 0 2.389.007 3.232.046.78.035 1.204.166 1.486.275.373.145.64.319.92.599.28.28.453.546.598.92.11.281.24.705.275 1.485.039.843.047 1.096.047 3.231s-.008 2.389-.047 3.232c-.035.78-.166 1.203-.275 1.485a2.47 2.47 0 0 1-.599.919c-.28.28-.546.453-.92.598-.28.11-.704.24-1.485.276-.843.038-1.096.047-3.232.047s-2.39-.009-3.233-.047c-.78-.036-1.203-.166-1.485-.276a2.478 2.478 0 0 1-.92-.598 2.48 2.48 0 0 1-.6-.92c-.109-.281-.24-.705-.275-1.485-.038-.843-.046-1.096-.046-3.233 0-2.136.008-2.388.046-3.231.036-.78.166-1.204.276-1.486.145-.373.319-.64.599-.92.28-.28.546-.453.92-.598.282-.11.705-.24 1.485-.276.738-.034 1.024-.044 2.515-.045v.002zm4.988 1.328a.96.96 0 1 0 0 1.92.96.96 0 0 0 0-1.92zm-4.27 1.122a4.109 4.109 0 1 0 0 8.217 4.109 4.109 0 0 0 0-8.217zm0 1.441a2.667 2.667 0 1 1 0 5.334 2.667 2.667 0 0 1 0-5.334z"/>
-				</svg></a></li>
-			  <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=1395851416" target="blank"><svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16">
-				  <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
-				</svg></a></li>
+			  <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/mikes_photo_travels/" target="blank"><i class="fa fa-instagram" style="font-size:20px"></i></a></li>
+			  <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=1395851416" target="blank"><i class="fa fa-facebook" style="font-size:20px"></i></a></li>
+			  <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/channel/UC6K-2vhM8gc7_C1kbUyUh0A" target="_blank"><i class="fa fa-youtube" style="font-size:20px"></i>
+			  </a></li>
 			</ul>
 		  </footer>
 	</div>
