@@ -1,13 +1,32 @@
 body{
-    background-color: #FEF5ED; /*stary F5E8DF
-    background-color: #F5E8B7;*/
+    /*background-color: #DEEDF0; */
+    background-color: #FFF5EB;
 }
 
-@media (max-width: 1080px) {
-    body{
-        font-size: x-large;
+@media (max-width: 480px){
+
+    /* Mobile */
+.ccontainer {
+    padding: 4%;
+}
+
+/* Tablet */
+@media (min-width:600px) {
+    .ccontainer {
+        padding: 3%;
     }
 }
+
+/* Desktop */
+@media (min-width:900px) {
+    .ccontainer {
+        padding: 2%;
+    }
+}
+
+}
+
+
 
 .nav-link{
     color: #202426;
@@ -43,12 +62,12 @@ body{
 .gallery img{
     width: 100%;
     height:auto;
-    transition: 0.5s;
+    transition: 0.3s;
     margin-top: 0px;  
     text-align: center;
 }
 .gallery img:hover{
-    filter: grayscale(80%);
+    filter: grayscale(40%);
     transform: scale(1.01);
 }
 
@@ -75,6 +94,13 @@ body{
     float:left;
 }
 
+.calosc{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
 .content{
     max-width: 920px;
 }
@@ -84,15 +110,9 @@ body{
         width: 300px;
     }
 
-    .calosc{
-        flex-direction: row;
-    }
-
-
     .gallery img{
         width: 300px;
     }
-
 
     .mapa{
         width: 50%;
@@ -117,7 +137,7 @@ body{
 }
 
 a{
-    color: #6A9C89;
+    color: #B2B8A3;
     text-decoration: none;
 }
 
@@ -142,10 +162,10 @@ a{
     line-height: 20px;
 	text-decoration: none;
 	background: url("img/up.png") no-repeat 0px 0px;
-    background-color: #C1D8C3;
+    background-color: #F4C7AB;
 	position: fixed;
-	right: 40px;
-	bottom: 40px;
+	right: 50px;
+	bottom: 50px;
 }
 /* ten kod zmienia karuzele na pierwszej stronie  
 p{
