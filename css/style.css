@@ -5,6 +5,9 @@ body{
 
 @media (max-width: 480px){
 
+	body{
+		font-size: larger;
+	}
     /* Mobile */
 .ccontainer {
     padding: 4%;
