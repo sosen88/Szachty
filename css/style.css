@@ -1,13 +1,13 @@
 body{
     /*background-color: #DEEDF0; */
     background-color: #FFF5EB;
+   /* font-family: 'Lato', sans-serif; */
 }
 
-@media (max-width: 768px){
 
-	body{
-		font-size: larger;
-	}
+
+@media (max-width: 480px){
+
     /* Mobile */
 .ccontainer {
     padding: 4%;
@@ -25,7 +25,7 @@ body{
     .ccontainer {
         padding: 2%;
     }
-}
+} 
 
 }
 
@@ -51,6 +51,7 @@ body{
     margin: 0px;
     box-sizing: border-box;
 }
+
 .gallery{
     width: 100%;
     height: auto;
@@ -88,7 +89,7 @@ body{
 .obraz{
     float: left;
     width: 100%;
-    border-radius: 5%;
+    border-radius: 4%;
 }
 
 .mapa{
@@ -108,9 +109,10 @@ body{
     max-width: 920px;
 }
 
-@media (min-width: 769px) {
+
+@media (min-width: 768px) {
     .obraz{
-        width: 300px;
+        width: 350px;
     }
 
     .gallery img{
@@ -122,7 +124,11 @@ body{
     }
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+
+    body{
+        font-size: x-large;
+    }
 
     .gallery img{
         width: 100%;
@@ -153,9 +159,20 @@ a{
     padding: 0.5em;
     border-color: #6A9C89;
     border-radius: 5%;
-    
 }
 
+
+@media(min-width:1400px){
+    .spistresci{
+        max-width: 284px ;
+    }
+}
+
+@media(max-width:767px){
+    .spistresci{
+        width: 360px ;
+    }
+}
 
 .scrollup
 {
@@ -169,6 +186,10 @@ a{
 	position: fixed;
 	right: 50px;
 	bottom: 50px;
+}
+
+.fragment{
+    padding-top: 10px;
 }
 /* ten kod zmienia karuzele na pierwszej stronie  
 p{
