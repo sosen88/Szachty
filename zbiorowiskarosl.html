@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>Szachty - Interaktywnie!</title>
+	<meta name="Description" content="Przejdź się po szachtach, zajrzyj w każdy kąt i obejrzyć najlepsze ujęcia z każdej pory roku!" />
+	<meta name="Keywords" content="szachty, poznań, stawy, glinianki, wieża widokowa, natura, ptaki, zieleń, natura, spacer, rezerwat, zachód słońca, wschód słońca, fotograria" /> 
+	<meta name="author" content="Michał Sosnowski" />
+	<link rel="stylesheet" type="text/css" href="./css/lightbox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="./js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<script src="js/jquery.scrollTo.min.js"></script>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+
+    <style>
+      img{
+          float: left;
+      }
+
+      p{
+          text-align: justify;
+          margin-bottom: 0;
+      }
+
+      h3,h4{
+        margin-top: 10px;
+      }
+
+      h2, h3, h4{
+        color: #3A4D39;
+      }
+
+      p + p {
+        text-indent: 1.5em;
+
+      }
+
+  
+      /*Pure CSS */
+
+      .question-input {
+        display: none;
+      }
+
+      .answer {
+        height: 0;
+        overflow: hidden;
+        transition: 0.5s;
+      }
+
+      .question-input:checked + .question-label + .answer {
+        height: auto;
+        padding: 0 0 5px 0;
+      }
+
+      .zbiorowiska{
+        margin-top: 10px;
+      }
+      
+
+    </style>
+</head>
+
+<body>
+
+	<a href="#" class="scrollup" style="display: inline;"><img src="img/up.png" alt="scroll" width="50px" style="border-radius: 10%;"></a>
+
+	<div class="container-md px-2">
+		<header class="d-flex flex-wrap justify-content-start py-3 mb-4 border-bottom">
+		  <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+			<span class="fs-4"><b><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16">
+				<path d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 0-.998 1.03l.01.091c.012.077.029.176.054.296.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a4.997 4.997 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1zM2 9l.03-.002.091-.01a4.99 4.99 0 0 0 .296-.054c.241-.049.542-.122.887-.213a60.59 60.59 0 0 0 2.314-.676L5.762 8l-.144-.045a60.59 60.59 0 0 0-2.314-.676 16.705 16.705 0 0 0-.887-.213 4.99 4.99 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2zm7 5-.002-.03a5.005 5.005 0 0 0-.064-.386 16.398 16.398 0 0 0-.213-.888 60.582 60.582 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a4.996 4.996 0 0 0-.064.386L7 14a1 1 0 1 0 2 0zm-5.696-2.134.025-.017a5.001 5.001 0 0 0 .303-.248c.184-.164.408-.377.661-.629A60.614 60.614 0 0 0 5.96 9.23l.103-.111-.147.033a60.88 60.88 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5.063 5.063 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027c-.01.02-.021.048-.036.084a5.09 5.09 0 0 0-.102.283c-.078.233-.165.53-.258.875a60.62 60.62 0 0 0-.572 2.342l-.033.147.11-.102a60.848 60.848 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5.001 5.001 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196.017.025a4.996 4.996 0 0 0 .248.303c.164.184.377.408.629.661A60.597 60.597 0 0 0 6.77 5.96l.111.102-.033-.147a60.602 60.602 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5.006 5.006 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1zm9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a60.619 60.619 0 0 0-2.342-.572l-.147-.033.102.111a60.73 60.73 0 0 0 1.667 1.742c.253.252.477.465.66.629a4.946 4.946 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+			  </svg>Szachty</b></span>
+		  </a>
+	
+		  <ul class="nav nav-underline"> <!--nav nav-pills-->
+			<li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">STRONA GŁÓWNA</a></li><!--nav-link active -->
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Przyroda</a>
+				<ul class="dropdown-menu">
+					<li><a href="flora.html"class="dropdown-item">Flora</a></li>
+					<li><a href="zbiorowiskarosl.html" class="dropdown-item">Zbiorowiska roślinne</a></li>
+					<li><a class="dropdown-item" href="fauna.html">Zwierzęta</a></li>
+					<li><a class="dropdown-item" href="zagrozenia.html">Ochrona Szacht</a></li>
+				</ul>
+			</li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Galerie</a>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="wiosna.html">Wiosenna</a></li>
+				  <li><a class="dropdown-item" href="lato.html">Letnia</a></li>
+				  <li><a class="dropdown-item" href="jesien.html">Jesienna</a></li>
+				  <li><a class="dropdown-item" href="zima.html">Zimowa</a></li>
+				</ul>
+			  </li>
+			<li class="nav-item dropdown">
+				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Historia</a>
+				<ul class="dropdown-menu">
+				  <li><a class="dropdown-item" href="przemysl ceramiczny.html">Przemysł ceramiczny</a></li>
+				  <li><a class="dropdown-item" href="geologia.html">Geologia</a></li>
+				</ul>
+			  </li>
+			<li class="nav-item"><a href="dojazd.html" class="nav-link">Dojazd</a></li>  
+			<li class="nav-item"><a href="o mnie.html" class="nav-link">O mnie</a></li>
+		  </ul>
+		</header>
+	</div>
+
+    <div class="container-md px-2 mb-5">
+		<div class="calosc">
+			<div class="spislewa item">
+				<div class="spistresci">
+					<ul>
+						<li><a id="link1" href="#">Wprowadzenie</a></li>
+						<li><a id="link2" href="#">Systematyczny wykaz zespołów roślinnych stwierdzonych na terenie użytku</a></li>
+							<ul>
+								<li><a id="link3" href="#">Zbiorowiska leśne i zaroślowe</a></li>
+								<li><a id="link4" href="#">Zbiorowiska związane z inicjalnymi i terminalnymi fazami rozwojowymi
+                  lasu (zbiorowiska „porębowe”)</a></li>
+								<li><a id="link5" href="#">Zbiorowiska wodne i bagienne</a></li>
+                <li><a id="link6" href="#">Krótkotrwałe zbiorowiska mulistych brzegów i  okresowo zalewanych
+                  zagłębień</a></li>
+                <li><a id="link7" href="#">Zbiorowiska kserotermofilnych ziołorośli okrajkowych</a></li>
+                <li><a id="link8" href="#">Zbiorowiska użytków zielonych</a></li>
+								<li><a id="link9" href="#">Zbiorowiska ziołorośli nitrofilnych</a></li>
+								<li><a id="link10" href="#">Krótkotrwałe zbiorowiska segetalne i ruderalne</a></li>
+							</ul>
+						<li><a id="link11" href="#">Opis rozmieszczenia zbiorowisk roślinnych</a></li>
+            <ul>
+              <li><a id="link12" href="#">Roślinność wodna i bagienna</a></li>
+              <li><a id="link13" href="#">Kompleks zbiorowisk ugorowych i  zaroślowych</a></li>
+              <li><a id="link14" href="#">Zbiorowiska leśne </a></li>
+              <li><a id="link15" href="#">Zbiorowiska rzadkie i ginące</a></li>
+            </ul>
+            <li><a id="link16" href="#">Podsumowanie</a></li>
+					</ul>
+				</div>
+			</div>
+
+    
+
+			<div class="content item">
+
+        <h2 style="text-align: left; display: inline; padding-bottom: 10px; float: left;">Zbiorowiska roślinne dawnych użytków ekologicznych „Kopanina I” i „Kopanina II”</h2>
+				
+				<h3>Sławomir Janyszek, Magdalena Kluza-Wieloch</h3>
+				<i style="font-size: small;">Rozdział 16 (s. 304-311) opublikowany w książce pt. <a href="https://wngig.amu.edu.pl/__data/assets/pdf_file/0018/410634/srodowisko-geograficzne-zlewni-junikowskiego-strumienia_.pdf" target="_blank">Środowisko geograficzne zlewni Junikowskiego Strumienia</a> pod red. <b>Małgorzaty Mazurek i Dawida Abramowicza</b> (Bogucki Wydawnictwo Naukowe, Poznań, 2022).</i>
+				
+					<h4 id="wpro">Wprowadzenie</h4>
+                <p>Szata roślinna terenu dawnych użytków ekologicznych „Kopanina I” i „Kopanina II” ukształtowała się na drodze procesów sukcesji wtórnej, jakie zachodziły
+                w ubiegłym wieku na obszarze wokół zbiorników poeksploatacyjnych. Procesy te
+                są obecnie w pośrednim stadium zaawansowania, zaś ich przebieg jest na bieżąco
+                modyfikowany przez współczesną antropopresję. Teren ten wykorzystywany jest
+                w miesiącach letnich jako obszar rekreacyjny – znajdują się tam dzikie kąpieliska,
+                łowiska wędkarskie i obszar spacerowy.</p>
+                <p>Ze względu na budowę oraz dominujące formacje roślinne badany obszar podzielić można na następujące kompleksy krajobrazowe:
+                <br>• zbiorniki wodne w  dawnych wyrobiskach oraz tereny bagienne i  łąkowe
+                wzdłuż biegu Junikowskiego Strumienia,
+                <br>• nasłonecznione, suche skarpy wyrobisk i wierzchowiny pomiędzy nimi,
+                <br>• fragmenty roślinności leśnej – pozostałości starych parków i sadów przy ulicy
+                Wykopy i Tynieckiej oraz zadrzewienia przy ulicy Leszczyńskiej.</p>
+                <p>Dane prezentowane poniżej pochodzą z opracowania poświęconego waloryzacji użytków ekologicznych „Kopanina I” i „Kopanina II” (Kluza-Wieloch i in.
+                2006) oraz z późniejszego opracowania (Kluza-Wieloch i in. 2017).</p>
+                
+                <h4 id="syst">Systematyczny wykaz zespołów roślinnych stwierdzonych na terenie użytku</h4>
+                <p>Na omawianym obrzeżu odnaleziono fitocenozy reprezentujące zespoły z  zamieszczonej poniżej listy, którą zestawiono, stosując diagnozy i  systematykę
+                zgodną z opracowaniem Brzega i Wojterskiej (2001).</p>
+                
+                <p id="zaro" class="zbiorowiska"><b>Zbiorowiska leśne i zaroślowe</b></p>
+                      
+                <input class="question-input 1" id="question 1" type="checkbox">
+                <label class="question-label 1" for="question 1">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px" >Kl. <i>Alnetea glutinosae</i> (<a href="https://www.encyklopedia.lasypolskie.pl/doku.php?id=b:bagienne-lasy-i-zarosla-olszowe">olsy i zarośla łozowe</a>) Br.-Bl. et Tx. 1943 </p>
+                </label>
+                <div class="answer 1">
+                  <p style="text-indent: 1em;">Rz. <i>Alnetalia</i> Tx. 1937</p>
+                  <p style="text-indent: 2em;">Zw. <i>Alnion glutinosae</i> (Malcuit 1929) Meijer Drees 1936</p>
+                  <p style="text-indent: 3em;"><b>1. <i>Salicetum cinereae</i> Kobendza 1930</b></p>                
+                </div>
+                
+                <input class="question-input 2" id="question 2" type="checkbox">
+                <label class="question-label 2" for="question 2">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px">Kl. <i>Salicetea purpureae</i> (łęgi wierzbowo-topolowe) Moor 1958</p>
+                </label>
+                <div class="answer 2">
+                  <p style="text-indent: 1em;"> Rz. <i>Salicetalia purpureae</i> Moor 1958</p>
+                  <p style="text-indent: 2em;">Zw. <i>Salicion albae</i> Soó 1930 em. Moor 1958</p>
+                  <p style="text-indent: 3em;"><b>2. <i>Salicetum triandro-viminalis</i> Lohmeyer 1952</b></p>                
+                </div>
+                
+                
+                <input class="question-input 3" id="question 3" type="checkbox">
+                <label class="question-label 3" for="question 3">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px">Kl. <i>Querco-Fagetea</i> (eutroficzne i mezotroficzne lasy liściaste) Br.-Bl. et Vlieger 1937</p>
+                </label>
+                <div class="answer 3">
+                  <p style="text-indent: 1em;">Rz. <i>Fagetalia sylvaticae</i> Pawł. in Pawł. et al. 1928</p>
+                  <p style="text-indent: 2em;">Zw. <i>Alnion incanae</i> Pawł. in Pawł. et al. 1928 (= Alno-Ulmion Br.-Bl. et Tx. 1943)</p>
+                  <p style="text-indent: 3em;"><b>3. <i>Querco-Ulmetum minoris</i> Issler 1924</b></p>
+                  <p style="text-indent: 2em;">Zw. <i>Carpinion betuli</i> Issler 1931 em.Oberd. 1957</p>
+
+                  <p style="text-indent: 3em;"><b>4. <i>Galio sylvatici-Carpinetum</i> (R.Tx. 1937) Oberd. 1957</b></p>           
+                </div>
+                
+                <input class="question-input 4" id="question 4" type="checkbox">
+                <label class="question-label 4" for="question 4">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px">Kl. <i>Rhamno-Prunetea</i> (ciepłolubne zbiorowiska okrajkowe) Rivas-Goday et Borja Carbonell 1961 ex. R.Tx. 1962</p>
+                </label>
+                <div class="answer 4">
+                  <p style="text-indent: 1em;">Rz. <i>Prunetalia spinosae</i> R.Tx. 1952</p>
+                  <p style="text-indent: 2em;">Zw. <i>Urtico-Crataegion</i> Pass. in Pass. et Hoffmann 1968</p>
+                  <p style="text-indent: 3em;"><b>5. <i>Euonymo-Prunetum spinosae</i> (Hueck 1931) Pass. et Hoffmann 1968</b></p>    
+                  <p style="text-indent: 3em;"><b>6. <i>Aegopodio-Sambucetum nigrae</i> Doing 1962 em. M. Wojterska 1990</b></p>   
+                  <p style="text-indent: 2em;">Zw. <i>Agrostio capilaris-Frangulion</i> Pass in Pass. et Hoffmann 1968 em. Brzeg et M.Wojterska 2001</p>
+                  <p style="text-indent: 3em;"><b>7. <i>Agrostio-Populetum</i> Pass in Pass. et Hoffmann 1968</b></p>     
+                </div>
+                
+                <p id="zwia" class="zbiorowiska"><b>Zbiorowiska związane z inicjalnymi i terminalnymi fazami rozwojowymi
+                lasu (zbiorowiska „porębowe”)</b></p>
+
+                <input class="question-input 5" id="question 5" type="checkbox">
+                <label class="question-label 5" for="question 5">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px">Kl. <i>Epilobietea angustifolii</i> (nirofilne zbiorowiska porębowe) R.Tx. et Preising 1950 in R.Tx. 1950</p>
+                </label>
+                <div class="answer 5">
+                  <p style="text-indent: 1em;">Rz. <i>Atropetalia</i> Vlieger 1937</p>
+                  <p style="text-indent: 2em;">Zw. <i>Carici piluliferae-Epilobion angustifolii</i> R.Tx. 1950</p>
+                  <p style="text-indent: 3em;"><b>8. <i>Calamagrostietum epigei</i> Juraszek 1928</b></p>                
+                </div>
+                
+                <p id="wodn" class="zbiorowiska"><b>Zbiorowiska wodne i bagienne</b></p>
+
+                <input class="question-input 6" id="question 6" type="checkbox">
+                <label class="question-label 6" for="question 6">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px">Kl. <i>Lemnetea minoris</i> (zbiorowiska rzęs w postaci skupień na powierzchni wód stojących lub bardzo wolno płynących) 
+                    (R Tx. 1955) de Bolós et Masclans 1955</p>
+                </label>
+                <div class="answer 6">
+                  <p style="text-indent: 1em;">Rz. <i>Lemnetalia minoris</i> (R Tx. 1955) de Bolós et Masclans 1955</p>
+                  <p style="text-indent: 2em;">Zw. <i>Salicion albae</i> Soó 1930 em. Moor 1958</p>
+                  <p style="text-indent: 3em;"><b>9. <i>Lemno-Spirodeletum polyrrhizae</i> W.Koch 1954 ex Th.Müller et Görs 1960</b></p>        
+                  <p style="text-indent: 3em;"><b>10. <i>Lemnetum minoris</i> Soó 1927</b></p>   
+                  <p style="text-indent: 3em;"><b>11. <i>Lemno-Utricularietum vulgaris</i> Soó 1927 ex 1947</b></p>           
+                </div>
+                
+                <input class="question-input 7" id="question 7" type="checkbox">
+                <label class="question-label 7" for="question 7">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px">Kl. <i>Potametea</i> (zbiorowiska słodkowodnych makrofitów w mezotroficznych i eutroficznych zbiornikach wód śródlądowych) R.Tx. et Prsg. 1942 ex Oberd. 1957</p>
+                </label>
+                <div class="answer 7">
+                  <p style="text-indent: 1em;">Rz. <i>Potametalia</i> W. Koch 1926</p>
+                  <p style="text-indent: 2em;">Zw. <i>Potamion pectinati</i> (W. Koch 1926) Görs 1977</p>
+                  <p style="text-indent: 3em;"><b>12. <i>Potametum pectinati</i> (Hueck 1931) Carstensen 1955</b></p>                
+                  <p style="text-indent: 3em;"><b>13. <i>Elodeetum canadensis</i> Eggler 1933</b></p>                
+                  <p style="text-indent: 3em;"><b>14. <i>Ceratophylletum demersi</i> Hild 1956</b></p>      
+                  <p style="text-indent: 2em;">Zw. <i>Nymphaeion</i> Oberd 1957</p>
+                  <p style="text-indent: 3em;"><b>15. <i>Nymphaeo albae-Nupharetum luteae</i> Nowiński 1928</b></p>      
+                </div>
+            
+                <input class="question-input 8" id="question 8" type="checkbox">
+                <label class="question-label 8" for="question 8">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px">Kl. <i>Scheuchzerio-Caricetea fuscae</i> (<a href="https://www.encyklopedia.lasypolskie.pl/doku.php?id=t:torfowiska-niskie">torfowiska niskie</a> i przejściowe) (Nordhagen 1936) R.Tx. 1937</p>
+                </label>
+                <div class="answer 8">
+                  <p style="text-indent: 1em;">Rz. <i>Scheuchzerietalia palustris</i> (Nordhagen 1936)</p>
+                  <p style="text-indent: 2em;">Zw. <i>Caricion davallianae</i> Klika 1934</p>
+                  <p style="text-indent: 3em;"><b>16. <i>Juncetum alpini</i> Philippi 1960</b></p>                
+                </div>
+                
+                <input class="question-input 9" id="question 9" type="checkbox">
+                <label class="question-label 9" for="question 9">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px">Kl. <i>Phragmitetea australis</i> (Klika in Klika et Novák 1941) R.Tx. et Preising 1942</p>
+                </label>
+                <div class="answer 9">
+                  <p style="text-indent: 1em;">Rz. <i>Phragmitetalia australis</i> W. Koch 1926</p>
+                  <p style="text-indent: 2em;">Zw. <i>Phragmition communis</i> W. Koch 1926</p>
+                  <p style="text-indent: 3em;"><b>17. <i>Scirpetum lacustris</i> (Allorge 1922) Chouard 1924</b></p>                
+                  <p style="text-indent: 3em;"><b>18. <i>Typhetum angustifoliae</i> Soó 1927 ex Pignatti 1953</b></p>                
+                  <p style="text-indent: 3em;"><b>19. <i>Typhetum latifoliae</i> Soó 1927 ex Lang 1973</b></p>                
+                  <p style="text-indent: 3em;"><b>20. <i>Sparganietum erecti</i> Roll 1938</b></p>                
+                  <p style="text-indent: 3em;"><b>21. <i>Phragmitetum communis</i> (W. Koch 1926) Schmale 1939</b></p>                
+                  <p style="text-indent: 2em;">Zw. <i>Magnocaricion elatae</i> Koch 1926</p>
+                  <p style="text-indent: 3em;"><b>22. <i>Cicuto-Caricetum pseudocyperi</i> Boer et Siss. in Boer 1942</b></p>                
+                  <p style="text-indent: 3em;"><b>23. <i>Caricetum acutiformis</i> Eggler 1933</b></p>                
+                  <p style="text-indent: 3em;"><b>24. <i>Caricetum gracilis</i> Almquist 1929</b></p>                
+                  <p style="text-indent: 1em;">Rz. <i>Nasturtio-Glycerietalia </i>Pignatti 1953</p>
+                  <p style="text-indent: 2em;">Zw. <i>Oenanthion aquaticae</i> Hejný ex Neuhäusl 1959</p>
+                  <p style="text-indent: 3em;"><b>25. <i>Oenantho aquaticae-Rorippetum amphibiae</i> Lohmeyer 1950</b></p>                
+                  <p style="text-indent: 2em;">Zw. <i>Sparganio-Glycerion fluitantis</i> Br.-Bl. et Sissingh in Boer 1942</p>
+                  <p style="text-indent: 3em;"><b>26. <i>Phalaridetum arundinaceae</i> Libbert 1931</b></p>                
+                </div>
+                
+                <p id="muli" class="zbiorowiska"><b>Krótkotrwałe zbiorowiska mulistych brzegów i  okresowo zalewanych
+                zagłębień</b></p>
+
+                <input class="question-input 10" id="question 10" type="checkbox">
+                <label class="question-label 10" for="question 10">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px">Kl. <i>Bidentetea tripartitae</i> R.Tx., Lohmeyer et Preising in R.Tx. 1950</p>
+                </label>
+                <div class="answer 10">
+                  <p style="text-indent: 1em;">Rz. <i>Bidentetalia tripartitae</i> Br.-Bl. et R.Tx. 1943</p>
+                  <p style="text-indent: 2em;">Zw. <i>Bidentetion tripartitae</i> Nordhagen 1940 em. R.Tx. in Poli et J.Tx. 1960</p>
+                  <p style="text-indent: 3em;"><b>27. <i>Bidenti-Polygonetum hydropiperis</i> (Miljan 1933) Lohmeyer in R.Tx.
+                    1950</b></p>                
+                  <p style="text-indent: 3em;"><b>28. <i>Rumici crispi-Alopecuretum aequalis</i> Cîrţu 1972</b></p>                
+                </div>
+                
+                <p id="kser" class="zbiorowiska"><b>Zbiorowiska kserotermofilnych ziołorośli okrajkowych</b></p>
+
+                <input class="question-input 11" id="question 11" type="checkbox">
+                <label class="question-label 11" for="question 11">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px">Kl. <i>Trifolio-Geranietea sanguinei</i> Th.Müller 1962</p>
+                </label>
+                <div class="answer 11">
+                  <p style="text-indent: 1em;">Rz. <i>Origanetalia vulgaris</i> Th.Müller 1962</p>
+                  <p style="text-indent: 2em;">Zw. <i>Geranion sanguinei</i> R.Tx. in Th.Müller 1962</p>
+                  <p style="text-indent: 3em;"><b>29. <i>Geranio-Trifolietum alpestris</i> Th.Müller 1962</b></p>                
+                  <p style="text-indent: 3em;"><b>30. <i>Trifolio-Agrimonietum eupatoriae</i> Th.Müller 1962</b></p>                
+                </div>
+                
+               <p id="uzyt" class="zbiorowiska"><b>Zbiorowiska użytków zielonych</b></p>
+
+                <input class="question-input 12" id="question 12" type="checkbox">
+                <label class="question-label 12" for="question 12">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px">Kl. <i>Molinio-Arrhenatheretea</i> R.Tx. 1937 em. 1970</p>
+                </label>
+                <div class="answer 12">
+                  <p style="text-indent: 1em;">Rz. <i>Molinietalia</i> W. Koch 1926</p>
+                  <p style="text-indent: 2em;">Zw. <i>Filipendulion</i> (Duvigneaud 1946) Segal 1966</p>
+                  <p style="text-indent: 3em;"><b>31. <i>Filipendulo-Geranietum palustris</i> (Scherrer 1923) W.Koch 1926</b></p>               
+                  <p style="text-indent: 3em;"><b>32. <i>Lysimachio vulgaris-Filipenduletum</i> Bal.-Tulačková 1978</b></p>  
+                  <p style="text-indent: 1em;">Rz. <i>Arrhenatheretalia</i> Pawł. 1928</p>              
+                  <p style="text-indent: 2em;">Zw. <i>Arrhenatherion elatioris</i> W.Koch 1926</p>
+                  <p style="text-indent: 3em;"><b>33. <i>Arrhenatheretum elatioris</i> Br.-Bl. 1919 ex Scherrer 1925</b></p>      
+                  <p style="text-indent: 1em;">Rz. <i>Trifolio repentis-Plantaginetalia majoris</i> (R.Tx. et Preising in R.Tx. 1950 em.
+                    Sissingh 1969) Brzeg 1991 ex Balcerkiewicz et Pawlak 2001</p>          
+                  <p style="text-indent: 2em;">Zw. <i>Cynosurion</i> R.Tx. 1947 em. Brzeg et M.Wojterska 1996</p>
+                  <p style="text-indent: 3em;"><b>34. <i>Lolio-Plantaginetum</i> Beger 1932 em. Sissingh 1969</b></p> 
+                  <p style="text-indent: 2em;">Zw. <i>Agropyro-Rumicion crispi</i> Nordhagen 1940 em. R.Tx. 1950</p>
+                  <p style="text-indent: 3em;"><b>35. <i>Ranunculetum repentis</i> R.Knapp 1946 ex Oberd. 1957</b></p>                
+                  <p style="text-indent: 3em;"><b>36. <i>Potentilletum anserinae</i> Rapaics 1927 em. Pass. 1964</b></p>                
+                  <p style="text-indent: 3em;"><b>37. <i>Potentilletum reptantis</i> Eliaš 1974</b></p>                
+                </div>
+         
+                <p id="ziol" class="zbiorowiska"><b>Zbiorowiska ziołorośli nitrofilnych</b></p>
+
+                <input class="question-input 13" id="question 13" type="checkbox">
+                <label class="question-label 13" for="question 13">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px">Kl. <i>Artemisietea vulgaris</i> Lohmeyer, Preising et R.Tx. in R.Tx. 1950</p>
+                </label>
+                <div class="answer 13">
+                  <p style="text-indent: 1em;">Rz. <i>Convolvuletalia sepium</i> R.Tx. 1950 em. Oberd. in Oberd. et al. 1967</p>
+                  <p style="text-indent: 2em;">Zw. <i>Calystegion sepium</i> R.Tx. 1947 em. 1950</p>
+                  <p style="text-indent: 3em;"><b>38. <i>Urtico-Convolvuletum sepium</i> Görs et Th.Müller 1969</b></p>                
+                  <p style="text-indent: 3em;"><b>39. <i>Rudbeckio-Solidaginetum</i> R.Tx. et Raabe in R.Tx. 1950</b></p>                
+                  <p style="text-indent: 3em;"><b>40. <i>Fallopio-Humuletum lupuli</i> Brzeg 1989 ex Brzeg et M.Wojterska
+                    2001</b></p>                
+                  <p style="text-indent: 3em;"><b>41. <i>Carduo crispi-Rubetum caesii</i> Brzeg in Brzeg et M.Wojterska 2001</b></p>                
+                  <p style="text-indent: 3em;"><b>42. <i>Sicyo-Echinocystidetum lobatae</i> Fijałkowski 1978 ex Brzeg et M.Wojterska 2001</b></p>  
+                  <p style="text-indent: 2em;">Zw. <i>Petasition officinalis</i> Sillinger 1933 em. R.Tx. 1967</p>
+                  <p style="text-indent: 3em;"><b>43. <i>Anthriscetum sylvestris</i> Hadač 1978</b></p>                
+                  <p style="text-indent: 3em;"><b>44. <i>Chaerophylletum aromatici</i> (R.Tx. 1967) Neuhäuslová-Novotná et
+                    al. 1969</b></p>                
+                  <p style="text-indent: 3em;"><b>45. <i>Aegopodio-Geranietum pratensis</i> Hadač 1978</b></p>                
+                  <p style="text-indent: 3em;"><b>46. Zb. <i>Agropyron repens-Urtica dioica</i></b></p>                
+                  <p style="text-indent: 2em;">Zw. <i>Galio-Alliarion</i> (Oberd. 1962) Lohmeyer et Oberd. in Oberd. et al. 1967</p>
+                  <p style="text-indent: 3em;"><b>47. <i>Alliario-Chaerophylletum temuli</i> Lohmeyer 1949</b></p> 
+                  <p style="text-indent: 3em;"><b>48. <i>Geo urbani-Chelidonietum maji</i> Jarolímek et al. 1997</b></p> 
+                  <p style="text-indent: 3em;"><b>49. <i>Impatientetum parviflorae</i> Brzeg 1989 ex Borysiak 1994</b></p> 
+                  <p style="text-indent: 3em;"><b>50. <i>Torilidetum japonicae</i> Lohmeyer in Oberd. et al. 1967 ex Görs et
+                    Th.Müller 1969</b></p>              
+                  <p style="text-indent: 2em;">Zw. <i>Onopordion acanthii</i> Br.-Bl. 1926 ex Br.-Bl. et al. 1936</p> 
+                  <p style="text-indent: 3em;"><b>51. <i>Melilotetum albo-officinalis</i> Sissingh 1950</b></p>  
+                  <p style="text-indent: 3em;"><b>52. <i>Dauco-Picridietum hieracioidis</i> (Faber 1933) Görs 1966</b></p>  
+                  <p style="text-indent: 3em;"><b>53. <i>Poo compressae-Tussilaginetum</i> R.x. 1931</b></p>  
+                  <p style="text-indent: 3em;"><b>54. <i>Artemisio vulgaris-Tanacetetum</i> Br.-Bl. 1949 ex Sissingh 1950</b></p>
+
+                  <p style="text-indent: 2em;">Zw. <i>Convolvulo arvensis-Agropyrion repentis</i> Görs 1966</p> 
+                  
+                  <p style="text-indent: 3em;"><b>55. <i>Convolvulo arvensis-Agropyretum repentis</i> Felföldy (1942) 1943</b></p> 
+                  <p style="text-indent: 3em;"><b>56. <i>Falcario vulgaris-Agropyretum repentis</i> Felföldy 1942 Th.Müller et
+                    Görs 1969</b></p> 
+                  <p style="text-indent: 3em;"><b>57. <i>Elymo-Rubetum caesii</i> Dengler 1997</b></p> 
+                  
+                  <p style="text-indent: 2em;">Zw. <i>Arction lappae</i> R.Tx. em. Sissingh in Westhoff et al. 1946</p>
+                  <p style="text-indent: 3em;"><b>58. <i>Leonuro cardiacae-Ballotetum nigrae</i> Slavnić 1951</b></p> 
+                  <p style="text-indent: 3em;"><b>59. <i>Lycietum halimifolii</i> Felföldy 1942</b></p> 
+                </div>
+
+
+
+                        
+                <p id="sege" class="zbiorowiska"><b>Krótkotrwałe zbiorowiska segetalne i ruderalne</b></p>
+
+                <input class="question-input 14" id="question 14" type="checkbox">
+                <label class="question-label 14" for="question 14">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px">Kl. <i>Stellarietea mediae</i> R.Tx., Lohmeyer et Preising in R.Tx. 1950</p>
+                </label>
+                <div class="answer 14">
+                  <p style="text-indent: 1em;">Rz. <i>Sisymbrietalia</i> R.Tx. in Lohmeyer et al. 1962</p>
+                  <p style="text-indent: 2em;">Zw. <i>Sisymbrion</i> R.Tx., Lohmeyer et Preising in R.Tx. 1950</p>
+                  <p style="text-indent: 3em;"><b>60. <i>Erigeronto-Lactucetum serriolae</i> Lohmeyer in Oberd. 1957</b></p>                
+                  <p style="text-indent: 3em;"><b>61. <i>Elymo repentis-Sisymbrietum loeselii</i> Mucina 1993</b></p>                
+                  <p style="text-indent: 3em;"><b>62. <i>Sisymbrietum altissimi</i> Bornkamm 1974</b></p>                
+                  <p style="text-indent: 3em;"><b>63. <i>Hordeetum murini</i> Allorge 1922 ex Libbert 1932</b></p>                
+                  <p style="text-indent: 3em;"><b>64. <i>Matricarietum discoideo-recutitae</i> Jarolímek et al. 1997</b></p>                
+                </div>
+
+                <input class="question-input 15" id="question 15" type="checkbox">
+                <label class="question-label 15" for="question 15">
+                  <p><img src="img/down-arrow.png" alt="downarrow" width="10px">Kl. <i>Polygono arenastri-Poetea annuae</i> Rivas-Martinez 1975 corr. Rivas-Martinez et al. 1991</p>
+                </label>
+                <div class="answer 15">
+                  <p style="text-indent: 1em;">Rz. <i>Polygono arenastri-Poetalia annuae</i> R.Tx. in Géhu et al 1972 corr. Rivas-Martinez et al. 1991</p>
+                  <p style="text-indent: 2em;">Zw. <i>Matricario matricarioidis-Polygonion arenastri</i> Rivas-Martinez 1975 corr. Rivas-Martinez et al. 1991</p>
+                  <p style="text-indent: 3em;"><b>65. <i>Poetum annuae</i> Felföldy 1942</b></p>   
+                  <p style="text-indent: 3em;"><b>66. <i>Matricario matricarioidis-Polygonetum arenastri</i> Th.Müller in Oberd.
+                    1971</b></p>                
+                  <p style="text-indent: 3em;"><b>67. <i>Polygonetum calcati</i> Lohmeyer 1975</b></p>                             
+                </div>
+       
+
+                <h4 id="opis">Opis rozmieszczenia zbiorowisk roślinnych</h4>
+                <p id="bagi"><b>• Roślinność wodna i bagienna w zbiornikach poeksploatacyjnych i rozwijająca się wzdłuż biegu Junikowskiego Strumienia</b>
+                <br>
+                Zdecydowana większość zbiorników wodnych, rozwijających się na obszarze stawów pokopalnianych cechuje się podobnym układem zbiorowisk roślinnych. Są
+                to zbiorniki eutroficzne, przy czym ich misy mają na ogół dość znaczną głębokość i stromo opadające zbocza, co sprawia, że szerokość strefy litoralu jest na
+                ogół niewielka. Zdecydowanie dominującym składnikiem tzw. szuwarów wysokich jest szuwar trzcinowy (Phragmitetum communis), któremu od strony otwartej wody, w najgłębszych partiach tego pasa towarzyszą niekiedy płaty szuwaru
+                pałki wąskolistnej (Typhetum angustifoliae). Znacznie rzadziej, w miejscach, gdzie
+                mniejsze falowanie zezwala na akumulację żyznych osadów dennych, zazwyczaj
+                na zapleczu trzcinowisk lub w wąskich zatokach niektórych stawów rozwijają się
+                płaty szuwaru pałki szerokolistnej (Typhetum latifoliae), pośród którego odnaleźć
+                można często, niewielkie płaty tzw. pła szalejowego (Cicuto-Caricetum pseudocyperi). Dwa pozostałe z odnalezionych zbiorowisk szuwarowych (szuwar oczeretowy
+                Scirpetum lacustris oraz szuwar jeżogłówki gałęzistej Sparganietum erecti) mają na
+                terenie użytków marginalne znaczenie.</p>
+
+                <div class="container px-0">
+                  <div class="gallery" style="margin-left: auto; margin-right: auto;">
+                  <a href="./img/Flora/wiezatrzcina.jpg" data-lightbox='mygallery' data-title="Szuwar trzcinowy"><img src="./img/Flora/wiezatrzcina.jpg"></a>
+                  <a href="./img/Flora/szuwar wąskopałkowy.jpeg" data-lightbox='mygallery' data-title="Szuwar wąskopałkowy"><img src="./img/Flora/szuwar wąskopałkowy.jpeg"></a>
+                  <a href="./img/Flora/szuwar szerokopałkowy.jpg" data-lightbox='mygallery' data-title="Szuwar szerokopałkowy"><img src="./img/Flora/szuwar szerokopałkowy.jpg"></a>
+                  </div>
+                </div>  
+                <p class="podpis">1)Szuwar trzcinowy(fot. własne), 2)<a href="https://pl.wikipedia.org/wiki/Szuwar_w%C4%85skopa%C5%82kowy" target="_blank">Szuwar wąskopałkowy</a> (fot. Kristian Peters), 3)<a href="https://pl.wikipedia.org/wiki/Szuwar_szerokopa%C5%82kowy" target="_blank">Szuwar szerokopałkowy</a>. Zdjęcie 2 i 3 na licencji <a href="https://creativecommons.org/licenses/by-sa/3.0/deed.en" target="_blank">CC BY-SA 3.0 DEED</a></p>
+
+                <p>Zbiorowiska roślinne toni wodnej (tzw. elodeidy) oraz zbiorowiska pleustonowe (grupy makrofitów unoszących się na powierzchni wody oraz bytujących
+                w toni wodnej) są na obszarze użytku wykształcone słabo. Pierwsza grupa reprezentowana jest przez fitocenozy, należące do dwóch pospolitych syntaksonów: zespołu moczarki kanadyjskiej Elodeetum canadensis oraz zespołu rogatka sztywnego
+                Ceratophylletum demersi. Płaty obu typów można obserwować na niezbyt wielkich
+                powierzchniach w pobliżu brzegów wszystkich stawów. W miejscach głębszych
+                są na ogół źle wykształcone, ze względu na niewielką przeźroczystość wód.</p>
+                <p>Zbiorowiska pleustonowe napotyka się na badanych zbiornikach jedynie w obrębie zatoczek i luk w pasie szuwarów. Kompletu typów roślinności wodnej dopełniają płaty zbiorowiska tzw. „lilii wodnych” – zespołu Nymphaeo albae-Nupharetum luteae – spotykane w stawach: Braciszki, Śmierduch oraz Pod Wierzbą, przy
+                wschodniej granicy użytku „Kopanina II”.
+                Wzdłuż biegu Junikowskiego Strumienia odnaleźć można także rozproszone płaty zbiorowisk szuwarowych i łąkowych związane z siedliskami wilgotnymi. W  miejscach o  najwyższym poziomie wód gruntowych są to szuwary turzycy błotnej (Caricetum acutiformis) oraz turzycy zaostrzonej (Caricetum gracilis),
+                zaś w miejscach mniej wilgotnych płaty zbiorowisk ziołoroślowych ze związku
+                Filipendulion.</p>
+                <br>
+                <p id="ugor"><b>• Kompleks zbiorowisk ugorowych i  zaroślowych na suchych skarpach
+                wyrobisk i wierzchowinach</b>
+                <br>
+                Zbiorowiska ruderalne i ugorowe, rozwijające się na gliniastych skarpach dawnych wyrobisk pokopalnianych, stanowią drugi, dominujący składnik krajobrazu użytku. Występują one tam w bardzo różnorodnych postaciach, w zależności
+                od lokalnych warunków siedliskowych. Na nasłonecznionych, skarpach i wierzchowinach dominującymi typami zbiorowisk są: zespół perzu i powoju polnego
+                Convolvulo arvensis-Agropyretum repentis, oraz porębowy zespół trzcinnika piaskowego Calamagrostietum epigei. Nieco mniejsze powierzchnie, w postaci wielu rozproszonych płatów, osiągają fitocenozy dwóch zespołów z dominacją jeżyny popielicy: Elymo-Rubetum caesii porastające suchsze, dobrze nasłonecznione gliniaste
+                skarpy i wierzchowiny, oraz Carduo crispi-Rubetum caesii – zbiorowisko o bardziej
+                okrajkowym charakterze, często spotykane w  miejscach wilgotniejszych, np.
+                w zagłębieniach i na zewnętrznych obrzeżach pasa szuwarów. Ostatnim z zespołów zajmujących na opisywanych siedliskach stosunkowo duże powierzchnie jest
+                rozproszony na obrzeżach użytków zespół rudbekii i nawłoci kanadyjskiej Rudbekio-Solidaginetum, którego fitocenozy tworzą jesienią charakterystyczne, żółte
+                aspekty barwne. Pośród rozległych płatów wymienionych zespołów napotyka się
+                na całym terenie rozproszone i na ogół niewielkie płaty innych, nitrofilnych zbiorowisk ugorowych i okrajkowych.</p>
+                <p>Elementem o dużym znaczeniu dla krajobrazu opisywanego kompleksu roślinności są także różnorodne postacie zbiorowisk zaroślowych. Najczęściej spotykane
+                płaty reprezentują czyżnie tarninowe (Euonymo-Prunetum spinosae) – rozwijające się
+                na różnych powierzchniach, od niewielkich, inicjalnych płatów do dużych, zwartych zarośli. W miejscach wilgotnych, w pobliżu zbiorników wodnych, rozrastają
+                się zbiorowiska wierzb, reprezentujące typ łozowiska (Salicetum cinereae).</p>
+                <br>
+                <p id="lesn"><b>• Zbiorowiska leśne</b>
+                <br>
+                Zbiorowiska leśne odgrywają na terenie opisywanych użytków marginalną rolę.
+                Większość obszaru obiektu jest bowiem odlesiona, zaś roślinność drzewiasta
+                reprezentowana jest jedynie przez niewielkie powierzchniowo zadrzewienia,
+                budowane na ogół przez lekkosiewne gatunki liściaste (klon, jawor, topola osika,
+                wierzby). Skład florystyczny większości takich zadrzewień nie pozwala na zaklasyfikowanie ich do żadnej jednostki fitosocjologicznej. Jedynie w przypadku
+                zapustów osikowych, które obserwować można w otoczeniu zabudowań fabrycznych na ulicy Ceglanej (użytek „Kopanina I”), możliwe jest zaliczenie ich do zespołu Agrostio-Populetum.</p>
+                <p>Poza opisanymi zadrzewieniami, na terenie użytków istnieją jedynie trzy zwarte kompleksy roślinności leśnej o nieco większej powierzchni. Są to niewielkie fragmenty lasoparku, położone w pobliżu ulicy Tynieckiej, większy obszar zadrzewień
+                w pobliżu ulicy Leszczyńskiej (oba na obszarze dawnego użytku „Kopanina II”)
+                oraz fragment lasoparku położony przy ulicy Wykopy (użytek „Kopanina II”).</p>
+                <br>
+                <p id="rzad"><b>• Zbiorowiska rzadkie i ginące</b>
+                <br>
+                Pośród zespołów roślinnych odnalezionych na terenie użytków stwierdzono występowanie 20 typów zbiorowisk, uznanych za zagrożone wyginięciem na terenie
+                Wielkopolski (Brzeg, Wojterska 2001). Dziewięć spośród tych zespołów zaliczanych jest do kategorii silnie zagrożonych (V). Są to: Angelico-Cirsietum oleracei,
+                Arrhenatheretum elatioris, Cicuto-Caricetum pseudocyperi, Filipendulo-Geranietum palustris, Geranio-Trifolietum alpestris, Matricarietum discoideo-recutitae, Nymphaeo albae-
+                -Nupharetum luteae, Querco-Ulmetum minoris oraz Juncetum alpini.</p>
+                <p>Kolejnych 11 typów zbiorowisk zaliczanych jest do kategorii zagrożonych,
+                o nieznanym stopniu zagrożenia (I). Są to następujące zespoły: Aegopodio-Geranietum pratensis, Agrostio-Populetum, Lemno-Utricularietum vulgaris, Leonuro cardiacae-
+                -Ballotetum nigrae, Lolio-Cynosuretum, Lycietum halimifolii, Lysimachio vulgaris-Filipenduletum, Rumici crispi-Alopecuretum aequalis, Salicetum cinereae, Torilidetum japonicae
+                oraz Trifolio-Agrimonietum eupatoriae.</p>
+                <p>Najcenniejszy jego zespół występujący na tym obszarze – Juncetum alpini –
+                znajduje się w pobliżu stawu Karpetaj, na kalcyfilnej młace. Nie został on do tej
+                pory odnotowany na terenie Wielkopolski (Brzeg, Wojterska 2001). Na uwagę zasługuje tu stosunkowo duży udział gatunków torfowisk przejściowych (Scheuchzerio-Caricetea fuscae), co świadczy o istnieniu w podłożu stałych wysięków wód.
+                Gatunki charakterystyczne dla zespołu: skrzyp pstry Equisetum variegatum i  sit
+                alpejski Juncus alpinus są w Wielkopolsce zagrożone wymarciem (Jackowiak i in.
+                2007) i mają w Poznaniu jedyne stanowiska (Jackowiak 1993). Również cały zespół jest bardzo rzadki i zagrożony wymarciem.</p>
+                <h3 id="pods">Podsumowanie</h3>
+                <p>Szata roślinna dawnych użytków ekologicznych „Kopanina  I”  i  „Kopanina  II”
+                stanowi przykład zróżnicowanego kompleksu zbiorowisk naturalnych, seminaturalnych i antropogenicznych, wytworzonego na skutek długotrwałych procesów
+                sukcesyjnych na dawnym terenie przemysłowym. Mimo że cały omawiany obszar
+                nosi piętno bardzo silnych oddziaływań antropogenicznych, zarówno działających w przeszłości (wykorzystanie przemysłowe), jak i obecnie (intensywne wykorzystywanie rekreacyjne i zaśmiecanie), istniejący tu krajobraz roślinny tworzy
+                bardzo harmonijną całość, o  stosunkowo wysokich walorach przyrodniczych
+                i niebagatelnych wartościach krajobrazowych. Ten ostatni walor jest tym istotniejszy, że opisywany obiekt leży bezpośrednio przy ruchliwej drodze krajowej
+                i stanowić powinien jedną z przyrodniczych wizytówek miasta.</p>
+                <p>Obszar dawnych użytków ekologicznych „Kopanina I” i „Kopanina II” charakteryzuje się dużą różnorodnością zbiorowisk roślinnych. Odnotowana obecność
+                67 zespołów roślinnych, z których 20 to syntaksony zagrożone na terenie Wielkopolski. Skupienie płatów tych rzadko spotykanych na obszarze miasta typów
+                roślinności czyni z Szacht wartościową ostoję różnorodności ekologicznej.</p>
+
+                <h4>Źródła:</h4>
+                <p
+                ><a href="https://www.flaticon.com/free-icons/down-arrow" title="down arrow icons">Down arrow icons created by Freepik - Flaticon</a><br>
+                <a href="https://www.encyklopedia.lasypolskie.pl/doku.php?id=start">Otwarta encyklopedia leśna</a><br>
+                <a href="https://atlas-roslin.pl/index.html">Atlas roślin</a><br>
+                </p>
+			</div>
+
+		</div>
+	</div>
+
+  
+
+	<div class="container-md px-2">
+		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-1 border-top">
+			<div class="col-md-4 d-flex align-items-center">
+			  <span class="mb-1 mb-md-0 text-body-secondary">© 2023 Michał Sosnowski</span>
+			</div>
+		
+			<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+			  <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/mikes_photo_travels/" target="blank"><i class="fa fa-instagram" style="font-size:20px"></i></a></li>
+			  <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=1395851416" target="blank"><i class="fa fa-facebook" style="font-size:20px"></i></a></li>
+			  <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/channel/UC6K-2vhM8gc7_C1kbUyUh0A" target="_blank"><i class="fa fa-youtube" style="font-size:20px"></i>
+			  </a></li>
+			</ul>
+		  </footer>
+	</div>
+
+  <script>
+	
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0); 
+			
+			$('#link1').click(function() { $.scrollTo($('#wpro'), 200); });
+			$('#link2').click(function() { $.scrollTo($('#syst'), 200); });
+			$('#link3').click(function() { $.scrollTo($('#zaro'), 200); });
+			$('#link4').click(function() { $.scrollTo($('#zwia'), 200); });
+			$('#link5').click(function() { $.scrollTo($('#wodn'), 200); });
+			$('#link6').click(function() { $.scrollTo($('#muli'), 200); });
+      $('#link7').click(function() { $.scrollTo($('#kser'), 200); });
+			$('#link8').click(function() { $.scrollTo($('#uzyt'), 200); });
+			$('#link9').click(function() { $.scrollTo($('#ziol'), 200); });
+      $('#link10').click(function() { $.scrollTo($('#sege'), 200); });
+  		$('#link11').click(function() { $.scrollTo($('#opis'), 200); });
+			$('#link12').click(function() { $.scrollTo($('#bagi'), 200); });
+			$('#link13').click(function() { $.scrollTo($('#ugor'), 200); });
+			$('#link14').click(function() { $.scrollTo($('#lesn'), 200); });
+			$('#link15').click(function() { $.scrollTo($('#rzad'), 200); });
+			$('#link16').click(function() { $.scrollTo($('#pods'), 200); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 200); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		}
+		
+		);
+		
+	</script>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</body>
+</html>
