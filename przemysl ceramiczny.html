@@ -18,42 +18,6 @@
 	<script src="js/jquery.scrollTo.min.js"></script>
 	<link rel="stylesheet" href="./css/style.css">
 
-	<script>
-	
-		jQuery(function($)
-		{
-			//zresetuj scrolla
-			$.scrollTo(0); 
-			
-			$('#link1').click(function() { $.scrollTo($('#wste'), 200); });
-			$('#link2').click(function() { $.scrollTo($('#wpro'), 200); });
-			$('#link3').click(function() { $.scrollTo($('#fest'), 200); });
-			$('#link4').click(function() { $.scrollTo($('#krol'), 200); });
-			$('#link5').click(function() { $.scrollTo($('#rudn'), 200); });
-			$('#link6').click(function() { $.scrollTo($('#mori'), 200); });;
-			$('#link7').click(function() { $.scrollTo($('#zabi'), 200); });
-			$('#link8').click(function() { $.scrollTo($('#hugo'), 200); });
-			$('#link9').click(function() { $.scrollTo($('#gorc'), 200); });
-			$('#link10').click(function() { $.scrollTo($('#koto'), 200); });
-			$('#link11').click(function() { $.scrollTo($('#waru'), 200); });
-			$('#link12').click(function() { $.scrollTo($('#cegi'), 200); });
-			$('#link13').click(function() { $.scrollTo($('#powo'), 200); });
-			$('#link14').click(function() { $.scrollTo($('#pods'), 200); });
-			$('.scrollup').click(function() { $.scrollTo($('body'), 200); });
-		}
-		);
-		
-		//pokaż podczas przewijania
-		$(window).scroll(function()
-		{
-			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
-			else $('.scrollup').fadeOut();
-		}
-		
-		);
-		
-	</script>
-
     <style>
 
 	        .obraz{
@@ -99,8 +63,8 @@
 
 <body>
 
-	<a href="#" class="scrollup" style="display: inline;"><h1 style="text-align: center;">↑</h1></a>
-
+	<a href="#" class="scrollup" style="display: inline;"><img src="img/up.png" alt="scroll" width="50px" style="border-radius: 10%;"></a>
+	
 	<div class="container-md px-2">
 		<header class="d-flex flex-wrap justify-content-start py-3 mb-4 border-bottom">
 		  <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
@@ -768,8 +732,41 @@
 		</div>	
 	</div>
 
-
-
+	<script>
+	
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0); 
+			
+			$('#link1').click(function() { $.scrollTo($('#wste'), 200); });
+			$('#link2').click(function() { $.scrollTo($('#wpro'), 200); });
+			$('#link3').click(function() { $.scrollTo($('#fest'), 200); });
+			$('#link4').click(function() { $.scrollTo($('#krol'), 200); });
+			$('#link5').click(function() { $.scrollTo($('#rudn'), 200); });
+			$('#link6').click(function() { $.scrollTo($('#mori'), 200); });;
+			$('#link7').click(function() { $.scrollTo($('#zabi'), 200); });
+			$('#link8').click(function() { $.scrollTo($('#hugo'), 200); });
+			$('#link9').click(function() { $.scrollTo($('#gorc'), 200); });
+			$('#link10').click(function() { $.scrollTo($('#koto'), 200); });
+			$('#link11').click(function() { $.scrollTo($('#waru'), 200); });
+			$('#link12').click(function() { $.scrollTo($('#cegi'), 200); });
+			$('#link13').click(function() { $.scrollTo($('#powo'), 200); });
+			$('#link14').click(function() { $.scrollTo($('#pods'), 200); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 200); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		}
+		
+		);
+		
+	</script>
 
 	<div class="container-md px-2">
 		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-1 border-top">
