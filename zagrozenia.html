@@ -18,35 +18,6 @@
 	<script src="js/jquery.scrollTo.min.js"></script>
 	<link rel="stylesheet" href="./css/style.css">
 
-	<script>
-	
-		jQuery(function($)
-		{
-			//zresetuj scrolla
-			$.scrollTo(0); 
-			
-			$('#link1').click(function() { $.scrollTo($('#wpro'), 200); });
-			$('#link2').click(function() { $.scrollTo($('#zagr'), 200); });
-			$('#link3').click(function() { $.scrollTo($('#proc'), 200); });
-			$('#link4').click(function() { $.scrollTo($('#smie'), 200); });
-			$('#link5').click(function() { $.scrollTo($('#eutr'), 200); });
-			$('#link6').click(function() { $.scrollTo($('#ochr'), 200); });
-			$('#link7').click(function() { $.scrollTo($('#pods'), 200); });
-			$('.scrollup').click(function() { $.scrollTo($('body'), 300); });
-		}
-		);
-		
-		//pokaż podczas przewijania
-		$(window).scroll(function()
-		{
-			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
-			else $('.scrollup').fadeOut();
-		}
-		
-		);
-		
-	</script>
-
     <style>
 
 		p{
@@ -72,8 +43,7 @@
 
 <body>
 
-	<a href="#" class="scrollup" style="display: inline;"><h1 style="text-align: center;">↑</h1></a>
-
+	<a href="#" class="scrollup" style="display: inline;"><img src="img/up.png" alt="scroll" width="50px" style="border-radius: 10%;"></a>
 
 	<div class="container-md px-2">
 		<header class="d-flex flex-wrap justify-content-start py-3 mb-4 border-bottom">
@@ -364,6 +334,35 @@
 			</ul>
 		  </footer>
 	</div>
+
+	<script>
+	
+		jQuery(function($)
+		{
+			//zresetuj scrolla
+			$.scrollTo(0); 
+			
+			$('#link1').click(function() { $.scrollTo($('#wpro'), 200); });
+			$('#link2').click(function() { $.scrollTo($('#zagr'), 200); });
+			$('#link3').click(function() { $.scrollTo($('#proc'), 200); });
+			$('#link4').click(function() { $.scrollTo($('#smie'), 200); });
+			$('#link5').click(function() { $.scrollTo($('#eutr'), 200); });
+			$('#link6').click(function() { $.scrollTo($('#ochr'), 200); });
+			$('#link7').click(function() { $.scrollTo($('#pods'), 200); });
+			$('.scrollup').click(function() { $.scrollTo($('body'), 300); });
+		}
+		);
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		}
+		
+		);
+		
+	</script>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
