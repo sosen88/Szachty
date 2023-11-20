@@ -5,7 +5,7 @@ body{
 }
 
 
-
+/*testowe, nie uzywane contenery */
 @media (max-width: 480px){
 
     /* Mobile */
@@ -28,8 +28,6 @@ body{
 } 
 
 }
-
-
 
 .nav-link{
     color: #202426;
@@ -69,6 +67,7 @@ body{
     transition: 0.3s;
     margin-top: 0px;  
     text-align: center;
+    border-radius: 3%;
 }
 .gallery img:hover{
     filter: grayscale(40%);
@@ -124,7 +123,7 @@ body{
     }
 }
 
-@media (max-width: 767px) {
+@media (max-width: 768px) {
 
     body{
         font-size: x-large;
@@ -152,6 +151,7 @@ a{
 
 .spistresci{
     width: max-content;
+    max-width: 700px;
     height: max-content;
     float: left;
     border: thin silver solid;
@@ -181,8 +181,8 @@ a{
     border-radius: 10%;
     line-height: 20px;
 	text-decoration: none;
-	background: url("img/up.png") no-repeat 0px 0px;
-    background-color: #F4C7AB;
+/*	background: url("img/up.png") no-repeat 0px 0px; 
+    background-color: #FFF5EB; ciemniejszy - #F4C7AB*/
 	position: fixed;
 	right: 50px;
 	bottom: 50px;
