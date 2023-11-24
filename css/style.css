@@ -1,7 +1,44 @@
 body{
     /*background-color: #DEEDF0; */
     background-color: #FFF5EB;
-   /* font-family: 'Lato', sans-serif; */
+    font-family: 'Lato', sans-serif;
+    position: relative;
+}
+
+.conti {
+    width: min(90%, 1220px);
+    margin-inline: auto;
+}
+
+.ponti{
+    margin-top: 20px;
+}
+
+.contih{
+    width: 100%;
+    height: fit-content;
+    margin: auto;
+    padding: 5px 20px;
+    position: relative;
+    z-index: 0;
+    top: 0;
+    background-color: #F4C7AB;
+}
+
+@media (min-width: 722px) {
+    .ponti{
+        margin-top: 75px;
+    }
+
+    .contih{
+        position: fixed;
+
+    }
+    
+}
+
+.head{
+    background-color: #DEEDF0;
 }
 
 
@@ -33,6 +70,12 @@ body{
     color: #202426;
     font-weight:bold;
 }
+
+.nav-link:hover{
+    color: #202426;
+    opacity: 50%;
+}
+
 
 .carousel-item {
     text-align: center;
@@ -106,29 +149,29 @@ body{
 
 .content{
     max-width: 920px;
+    padding: 0 10px;
 }
 
-
-
-@media (min-width: 768px) {
+@media only screen and (min-width: 768px)
+/*@media (min-width: 768px) */{
     .obraz{
         width: 350px;
     }
 
     .gallery img{
-        width: 300px;
+        width: 295px;
     }
 
     .mapa{
         width: 50%;
     }
 }
+@media only screen and (max-width: 767px)
+/*@media (max-width: 767px) */{
 
-@media (max-width: 767px) {
-
-    body{
+  /*  body{
         font-size: x-large;
-    }
+    } */
 
     .gallery img{
         width: 100%;
@@ -150,12 +193,17 @@ a{
     text-decoration: none;
 }
 
+a:hover{
+    color: pink;
+}
+
 .spistresci{
     width: max-content;
-    max-width: 700px;
+    max-width: 920px;
     height: max-content;
     float: left;
-    border: thin silver solid;
+    /*border: thin silver solid;*/
+    background-color: white;
     margin: 0 1em 1em 0;
     padding: 0.5em;
     border-color: #6A9C89;
@@ -192,6 +240,16 @@ a{
 .fragment{
     padding-top: 10px;
 }
+
+.wstep{
+    width: fit-content;
+    background-color: white;
+    border-radius: 5%;
+    margin: 10px auto;
+    padding: 20px;
+}
+
+
 /* ten kod zmienia karuzele na pierwszej stronie  
 p{
     text-align: justify;
