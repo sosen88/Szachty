@@ -1,3 +1,15 @@
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 63px;
+}
+
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+
+
 body{
     /*background-color: #DEEDF0; */
     background-color: #FFF5EB;
@@ -5,9 +17,19 @@ body{
     position: relative;
 }
 
-.conti {
+.navbar{
+    background-color: #F4C7AB;
+}
+
+.conti{
     width: min(90%, 1220px);
     margin-inline: auto;
+}
+
+.contif{
+    width: min(95%, 1220px);
+    margin-inline: auto;
+    margin-top: 20px;
 }
 
 .ponti{
@@ -18,52 +40,10 @@ body{
     width: 100%;
     height: fit-content;
     margin: auto;
-    padding: 5px 20px;
     position: relative;
-    z-index: 0;
+    z-index: 1;
     top: 0;
     background-color: #F4C7AB;
-}
-
-@media (min-width: 722px) {
-    .ponti{
-        margin-top: 75px;
-    }
-
-    .contih{
-        position: fixed;
-
-    }
-    
-}
-
-.head{
-    background-color: #DEEDF0;
-}
-
-
-/*testowe, nie uzywane contenery */
-@media (max-width: 480px){
-
-    /* Mobile */
-.ccontainer {
-    padding: 4%;
-}
-
-/* Tablet */
-@media (min-width:600px) {
-    .ccontainer {
-        padding: 3%;
-    }
-}
-
-/* Desktop */
-@media (min-width:900px) {
-    .ccontainer {
-        padding: 2%;
-    }
-} 
-
 }
 
 .nav-link{
@@ -76,6 +56,9 @@ body{
     opacity: 50%;
 }
 
+.nav-link:active{
+    color: grey;
+}
 
 .carousel-item {
     text-align: center;
@@ -87,12 +70,6 @@ body{
 
 }
 
-*{
-    padding: 0px;
-    margin: 0px;
-    box-sizing: border-box;
-}
-
 .gallery{
     width: 100%;
     height: auto;
@@ -102,7 +79,7 @@ body{
     justify-content: center;
     gap: 5px;
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
 }
 .gallery img{
     width: 100%;
@@ -155,7 +132,7 @@ body{
 @media only screen and (min-width: 768px)
 /*@media (min-width: 768px) */{
     .obraz{
-        width: 350px;
+        width: 370px;
     }
 
     .gallery img{
@@ -198,7 +175,7 @@ a:hover{
 }
 
 .spistresci{
-    width: max-content;
+    width: min(max-content, 100%);
     max-width: 920px;
     height: max-content;
     float: left;
@@ -219,7 +196,7 @@ a:hover{
 
 @media(max-width:767px){
     .spistresci{
-        width: 360px ;
+        width: 100% ;
     }
 }
 
@@ -247,6 +224,12 @@ a:hover{
     border-radius: 5%;
     margin: 10px auto;
     padding: 20px;
+}
+
+hr{
+    width: min(90%, 1220px);
+    margin: 20px auto;
+    color: grey;
 }
 
 
