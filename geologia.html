@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+
+	<meta charset="utf-8">
+	<title>Szachty - Interaktywnie!</title>
+	<meta name="Description" content="Przejdź się po szachtach, zajrzyj w każdy kąt i obejrzyć najlepsze ujęcia z każdej pory roku!" />
+	<meta name="Keywords" content="szachty, poznań, stawy, glinianki, wieża widokowa, natura, ptaki, zieleń, natura, spacer, rezerwat, zachód słońca, wschód słońca, fotograria" /> 
+	<meta name="author" content="Michał Sosnowski" />
+	<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="./css/lightbox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
+	<script src="./js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+	<!-- <script src="js/jquery.scrollTo.min.js"></script> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
+
+    <style>
+
+        p{
+            text-align: justify;
+			margin-bottom: 0;
+        }
+
+		h3,h4{
+			margin: 20px 0 10px;
+		}
+
+		h2, h3, h4{
+			color: #3A4D39;
+		}
+
+		p + p {
+			text-indent: 1.5em;
+		}
+
+		/* .obraz-horiz {
+			width: 100%;
+			border-radius: 5%;
+			padding: 10px 0;
+		}
+
+		.obraz-verti {
+			width: 50%;
+			border-radius: 5%;
+			padding: 5px;
+			float: right;
+			padding: 10px 0 10px 15px;
+		}
+
+		@media only screen and (min-width: 768px){
+			.obraz-horiz{
+				width: 600px;
+				float: left;
+				padding: 0 10px 10px 0;
+			}
+
+			.obraz-verti{
+				width: 300px;
+				float: right;
+				
+			}
+		} */
+		
+		.galeria{
+			width: fit-content;
+		}
+
+		.left{
+			float: left;
+			padding: 10px 10px 10px 0;
+		}
+
+		.right{
+			float: right;
+			padding: 10px 0 10px 10px;
+		}
+
+		/* @media only screen and (min-width: 768px)
+		{
+		
+
+			.gallery img{
+				width: 350px;
+			}
+		} */
+
+    </style>
+</head>
+
+<body>
+
+	<a href="#" class="scrollup" style="display: inline;"><img src="img/up.png" alt="scroll" width="50px" style="border-radius: 10%;"></a>
+
+	<nav class="navbar fixed-top navbar-expand-md navbar-light" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <a href="index.html" class="d-flex align-items-center mb-0 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <span class="fs-3"><b><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16" style="padding-bottom: 4px;">
+                    <path d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 0-.998 1.03l.01.091c.012.077.029.176.054.296.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a4.997 4.997 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1zM2 9l.03-.002.091-.01a4.99 4.99 0 0 0 .296-.054c.241-.049.542-.122.887-.213a60.59 60.59 0 0 0 2.314-.676L5.762 8l-.144-.045a60.59 60.59 0 0 0-2.314-.676 16.705 16.705 0 0 0-.887-.213 4.99 4.99 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2zm7 5-.002-.03a5.005 5.005 0 0 0-.064-.386 16.398 16.398 0 0 0-.213-.888 60.582 60.582 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a4.996 4.996 0 0 0-.064.386L7 14a1 1 0 1 0 2 0zm-5.696-2.134.025-.017a5.001 5.001 0 0 0 .303-.248c.184-.164.408-.377.661-.629A60.614 60.614 0 0 0 5.96 9.23l.103-.111-.147.033a60.88 60.88 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5.063 5.063 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027c-.01.02-.021.048-.036.084a5.09 5.09 0 0 0-.102.283c-.078.233-.165.53-.258.875a60.62 60.62 0 0 0-.572 2.342l-.033.147.11-.102a60.848 60.848 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5.001 5.001 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196.017.025a4.996 4.996 0 0 0 .248.303c.164.184.377.408.629.661A60.597 60.597 0 0 0 6.77 5.96l.111.102-.033-.147a60.602 60.602 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5.006 5.006 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1zm9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a60.619 60.619 0 0 0-2.342-.572l-.147-.033.102.111a60.73 60.73 0 0 0 1.667 1.742c.253.252.477.465.66.629a4.946 4.946 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                  </svg>Szachty</b></span>
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">STRONA GŁÓWNA</a></li><!--nav-link active -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Przyroda</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="flora.html">Flora</a></li>
+                        <li><a class="dropdown-item" href="zbiorowiskarosl.html">Zbiorowiska roślinne</a></li>
+                        <li><a class="dropdown-item" href="fauna.html">Zwierzęta</a></li>
+                        <li><a class="dropdown-item" href="zagrozenia.html">Ochrona Szacht</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Galerie</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="wiosna.html">Wiosenna</a></li>
+                      <li><a class="dropdown-item" href="lato.html">Letnia</a></li>
+                      <li><a class="dropdown-item" href="jesien.html">Jesienna</a></li>
+                      <li><a class="dropdown-item" href="zima.html">Zimowa</a></li>
+					  <li><a class="dropdown-item" href="zachody.html">Zachody słońca</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Historia</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="przemysl ceramiczny.html">Przemysł ceramiczny</a></li>
+                      <li><a class="dropdown-item" href="geologia.html">Geologia</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item"><a href="dojazd.html" class="nav-link">Dojazd</a></li>  
+                <li class="nav-item"><a href="o mnie.html" class="nav-link">O mnie</a></li>
+            </ul>
+            
+            <!-- <form>
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </form> -->
+            </div>
+        </div>
+    </nav>
+
+	<div class="conti" style="margin-top: 80px;">
+		<div class="calosc">
+			<div class="spislewa item">
+				<div class="spistresci">
+					<ul>
+						<li><a id="link1" href="#wpro">Wprowadzenie</a></li>
+						<li><a id="link2" href="#rzez">Rzeźba terenu</a></li>
+						<li><a id="link3" href="#uwar">Uwarunkowania geomofrologiczne</a></li>
+						<li><a id="link4" href="#lito">Litologia osadów</a></li>
+						<li><a id="link5" href="#waru">Warunki hydrogeologiczne</a></li>
+						<li><a id="link6" href="#wody">Wody powierzchniowe</a></li>
+						<li><a id="link7" href="#pods">Podsumomowanie</a></li>
+
+					</ul>
+
+				</div>
+			</div>
+			<div class="content item" style="text-align: justify;">
+				<h1 style="padding-bottom: 10px;">Geologia <span style="font-size: 16px;"><a href="https://pl.wikipedia.org/wiki/Geologia" target="_blank">(wiki)</a></span></h1>
+				<h2 style="display: inline; padding-bottom: 10px;">Rzeźba, osady i wody zlewni Junikowskiego Strumienia</h2>
+
+				<h3>Małgorzata Mazurek</h3>
+				<i style="font-size: small;">Rozdział 3 (s. 46-61) opublikowany w książce pt. <a href="https://wngig.amu.edu.pl/__data/assets/pdf_file/0018/410634/srodowisko-geograficzne-zlewni-junikowskiego-strumienia_.pdf" target="_blank">Środowisko geograficzne zlewni Junikowskiego Strumienia</a> pod red. <b>Małgorzaty Mazurek i Dawida Abramowicza</b> (Bogucki Wydawnictwo Naukowe, Poznań, 2022).</i>
+				<br>
+					<h4 id="wpro">Wprowadzenie</h4>
+					<p>Zlewnia Junikowskiego Strumienia reprezentuje młodoglacjalny krajobraz nizinny położony w strefie klimatu umiarkowanego i podlegający rosnącej antropopresji. Aktywność procesów przyrodniczych w zlewni rzecznej uwarunkowana
+						jest budową geologiczną, z  którą ściśle wiążą się warunki hydrogeologiczne.
+						Ukształtowanie terenu wykazuje również silny związek z  budową geologiczną
+						i  przebiegiem głównych struktur tektonicznych regionu. Istotnym czynnikiem
+						decydującym o wykształceniu sieci rzecznej i jej zasilaniu jest powierzchniowa
+						budowa geologiczna o zróżnicowanych właściwościach infiltracyjnych, które na
+						obszarze zurbanizowanym zostały znacznie ograniczone.</p>
+					
+					<h4 id="rzez">Rzeźba terenu</h4>
+					<p><!-- <img class="obraz-horiz" src="img/Geologia/Ryc 1.png" alt=""/> -->
+						<div class="galeria left"><div class="gallery" style="margin-top: 0;">
+							<a href="./img/Geologia/Ryc 1.png" data-lightbox='mygallery' data-title="Ryc 1"><img src="./img/Geologia/Ryc 1.png"></a>
+							</div></div>
+						Teren zlewni cechuje zróżnicowanie hipsometryczne związane z  występowaniem zespołu form rzeźby polodowcowej i fluwialnej. 
+						Najwyższy punkt o rzędnej 103,3 m n.p.m. (ISOK, Cyfrowy model wysokościowy, GUGiK 2022) położony
+						jest w obrębie wzgórza morenowego, w strefie topograficznego działu wodnego
+						III rzędu w północno-wschodniej części zlewni. Najniżej położony punkt o wysokości 52,2 m n.p.m. zlokalizowany jest w  południowej części zlewni, przy
+						ujściu Junikowskiego Strumienia do Warty (ryc. 1). <div class="galeria right"><div class="gallery" style="display: inline;">
+							<a href="./img/Geologia/Ryc 2.png" data-lightbox='mygallery' data-title="Ryc 1"><img src="./img/Geologia/Ryc 2.png"></a>
+							</div></div>
+						Odcinek źródłowy cieku leży
+						na wysokości 87,5 m n.p.m. Średnia wysokość analizowanego terenu przyjmuje
+						wartość 82,5 m n.p.m. Obszar zlewni charakteryzuje się spadkami w przedziale
+						od 0° do 16° (ryc. 2, 3A), dominują spadki z przedziału 0–2° stanowiące 93,1%
+						powierzchni, a średni spadek wynosi 0,74° (odchylenie standardowe 0,91). Największe nachylenie wykazują zbocza dolin rzecznych, zwłaszcza zbocza rynny
+						subglacjalnej oraz stoki form antropogenicznych. Obszary o spadkach >6° zajmują 0,4% powierzchni zlewni. 
+						
+						Zaznacza się asymetria pomiędzy północną częścią zlewni, gdzie odnotowywany jest mniejszy udział spadków o wartości 10–
+						16°, <div class="galeria left"><div class="gallery" style="display: inline;">
+							<a href="./img/Geologia/Ryc 3.png" data-lightbox='mygallery' data-title="Ryc 1"><img src="./img/Geologia/Ryc 3.png"></a>
+							</div></div>a jej południowym fragmentem. Nachylenia powierzchni zlewni w kierunku
+						
+						południowo-wschodnim znajdują odzwierciedlenie w  układzie sieci rzecznej
+						i kierunku odpływu wód podziemnych.</p>
+						<p>Zlewnia Junikowskiego Strumienia jest w przeważającej części zurbanizowana,
+						w efekcie czego naturalne ukształtowanie terenu w zakresie wysokości względnych i spadków uległo znacznym modyfikacjom.
+						<!-- <div class="container px-0">
+							<div class="gallery" style="margin-left: auto; margin-right: auto;">
+							<a href="./img/Geologia/Ryc 1.png" data-lightbox='mygallery' data-title="Ryc 1"><img src="./img/Geologia/Ryc 1.png"></a>
+							<a href="./img/Geologia/Ryc 2.png" data-lightbox='mygallery' data-title="Ryc 2"><img src="./img/Geologia/Ryc 2.png"></a>
+							<a href="./img/Geologia/Ryc 3.jpg" data-lightbox='mygallery' data-title="Ryc 3"><img src="./img/Geologia/Ryc 3.jpg"></a>
+							</div>
+						</div>  
+						
+						<p class="podpis">Ryc. 1. Zlewnia Junikowskiego Strumienia: cyfrowy model wysokościowy oraz główne
+						elementy hydrograficzne (A) z zaznaczonym obszarem Szacht (B)
+						Źródło: Cyfrowy model wysokościowy (GUGiK 2022) i MPHP (2021), opracowanie graficzne M. Majewski.</p>
+						
+						<p class="podpis">Ryc. 2. Mapa spadków terenu w zlewni Junikowskiego Strumienia (A) z zaznaczonym
+						obszarem Szacht (B)
+						Źródło: Cyfrowy model wysokościowy (GUGiK 2022), zmodyfikowane, opracowanie graficzne M.
+						Majewski.</p>
+						
+						<p class="podpis">Ryc. 3. A – równinna rzeźba północno-zachodniej części zlewni Junikowskiego Strumienia; B – zachowane grzędy 
+							niewyeksploatowanego surowca pokryte roślinnością szuwarową w obrębie stawu Glinki Edy (fot. M. Winowski)</p> -->
+						
+						 Od XIX w. w zlewni, podobnie jak na
+						obszarze całego miasta, można zaobserwować nasilające się zmiany w rzeźbie spowodowane działalnością człowieka. Do 
+						ważniejszych zaliczyć można: prace fortyfikacyjne, powstawanie i rekultywacje kopalni odkrywkowych (wyrobiska gliny
+						zwałowej, iłów zastoiskowych i torfu), przekształcenia związane z budową infrastruktury drogowej i kolejowej (nasypy, wykopy) oraz niwelacją powierzchni pod
+						teren budownictwa (Ewertowski i in. 2010, Hildebrandt-Radke 2016, por. rozdz.
+						4). Do wyróżniających się przekształceń rzeźby wynikających z układu komunikacyjnego w zlewni należy autostrada A2, natomiast nowymi antropogenicznymi
+						wzniesieniami w krajobrazie są dwa zrekultywowane składowiska odpadów komunalnych, a mianowicie góra saneczkowa w Lasku Marcelińskim oraz Wzgórze
+						Papieskie (Wzgórze Jana Pawła II) w Luboniu.</p>
+
+						<h4 id="uwar">Uwarunkowania geomorfologiczne</h4>
+						<p>Zgodnie z podziałem geomorfologicznym Niziny Wielkopolskiej Krygowskiego
+						(1961) zlewnia położona jest na Wysoczyźnie Poznańskiej, a  w  jej obrębie na
+						Równinie Poznańskiej, którą otaczają od północy Równina Szamotulska, od północnego zachodu Pagórki Międzyrzecko-Pniewskie, od zachodu i południowego
+						zachodu Równina Opalenicka, a od południa Pojezierze Stęszewskie.</p>
+						<p>Rzeźba Równiny Poznańskiej jest efektem morfogenezy plejstoceńskiej (glacjalnej) i holoceńskiej (umiarkowanej). Zasadniczy wpływ na jej krajobraz wywarły procesy glacjalne i fluwioglacjalne związane z fazą leszczyńską (ok. 24–21
+						ka BP, Marks 2012) i poznańską (19–18 ka BP) zlodowacenia Wisły. Efektem tych
+						procesów rzeźbotwórczych są wzgórza moren czołowych oraz przyległe do nich
+						wysoczyzny morenowe i  równiny wodnolodowcowe. Powierzchnie tych jednostek morfologicznych zostały rozczłonkowane rynnami subglacjalnymi, dolinami
+						odpływu wód roztopowych, zagłębieniami bezodpływowymi oraz obniżeniami
+						dolinnymi.</p>
+						
+						<p><div class="galeria right"><div class="gallery" style="display: inline;">
+							<a href="./img/Geologia/Ryc 4.png" data-lightbox='mygallery' data-title="Ryc 1"><img src="./img/Geologia/Ryc 4.png"></a>
+							</div></div>Zlewnia Junikowskiego Strumienia leży we wschodniej części wysoczyzny
+						morenowej Równiny Poznańskiej (ryc. 4), w zasięgu fazy leszczyńskiej zlodowacenia Wisły, na bezpośrednim przedpolu form marginalnych fazy poznańskiej,
+						których kulminacje występują na północ od Poznania: koło Suchego Lasu, Moraska (góra Morasko 154,4 m n.p.m.) i w Czerwonaku (Pagórki Poznańskie). Zapisem transgresji lądolodu podczas fazy leszczyńskiej na tym obszarze są gliny
+						zwałowe (Chmal 1997), na których miejscami zalegają piaszczysto-żwirowe osady lodowcowe.</p>
+						<p>Osady glacjalne fazy leszczyńskiej rozcina przebiegająca z NW na SE rynna
+						subglacjalna Junikowskiego Strumienia. W okresie poprzedzającym fazę poznańską rynna subglacjalna wraz z obniżeniem doliny Warty (o założeniach ukształtowanych podczas wcześniejszych zlodowaceń) konserwowane były martwym
+						lodem z  fazy leszczyńskiej. Po wytopieniu lodu w  rynnie Junikowskiego Strumienia miała miejsce sedymentacja mułków i iłów zastoiskowych (warwowych;
+						Krygowski 1961, Chmal 1997; ryc. 5). Krygowski (1961) wskazuje, że powstanie
+						tej serii osadowej następowało przy zablokowaniu odpływu w obniżeniu Warty
+						przez bryły martwego lodu obecne m.in. w strefie Lubonia–Mosiny oraz między
+						rynną Junikowskiego Strumienia a rynną Bogdanki.</p>
+						<p>Kolejny ważny etap rozwoju środowiska zlewni związany był z postojem lądolodu fazy poznańskiej na północ od Poznania, na linii moren czołowych (na linii
+						Suchy Las–Morasko–Czerwonak). <div class="galeria left"><div class="gallery" style="display: inline;">
+							<a href="./img/Geologia/Ryc 5.png" data-lightbox='mygallery' data-title="Ryc 1"><img src="./img/Geologia/Ryc 5.png"></a>
+							</div></div>Na przedpolu lądolodu powstała strefa sandrowa obejmująca sandry: lusowski (sierosławski), junikowski, strzeszyński, piątkowski, naramowicki, kiciński i Głównej (Biedrowski 1968). Piaszczysto-żwirowy materiał sandru junikowskiego został wyniesiony przez wody fluwioglacjalne
+						wypływające z rynny Jeziora Kierskiego (Konieczny i in. 1970). Jego podłożem są
+						gliny zwałowe z fazy leszczyńskiej, a także osady zastoiskowe w obniżeniu rynny
+						subglacjalnej Junikowskiego Strumienia (ryc. 6). W morfologii zlewni zaznacza
+						się najwyższy poziom sandrowy (I), który jest efektem proglacjalnej sedymentacji sandrowej. Natomiast tzw. wyższy poziom (II) powstał w okresie deglacjacji
+						lądolodu w  wyniku akumulacji piasków i  żwirów wodnolodowcowych na powierzchni teras Warty ukształtowanych we wcześniejszych okresach geologicznych (Biedrowski 1968, Chmal 1997). Sandr junikowski w północnej części akumulowany był na martwym lodzie, co przejawia się jego zróżnicowaną morfologią
+						z obecnością zagłębień wytopiskowych i występowaniem pagórków morenowych
+						martwego lodu. Akumulacja osadów wodnolodowcowych przerwała między
+						
+						
+						Krzyżownikami–Smochowicami a Przeźmierowem ciągłość rynny Junikowskiego Strumienia z rynną Jeziora Kierskiego, wpływając na organizację odwodnienia
+						na tym terenie (Krygowski 1961). Rynna Junikowskiego Strumienia ma swoją
+						kontynuację na południowym wschodzie w postaci rynny jezior kórnickich.</p>
+						
+						
+						<p>Podczas fazy pomorskiej rozpoczęło się kształtowanie obecnej doliny Warty.
+						W tym okresie rzeka na wysokości Mosiny rozgałęziała się (bifurkowała), większość jej wód odpływała na zachód do pradoliny Obry, część natomiast na północ. Przepływ do Obry zakończył się na przełomie fazy pomorskiej i najstarszego
+						dryasu (ok. 13 ka BP). <div class="galeria right"><div class="gallery" style="display: inline;">
+							<a href="./img/Geologia/Ryc 6.png" data-lightbox='mygallery' data-title="Ryc 1"><img src="./img/Geologia/Ryc 6.png"></a>
+							</div></div>W wyniku erozji wstecznej ukształtował się obecny kierunek odpływu Warty na północ do Pradoliny Toruńsko-Eberswaldzkiej. Poprzez
+						proces kaptażu zostały wpierw przeciągnięte na północ wody mniejszych cieków
+						(m.in.: Głównej, Cybiny, Bogdanki, Junikowskiego Strumienia, Wirynki; Stankowski 1978). W przełomowym południkowym odcinku doliny Warty powstawała w tym okresie terasa akumulacyjna I, którą lokalnie uznaje się za powierzchnię
+						stożków napływowych Bogdanki, Głównej, Cybiny i Junikowskiego Strumienia
+						(Bartkowski 1957). W późnym glacjale zakończyło się pogłębianie doliny Warty i nastąpiła akumulacja piasków drobnoziarnistych i średnioziarnistych terasy
+						nadzalewowej II (Chmal 1997). W holocenie naprzemienne procesy akumulacji
+						i erozji rzecznej doprowadziły do powstania teras zalewowych w dolinie Warty.
+						Głębokość wcięcia i przebieg doliny Junikowskiego Strumienia dostosowywały
+						się do zmiennego położenia dna doliny Warty. W wyniku erozji rozcięte zostały
+						osady zastoiskowe wypełniające rynnowy odcinek doliny, a  w  zboczach i  dnie
+						
+						
+						doliny odsłoniły się gliny zwałowe stadiału Warty zlodowacenia Odry (ryc. 5).
+						W okresie subatlantyckim rozwój akumulacyjnej terasy zalewowej i podniesienie
+						poziomu wód gruntowych doprowadziły do akumulacji torfów w dolinach dopływów Warty, także w dolinie Junikowskiego Strumienia.</p>
+						<p>Rodzaj i natężenie procesów denudacyjnych na Równinie Poznańskiej zmieniał się od schyłku plejstocenu i przez holocen w zależności od warunków klimatycznych i związanej z nimi degradacji wieloletniej zmarzliny, ewolucji szaty roślinnej oraz działalności człowieka. Pierwotna rzeźba Równiny Poznańskiej oraz
+						zlewni Junikowskiego Strumienia podlegała stopniowo przeobrażeniu w warunkach peryglacjalnych, tj. w warunkach klimatu tundrowego, przy udziale mrozu,
+						co doprowadziło do modyfikacji form rzeźby lodowcowej (do zatarcia ostrości
+						form glacjalnych) oraz akumulacji osadów deluwialnych, fluwialnych i organogenicznych. W sieć dolinną w zlewni zostały włączone dolinki wykształcone w strefie krawędziowej rynny subglacjalnej. We współczesnym bilansie denudacyjnym
+						Równiny Poznańskiej dominujący udział mają procesy fluwialne oraz denudacja
+						chemiczna i antropogeniczna (Kostrzewski i in. 2021).</p>
+						<p>Znaczną cześć zlewni Junikowskiego Strumienia (ryc.  4) stanowi równina
+						sandrowa (sandr ławicki). Jej szerokość w północnej i środkowej części zlewni
+						osiąga około 4 km, a w południowej dochodzi do 1 km. Równinę urozmaicają
+						liczne zagłębienia bezodpływowe powstałe w wyniku wytapiania brył martwego
+						lodu lub nierównomiernej akumulacji materiału lodowcowego. W północnej części zlewni występują pagórki po martwym lodzie oraz pagórki morenowe typu
+						akumulacyjnego, stanowią one najwyższe wzniesienia, przez które przebiega
+						dział wodny zlewni Junikowskiego Strumienia i Bogdanki. Zachodnią i wschodnią część zlewni stanowi płaska wysoczyzna morenowa położona na wysokości
+						od 80 do 100 m n.p.m. (ryc. 1). Obszar wysoczyzny charakteryzuje się małymi
+						różnicami wysokości względnych dochodzącymi do 2–5 m, a także małymi spadkami terenu (ryc. 2).</p>
+						<p>Sieć dolinna w obrębie zlewni ma genezę rynnową oraz erozyjno-denudacyjną. Obszar źródliskowy doliny Junikowskiego Strumienia zlokalizowany jest na
+						równinie sandrowej w obrębie zagłębienia wytopiskowego (Konieczny i in. 1970,
+						Graf i in. 1995a). Górny odcinek cieku ujęty jest w system drenażu podziemnego.
+						Równina sandrowa poprzecinana jest także płytkimi płaskodennymi dolinami
+						dopływów Junikowskiego Strumienia: Ławicy, Skórzyny i  Żabinki. Zachodnią
+						część wysoczyzny morenowej rozcinają koryta Plewianki, Żabinki oraz środkowej Skórzyny. Na pograniczu równiny sandrowej i wschodniej części wysoczyzny
+						morenowej płynie Ceglanka.</p>
+						<p>Rozcinająca powierzchnię wysoczyzny morenowej rynna subglacjalna odwadniana jest przez Junikowski Strumień oraz jego dopływy. Zbocza doliny rynnowej
+						osiągają spadki nawet do 16° (ryc.  2). Jej pierwotna głębokość uległa zmianie
+						w wyniku erozji fluwialnej, a następnie jej dno wypełniły torfy i namuły rzeczne.
+						Dno doliny Junikowskiego Strumienia oraz częściowo jego dopływów stanowią
+						niewielkie powierzchniowo równiny torfowe, np. w Lasku Marcelińskim. Południowo-wschodnią część doliny rynnowej zajmuje równina zastoiskowa 
+						zbudowana z mułków i iłów z  widoczną sedymentacją warwową (Chmal 1997, por.
+						
+						rozdz. 4). W  zasięgu odcinka zastoiskowego znajdują się dolne odcinki biegu
+						wszystkich dopływów Junikowskiego Strumienia. Miejscowo osady zastoiskowe
+						pokrywają namuły rzeczne. Przy ujściu Skórzyny dolina rozszerza się do około
+						800 m. Poszerzenie doliny, ale także jej pogłębienie, jest spowodowane głównie przez eksploatację iłów zastoiskowych i  glin zwałowych. W  południowej
+						części zlewni, w odcinku ujściowym, dolina Junikowskiego Strumienia rozcina
+						terasy przełomowego odcinka doliny Warty: terasę akumulacyjną oraz terasy
+						erozyjno-akumulacyjne.</p>
+
+						<h4 id="lito">Litologia osadów</h4>
+						<p>W podłożu utworów czwartorzędowych zlewni Junikowskiego Strumienia występują osady neogeńskie: mioceńskie i plioceńskie (ryc. 6, por. rozdz. 4). Zróżnicowana rzeźba przedkenozoiczna została wyrównana przez prawie poziomo
+						zalegającą serię iłów, mułków i piasków neogeńskich przewarstwionych pokładami węgla brunatnego (Ciuk 1978, Chmal 1997). Osady te osiągają około 250 m
+						miąższości. Szczególne znaczenie mają neogeńskie iły poznańskie (o miąższości
+						do 110 m w rowie Poznania, Dyjor 1970, Kunkel 1975), odsłaniające się często
+						jako struktury glacitektoniczne (Krygowski 1961), m.in. na zboczach doliny Warty (Chmal 1997).</p>
+						<p>Powierzchniowe osady zlewni Junikowskiego Strumienia tworzą utwory
+						czwartorzędowe o miąższości od 78 m na północy do 12–14 m w okolicach ujścia
+						Junikowskiego Strumienia (Konieczny i in. 1970, Chmal 1997).</p>
+						<p>Utwory glacjalne plejstocenu na terenie Poznania reprezentowane są przez:
+						poziomy glin zwałowych pochodzące z kolejnych zlodowaceń: zlodowaceń południowopolskich, zlodowacenia Odry i  zlodowacenia Wisły (Hildebrandt-Radke
+						i in. 2016), osady wodnolodowcowe (piaski i żwiry) i zastoiskowe (mułki i iły warwowe) oraz związane z interglacjałami (wielkim i eemskim) piaski i żwiry rzeczne. Zlodowacenia południowopolskie reprezentowane są przez gliny występujące
+						w obrębie subglacjalnych rynien rozcinających utwory paleogeńskie i neogeńskie.
+						Rynny takie występują m.in.: w sąsiedztwie osiedla Junikowo. Występują w nich
+						ciemnoszare, zwięzłe gliny zwałowe o miąższościach do 36 m z wkładkami węgla
+						brunatnego. Powszechnie natomiast reprezentowane są w podłożu zlewni dwa
+						poziomy glin zlodowacenia środkowopolskiego (zlodowacenie Odry, stadiał Warty) lokalnie rozdzielone serią osadów wodnolodowcowych i zastoiskowych. Do
+						osadów zlodowacenia Odry zostały zaliczone dolne gliny zwałowe, a także kompleks piasków i żwirów wodnolodowcowych o miąższości 22 m. Stadiał Warty
+						zlodowacenia Odry reprezentują górne gliny zwałowe o miąższości dochodzącej
+						do 28 m. Osady te pokrywają piaski ze szczątkami organicznymi, mułki jeziorne
+						oraz torfy z interglacjału eemskiego.</p>
+						<p>Na obszarze Poznania zlodowacenie Wisły reprezentowane jest przez osady
+						z faz: leszczyńskiej, poznańskiej, pomorskiej oraz z böllingu–młodszego dryasu.
+						W fazie leszczyńskiej wkroczenie lądolodu zaznaczyło się akumulacją zastoiskowych mułków piaszczystych, powyżej których leżą piaski i żwiry wodnolodowcowe dolne. Gliny zwałowe zaliczone do fazy leszczyńskiej są silnie piaszczyste
+						
+						o zawartości węglanu wapnia od 7 do 12%, ich miąższość wynosi 3–5 m, miejscami do 12 m (Chmal 1997). W środkowej i południowej części zlewni występują
+						mułki i iły zastoiskowe (warwowe) o miąższości dochodzącej do 10–15 m (por.
+						rozdz. 4). W brzeżnych partiach zbiornika zastoiskowego iły zostały wyeksploatowane (Chmal 1997, Flieger-Szymańska, Machowiak 2010), na obszarze Szacht
+						pozostały w postaci grzęd oddzielających wyrobiska (ryc. 3B).</p>
+						<p>W fazie poznańskiej następowała akumulacja piasków i żwirów oraz glin moren czołowych w strefie Suchy Las–Morasko–Czerwonak, glin zwałowych oraz
+						piasków i żwirów wodnolodowcowych trzech poziomów (Chmal 1997): najwyższego (poziom sandrowy I), wyższego (poziom II) i niższego (poziom III). Miąższość osadów równiny sandrowej dochodzi do 20 m i  systematycznie zmniejsza się w kierunku południowo-wschodnim. Równocześnie zmienia się frakcja
+						osadów (Konieczny i in. 1970). Osady wodnolodowcowe przykryły także osady
+						zastoiskowe w obniżeniu rynny subglacjalnej (ryc. 6) w okolicach osiedli Ławica
+						i Junikowo, warstwą o miąższości dochodzącej do 8 m.</p>
+						<p>Osady plejstocenu są oddzielone od osadów holoceńskich eluwiami (zwietrzelinami) piaszczysto-pyłowymi glin zwałowych oraz piaskami deluwialnymi
+						występującymi w dolnej części zboczy doliny Warty. W holocenie na dnie doliny
+						Warty osadziły się piaski rzeczne z wkładkami namułów organicznych budujące terasy zalewowe. W starorzeczach i dolinkach dopływów akumulowane były
+						torfy. Zapisem nasilającej się działalności antropogenicznej jest natomiast seria
+						gruntów antropogenicznych (kulturowych), a na omawianym obszarze występują
+						także nasypy niebudowlane powstałe jako wynik niekontrolowanego składowania odpadów, takich jak: gruz, cegła, kamienie, szkło, fragmenty drewniane wymieszane z gruntami sypkimi lub spoistymi.</p>
+						<p>Znaczna część zlewni Junikowskiego Strumienia (ryc. 5) zbudowana jest z piasków i żwirów wodnolodowcowych (44% powierzchni zlewni; Biegała 2014). Na
+						wysoczyźnie morenowej występują gliny zwałowe lub piaski lodowcowe położone
+						na glinach zwałowych. Dna dolin wypełniają torfy, namuły piaszczyste oraz mułki i iły zastoiskowe (warwowe). Miąższość osadów organogenicznych dochodzi
+						do kilku metrów. Obecna działalność rzeczna ogranicza się do akumulowania
+						piaszczystych aluwiów w korycie rzecznym. W południowej części zlewni terasy
+						Warty budują piaski rzeczne. Na obszarze Szacht na powierzchni odsłonięte są
+						gliny zwałowe stadiału Warty zlodowacenia Odry.</p>
+						<p>Od litologii osadów podłoża i jednostek geomorfologicznych uzależnione są
+						typy i rodzaje gleb występujące w zlewni Junikowskiego Strumienia. W obrębie
+						wysoczyzny morenowej, na glinach zwałowych i piaskach gliniastych wykształciły się gleby płowe i brunatne (Mapa glebowo-rolnicza Polski 1981). Gleby rdzawe
+						i bielicowe charakterystyczne są dla obszaru piasków sandrowych i teras akumulacyjnych Warty. W obrębie dolin rzecznych, przede wszystkim Junikowskiego
+						Strumienia, o płytko zalegającym zwierciadle wód gruntowych, wytworzyły się
+						gleby torfowe, czarne gleby, gleby: mułowe, murszowe, murszowate i gruntowo-
+						-glejowe (Wrońska-Pilarek D. (red.) 2016). Postępujące osuszenie den dolin prowadzi do murszenia gleb organicznych. Warto jednak zaznaczyć, że położenie
+						obszaru badań w strefie zurbanizowanej i silnie przekształconej przez człowieka
+						
+						sprawia, że większość gleb charakteryzuje się przeobrażeniem antropogenicznym
+						(por. rozdz. 10), m.in. lokalnie wykazując odczyn bardzo kwaśny (Kaniecki 2001).</p>
+						<p>Istniejące zasoby glebowe wykorzystywane są na terenach zajętych przez
+						grunty orne, które stanowią 10% powierzchni zlewni, oraz lasy zajmujące 13%
+						powierzchni (BDOT 2021). Na obszarach zabudowy miejskiej zwartej i luźnej,
+						komunikacyjnych, w  miejscach eksploatacji odkrywkowej (w  sumie 45%), ale
+						także na terenach parków i  zieleńców (30%) gleby zostały w  różnym stopniu
+						przekształcone antropogenicznie.</p>
+						<h4 id="waru">Warunki hydrogeologiczne</h4>
+						<p>Zgodnie z  podziałem hydrogeologicznym słodkich wód podziemnych Polski
+						zlewnia Junikowskiego Strumienia znajduje się w  prowincji Odry, w  makroregionie północno-zachodnim, w  regionie wielkopolskim (VI), w  subregionie
+						lubusko-poznańskim (VI2
+						) (Paczyński 1995). W  nawiązaniu do podziału regionalnego zwykłych wód podziemnych (Paczyński, Sadurski 2007), zlewnia
+						zlokalizowana jest w regionie Warty (RW), w subregionie nizinnym (SWN). Na
+						obszarze miasta Poznania można wyróżnić 6 jednostek hydrogeologicznych: 5
+						w czwartorzędowym piętrze wodonośnym i 1 w poziomie mioceńskim. Zlewnia usytuowana jest poza obszarami głównych zbiorników wód podziemnych
+						(Kleczkowski 1990).</p>
+						<p>Naprzemianległe ułożenie serii osadów przepuszczalnych (piaski i  żwiry)
+						i słabo przepuszczalnych (gliny zwałowe oraz iły zastoiskowe), nieciągłość i zróżnicowana miąższość oraz skład litologiczny utworów czwartorzędowych są przyczyną występowania odmiennych pod względem głębokości zalegania, zasięgu,
+						właściwości filtracyjnych i zasobności poziomów wodonośnych w obrębie czwartorzędowego piętra wodonośnego. W zasięgu piętra czwartorzędowego pierwszy
+						użytkowy poziom obejmuje poziomy: wód gruntowych, międzyglinowy górny
+						i międzyglinowy środkowy (Wijura i in. 2007).</p>
+						<p>W zlewni Junikowskiego Strumienia poziom wód gruntowych wykształcił się
+						w utworach piaszczysto-żwirowych równiny sandrowej oraz w osadach aluwialnych dolin rzecznych, a występuje także w 
+						piaskach lodowcowych oraz w stropowej partii spiaszczonych glin zwałowych (w eluwiach) fazy leszczyńskiej. Miąższość 
+						tej warstwy wodonośnej jest zmienna i wynosi od kilku do około 10 m.</p>
+						<p>Poziom wód gruntowych charakteryzuje się swobodnym zwierciadłem występującym na zmiennej głębokości nawiązującej do rzeźby terenu, od 0,5 m p.p.t.
+						(doliny cieków) do poniżej 5,0 (na wysoczyźnie morenowej i równinie sandrowej;
+						Konieczny i in. 1970). Wody tworzą lokalne systemy krążenia, które powiązane są z siecią rzeczną zlewni. Przypowierzchniowy poziom wodonośny zasilają
+						głównie infiltrujące wody opadowe i drenaż głębszych poziomów w obrębie obniżeń dolinnych. Zwierciadło wód podlega wahaniom sezonowym o amplitudzie
+						0,5–1,0 m, z najwyższymi stanami w miesiącach wiosennych – marcu i kwietniu
+						(Kaniecki 2001, Straburzyńska-Janiszewska, Flieger-Szymańska 2010). Czynnikiem w  największym stopniu różnicującym przestrzennie wielkość zasilania
+						infiltracyjnego jest sposób użytkowania terenu oraz przepuszczalność osadów,
+						
+						a  także spadek terenu i  głębokość zwierciadła wód podziemnych. Grunty antropogeniczne w  zlewni ze względu na wysoki stopień uszczelnienia podłoża
+						ograniczają zasilanie infiltracyjne wód podziemnych. Zbiornik wód gruntowych
+						ma lokalne znaczenie użytkowe i  pozostaje pod silnym wpływem antropopresji. Pierwszy poziom wodonośny w  górnym oraz dolnym biegu Junikowskiego
+						Strumienia cechuje się bardzo wysoką i wysoką podatnością na zanieczyszczenia.
+						W wodach stwierdzono podwyższone stężenia siarczanów i chlorków wywołane głównie gospodarką człowieka (Straburzyńska-Janiszewska, Flieger-Szymańska 2010). Zwracają uwagę wyższe stężenia wymienionych związków w wodach
+						podziemnych na terenie Lubonia (Dąbrowski i in. 2000).</p>
+						<p>Na terenie Poznania na poziomy międzyglinowe składają się piaszczysto-żwirowe utwory wodnolodowcowe oraz rzeczne zalegające pomiędzy warstwami glin
+						różnych zlodowaceń. Poziomy te zasilane są głównie poprzez przesączanie się
+						wód przez gliny zwałowe z  leżących powyżej poziomów wodonośnych czwartorzędu, a lokalnie przez przepływ w oknie hydrogeologicznym oraz infiltrację
+						opadów w strefach, w których brakuje górnych poziomów wodonośnych.
+						W zlewni Junikowskiego Strumienia występowanie, poza wodami gruntowymi, pozostałych poziomów piętra czwartorzędowego jest ograniczone, gdyż na tym
+						obszarze gliny zlodowacenia Wisły zalegają najczęściej bezpośrednio na glinach
+						zlodowacenia Odry (ryc. 6). Warstwy wodonośne o małej miąższości i niewielkim zasięgu związane są z piaskami i żwirami wodnolodowcowymi zlodowacenia
+						Odry. W zlewni, w jej wschodniej części, występuje jednostka hydrogeologiczna
+						5 aQ/Tr II, w  której poziomem użytkowym jest poziom międzyglinowy górny
+						(Dąbrowski i  in. 2000). W  podłożu zlewni zlokalizowany jest również poziom
+						międzyglinowy środkowy, który występuje w piaskach i żwirach wodnolodowcowych wypełniających południkową dolinę kopalną Komorniki-Złotniki (jednostka
+						hydrogeologiczna 4 abQ/Tr II; Dąbrowski i in. 2000). Ten zbiornik wód występuje
+						na głębokościach od 15 do około 30 m p.p.t., a jego naporowe zwierciadło zalega na głębokości od 1 do około 16 m p.p.t. W okolicy Poznań–Rudnicze poziom
+						międzyglinowy środkowy łączy się poprzez okno hydrogeologiczne z poziomem
+						międzyglinowym górnym. Zwierciadło wody jest tam swobodne i zalega na głębokości około 6–12 m p.p.t. (Dąbrowski i in. 2000).</p>
+						<p>Drugim piętrem użytkowym na terenie Poznania oraz w zlewni jest piętro
+						wodonośne w utworach paleogeńsko-neogeńskich. Z nim związane jest występowanie mioceńskich i oligoceńskich poziomów wodonośnych. Poziom mioceński występuje na głębokości od 50 do 150 m p.p.t. w obrębie piasków drobnoziarnistych i mułkowych przedzielonych miejscami warstwami mułków i węgli
+						brunatnych (ryc. 6). W piętrze paleogeńsko-neogeńskim wydzielono jednostkę
+						hydrogeologiczną w poziomie mioceńskim – 1cTrI (Dąbrowski i in. 2000) o bardzo niskim stopniu zagrożenia zanieczyszczeniami (Straburzyńska-Janiszewska,
+						Flieger-Szymańska 2010).</p>
+						<p>Wody podziemne ujmowane na terenie zlewni Junikowskiego Strumienia w  utworach czwartorzędu są w  warunkach naturalnych typu HCO3-Ca-
+						-Mg (Wijura i in. 2007). Poziom wód gruntowych ze względu na antropopresję
+						
+						charakteryzuje się mineralizacją od 500 do ponad 1000 mg·dm–3, natomiast wody
+						poziomów międzyglinowych cechuje mineralizacja od 300 do 800 mg·dm–3.</p>
+						<p>W podziale regionalnym zwykłych wód podziemnych zlewnia Junikowskiego Strumienia położona jest w  obrębie jednolitych części wód podziemnych
+						(JCWPd) o kodzie europejskim PLGW600060 (podział obowiązywał w latach
+						2010–2015). Na podstawie badań wykonanych w 2012 r. w ramach Państwowego
+						Monitoringu Wód Podziemnych określono stan ilościowy oraz jakościowy wód
+						podziemnych jako dobry, a cele środowiskowe uznano za niezagrożone. W roku
+						2019 zakwalifikowano stan wód PLGW650062 (podział z lat 2016–2027) jako
+						dobry (GIOŚ 2022).</p>
+						<p>Lokalnie degradacja wód podziemnych tego obszaru przejawia się: w zubożeniu zasobów wód podziemnych na skutek zmniejszenia zdolności infiltracyjnej
+						gruntu w wyniku zabudowy terenu oraz rozbudowy lokalnych sieci kanalizacyjnych i zanieczyszczenia wód podziemnych.</p>
+						<h4 id="wody">Wody powierzchniowe</h4>
+						<p>Układ sieci rzecznej na Pojezierzu Poznańskim nawiązuje do przebiegu Pradoliny Toruńsko-Eberswaldziej i Pradoliny Warciańsko-Odrzańskiej oraz odcinków
+						przełomowych dolin Warty i Obry o kierunku południkowym (Graf 2012). System rzeczny zlewni Junikowskiego Strumienia 
+						stanowi część systemu hydrograficznego Poznańskiego Przełomu Warty, który powstał wraz z rozwojem przełomowej doliny Warty 
+						u schyłku plejstocenu (Graf 2012).</p>
+						<p>Dopływy Warty w  jej odcinku przełomowym (w  tym: Wirynka, Junikowski Strumień, Bogdanka, Różany Strumień, dopływ z Łysego Młyna) wykazują
+						w części zachodniej przebieg z północnego zachodu na południowy wschód, nawiązujący do kierunku spływu wód lodowcowych w czasie fazy poznańskiej zlodowacenia Wisły. Podobny układ wykazują dopływy Junikowskiego Strumienia:
+						Skórzyna, Plewianka, Kotówka i Ławica. Wyjątkiem jest Żabinka, której koryto
+						ma przebieg z zachodu na wschód, uchodząc do Junikowskiego Strumienia na
+						obszarze Lubonia. Wyniki monitoringu wód podziemnych potwierdziły, że przepływ wody podziemnej również następuje w kierunku północno-wschodnim, tj.
+						w  kierunku doliny Warty. Warta stanowi bazę drenażu zarówno dla wód powierzchniowych, jak i podziemnych zlewni.</p>
+						<p>Zasilanie sieci rzecznej oraz zbiorników poeksploatacyjnych na Szachtach następuje bezpośrednio wodami deszczowymi, wodami spływu powierzchniowego
+						oraz wodami gruntowymi i wodami drugiego poziomu wodonośnego, międzyglinowego górnego (Graf i in. 1995b). Poziom wód gruntowych mający kontakt
+						hydrauliczny z wodami powierzchniowymi występuje w stropowej partii spiaszczonych glin zwałowych lub na kontakcie piasków i  żwirów fluwioglacjalnych
+						i glin zwałowych. Drugi poziom wodonośny występuje w środkowej części doliny
+						pomiędzy iłami warwowymi a gliną zwałową stadiału Warty zlodowacenia Odry.
+						Są to wody naporowe. Wyeksploatowanie lub znaczne zmniejszenie miąższości
+						iłów spowodowało, że wody z tego poziomu swobodnie zasilają omawiane zbiorniki powyrobiskowe (Konieczny i in. 1970).</p>
+						
+						<p>Drenaż poziomów wodonośnych następuje głównie liniowo (Junikowski Strumień i jego dopływy), lokalnie powierzchniowo (obszary podmokłe, torfowiska
+						w dolinie Junikowskiego Strumienia), a rzadko punktowo (wycieki, wysięki).</p>
+						<p>Z płytkim zaleganiem glin zwałowych lub iłów warwowych związane jest wysokie położenie zwierciadła wód gruntowych i występujące podmokłości, m.in.
+						w odcinku górnym i środkowym doliny Junikowskiego Strumienia, w dolinie Ławicy, środkowym odcinku Skórzyny, środkowym i dolnym biegu Plewianki oraz
+						Kotówki, dolnym odcinku Żabinki (Konieczny i  in. 1970). Obszary podmokłe
+						zostały w większości zdrenowane, a pogłębienie koryt rzecznych spowodowało
+						obniżenie poziomu wód gruntowych i osuszenie tych obszarów. Odcinki cieków
+						w obrębie gliniastej wysoczyzny morenowej charakteryzują się okresowym czy
+						wręcz epizodycznym występowaniem wody w korycie. Nieliczne w zlewni Junikowskiego Strumienia małe zbiorniki bezodpływowe na obszarach sandrowych
+						w wyniku postępującej urbanizacji w większości zostały zdrenowane, zasypane
+						i  zniwelowane. Cechą charakterystyczną zlewni jest występowanie antropogenicznych zbiorników wodnych, które wypełniają wyrobiska powstałe w wyniku
+						eksploatacji surowców ceramicznych (glinianki, Szachty, por. rozdz. 6) oraz torfu
+						(torfianki, Lasek Marceliński; Gołdyn i in. 2010).</p>
+
+						<h4 id="pods">Podsumowanie</h4>
+						<p>W  strukturze krajobrazu zlewni miejskiej, jaką stanowi zlewnia Junikowskiego Strumienia, niewiele jest obszarów pozbawionych form antropogenicznych.
+						Rzeźba terenu i  sieć rzeczna zostały przekształcone przez rozwój osadnictwa,
+						budowę sieci komunikacyjnych i eksploatację surowców mineralnych.</p>
+						<p>Rozpoznanie uwarunkowań abiotycznych funkcjonowania zlewni Junikowskiego Strumienia ma podstawowe znaczenie dla określenia stanu aktualnego
+						środowiska, zarządzania zasobami środowiskowymi, kształtowania układów
+						ekologicznych i  krajobrazu kulturowego oraz rozwoju edukacji społeczności
+						miejskiej.</p>
+	
+
+					<h4><a href="źródła.html">Źródła</a></h4>
+
+			</div>	
+		</div>	
+	</div>
+
+		
+	
+	<div class="container-lg px-2">
+		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-1 border-top">
+			<div class="col-md-4 d-flex align-items-center">
+			  <!--<a href="/" class="mb-3 me-0 mb-md-0 text-body-secondary text-decoration-none lh-1">
+				<svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"></use></svg>
+			  </a>-->
+			  <span class="mb-3 mb-md-0 text-body-secondary">© 2023 Michał Sosnowski</span>
+			</div>
+		
+			<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+			  <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/mikes_photo_travels/" target="blank"><i class="fa fa-instagram" style="font-size:20px"></i></a></li>
+			  <!-- <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=1395851416" target="blank"><i class="fa fa-facebook" style="font-size:20px"></i></a></li> -->
+			  <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/channel/UC6K-2vhM8gc7_C1kbUyUh0A" target="_blank"><i class="fa fa-youtube" style="font-size:20px"></i>
+			  </a></li>
+			</ul>
+		  </footer>
+	</div>
+
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+	<script>
+	
+		// jQuery(function($)
+		// {
+		// 	//zresetuj scrolla
+		// 	$.scrollTo(0); 
+			
+		// 	$('#link1').click(function() { $.scrollTo($('#wpro'), 200); });
+		// 	$('#link2').click(function() { $.scrollTo($('#rzez'), 200); });
+		// 	$('#link3').click(function() { $.scrollTo($('#uwar'), 200); });
+		// 	$('#link4').click(function() { $.scrollTo($('#lito'), 200); });
+		// 	$('#link5').click(function() { $.scrollTo($('#waru'), 200); });
+		// 	$('#link6').click(function() { $.scrollTo($('#wody'), 200); });;
+		// 	$('#link7').click(function() { $.scrollTo($('#pods'), 200); });
+		// 	$('.scrollup').click(function() { $.scrollTo($('body'), 200); });
+		// }
+		// );
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		}
+		
+		);
+		
+	</script>
+
+</body>
+</html>

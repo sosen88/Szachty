@@ -7,51 +7,22 @@
 	<meta name="Description" content="Przejdź się po szachtach, zajrzyj w każdy kąt i obejrzyć najlepsze ujęcia z każdej pory roku!" />
 	<meta name="Keywords" content="szachty, poznań, stawy, glinianki, wieża widokowa, natura, ptaki, zieleń, natura, spacer, rezerwat, zachód słońca, wschód słońca, fotograria" /> 
 	<meta name="author" content="Michał Sosnowski" />
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
 	<link rel="stylesheet" type="text/css" href="./css/lightbox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
 	<script src="./js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="js/jquery.scrollTo.min.js"></script>
+	<!-- <script src="js/jquery.scrollTo.min.js"></script> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 
-	<script>
-	
-		jQuery(function($)
-		{
-			//zresetuj scrolla
-			$.scrollTo(0); 
-			
-			$('#link1').click(function() { $.scrollTo($('#wpro'), 500); });
-			$('#link2').click(function() { $.scrollTo($('#bezk'), 500); });
-			$('#link3').click(function() { $.scrollTo($('#paje'), 500); });
-			$('#link4').click(function() { $.scrollTo($('#owad'), 500); });
-			$('#link5').click(function() { $.scrollTo($('#miec'), 500); });
-			$('#link6').click(function() { $.scrollTo($('#kreg'), 500); });
-			$('#link7').click(function() { $.scrollTo($('#ryby'), 500); });
-			$('#link8').click(function() { $.scrollTo($('#plaz'), 500); });
-			$('#link9').click(function() { $.scrollTo($('#ptak'), 500); });
-			$('#link10').click(function() { $.scrollTo($('#ssak'), 500); });
-			$('#link11').click(function() { $.scrollTo($('#pods'), 500); });
-			$('.scrollup').click(function() { $.scrollTo($('body'), 1000); });
-		}
-		);
-		
-		//pokaż podczas przewijania
-		$(window).scroll(function()
-		{
-			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
-			else $('.scrollup').fadeOut();
-		}
-		
-		);
-		
-	</script>
-
     <style>
+
         img{
             float: left;
         }
@@ -62,7 +33,7 @@
         }
 
 		h3,h4{
-			margin-top: 10px;
+			margin: 20px 0 10px;
 		}
 
 		h2, h3, h4{
@@ -81,63 +52,70 @@
 
 	<a href="#" class="scrollup" style="display: inline;"><img src="img/up.png" alt="scroll" width="50px" style="border-radius: 10%;"></a>
 
-	<div class="container-md px-2">
-		<header class="d-flex flex-wrap justify-content-start py-3 mb-4 border-bottom">
-		  <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-			<span class="fs-4"><b><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16">
-				<path d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 0-.998 1.03l.01.091c.012.077.029.176.054.296.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a4.997 4.997 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1zM2 9l.03-.002.091-.01a4.99 4.99 0 0 0 .296-.054c.241-.049.542-.122.887-.213a60.59 60.59 0 0 0 2.314-.676L5.762 8l-.144-.045a60.59 60.59 0 0 0-2.314-.676 16.705 16.705 0 0 0-.887-.213 4.99 4.99 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2zm7 5-.002-.03a5.005 5.005 0 0 0-.064-.386 16.398 16.398 0 0 0-.213-.888 60.582 60.582 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a4.996 4.996 0 0 0-.064.386L7 14a1 1 0 1 0 2 0zm-5.696-2.134.025-.017a5.001 5.001 0 0 0 .303-.248c.184-.164.408-.377.661-.629A60.614 60.614 0 0 0 5.96 9.23l.103-.111-.147.033a60.88 60.88 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5.063 5.063 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027c-.01.02-.021.048-.036.084a5.09 5.09 0 0 0-.102.283c-.078.233-.165.53-.258.875a60.62 60.62 0 0 0-.572 2.342l-.033.147.11-.102a60.848 60.848 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5.001 5.001 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196.017.025a4.996 4.996 0 0 0 .248.303c.164.184.377.408.629.661A60.597 60.597 0 0 0 6.77 5.96l.111.102-.033-.147a60.602 60.602 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5.006 5.006 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1zm9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a60.619 60.619 0 0 0-2.342-.572l-.147-.033.102.111a60.73 60.73 0 0 0 1.667 1.742c.253.252.477.465.66.629a4.946 4.946 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-			  </svg>Szachty</b></span>
-		  </a>
-	
-		  <ul class="nav nav-underline"> <!--nav nav-pills-->
-			<li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">STRONA GŁÓWNA</a></li><!--nav-link active -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Przyroda</a>
-				<ul class="dropdown-menu">
-					<li><a href="flora.html"class="dropdown-item">Flora</a></li>
-					<li><a href="zbiorowiskarosl.html" class="dropdown-item">Zbiorowiska roślinne</a></li>
-					<li><a class="dropdown-item" href="fauna.html">Zwierzęta</a></li>
-					<li><a class="dropdown-item" href="zagrozenia.html">Ochrona Szacht</a></li>
-				</ul>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Galerie</a>
-				<ul class="dropdown-menu">
-				  <li><a class="dropdown-item" href="wiosna.html">Wiosenna</a></li>
-				  <li><a class="dropdown-item" href="lato.html">Letnia</a></li>
-				  <li><a class="dropdown-item" href="jesien.html">Jesienna</a></li>
-				  <li><a class="dropdown-item" href="zima.html">Zimowa</a></li>
-				</ul>
-			  </li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Historia</a>
-				<ul class="dropdown-menu">
-				  <li><a class="dropdown-item" href="przemysl ceramiczny.html">Przemysł ceramiczny</a></li>
-				  <li><a class="dropdown-item" href="geologia.html">Geologia</a></li>
-				</ul>
-			  </li>
-			<li class="nav-item"><a href="dojazd.html" class="nav-link">Dojazd</a></li>  
-			<li class="nav-item"><a href="o mnie.html" class="nav-link">O mnie</a></li>
-		  </ul>
-		</header>
-	</div>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light" aria-label="Fourth navbar example" style="background-color: #F4C7AB;">
+        <div class="container-fluid">
+            <a href="index.html" class="d-flex align-items-center mb-0 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <span class="fs-3"><b><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16" style="padding-bottom: 4px;">
+                    <path d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 0-.998 1.03l.01.091c.012.077.029.176.054.296.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a4.997 4.997 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1zM2 9l.03-.002.091-.01a4.99 4.99 0 0 0 .296-.054c.241-.049.542-.122.887-.213a60.59 60.59 0 0 0 2.314-.676L5.762 8l-.144-.045a60.59 60.59 0 0 0-2.314-.676 16.705 16.705 0 0 0-.887-.213 4.99 4.99 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2zm7 5-.002-.03a5.005 5.005 0 0 0-.064-.386 16.398 16.398 0 0 0-.213-.888 60.582 60.582 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a4.996 4.996 0 0 0-.064.386L7 14a1 1 0 1 0 2 0zm-5.696-2.134.025-.017a5.001 5.001 0 0 0 .303-.248c.184-.164.408-.377.661-.629A60.614 60.614 0 0 0 5.96 9.23l.103-.111-.147.033a60.88 60.88 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5.063 5.063 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027c-.01.02-.021.048-.036.084a5.09 5.09 0 0 0-.102.283c-.078.233-.165.53-.258.875a60.62 60.62 0 0 0-.572 2.342l-.033.147.11-.102a60.848 60.848 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5.001 5.001 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196.017.025a4.996 4.996 0 0 0 .248.303c.164.184.377.408.629.661A60.597 60.597 0 0 0 6.77 5.96l.111.102-.033-.147a60.602 60.602 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5.006 5.006 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1zm9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a60.619 60.619 0 0 0-2.342-.572l-.147-.033.102.111a60.73 60.73 0 0 0 1.667 1.742c.253.252.477.465.66.629a4.946 4.946 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                  </svg>Szachty</b></span>
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
-   	<div class="container-md px-2 mb-5">
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">STRONA GŁÓWNA</a></li><!--nav-link active -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Przyroda</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="flora.html">Flora</a></li>
+                        <li><a class="dropdown-item" href="zbiorowiskarosl.html">Zbiorowiska roślinne</a></li>
+                        <li><a class="dropdown-item" href="fauna.html">Zwierzęta</a></li>
+                        <li><a class="dropdown-item" href="zagrozenia.html">Ochrona Szacht</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Galerie</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="wiosna.html">Wiosenna</a></li>
+                      <li><a class="dropdown-item" href="lato.html">Letnia</a></li>
+                      <li><a class="dropdown-item" href="jesien.html">Jesienna</a></li>
+                      <li><a class="dropdown-item" href="zima.html">Zimowa</a></li>
+					  <li><a class="dropdown-item" href="zachody.html">Zachody słońca</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Historia</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="przemysl ceramiczny.html">Przemysł ceramiczny</a></li>
+                      <li><a class="dropdown-item" href="geologia.html">Geologia</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item"><a href="dojazd.html" class="nav-link">Dojazd</a></li>  
+                <li class="nav-item"><a href="o mnie.html" class="nav-link">O mnie</a></li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+
+	<div class="conti" style="margin-top: 80px;">
 		<div class="calosc">
 			<div class="spislewa item">
 				<div class="spistresci">
 					<ul>
-						<li><a id="link1" href="#">Wprowadzenie</a></li>
-						<li><a id="link2" href="#">Bezkręgowce</a></li>
-							<ul><a id="link3" href="#">Pajęczaki</a></ul>
-							<ul><a id="link4" href="#">Owady</a></ul>
-							<ul><a id="link5" href="#">Mięczaki</a></ul>
-						<li><a id="link6" href="#">Kręgowce</a></li>
-							<ul><a id="link7" href="#">Ryby</a></ul>
-							<ul><a id="link8" href="#">Płazy i gady</a></ul>
-							<ul><a id="link9" href="#">Ptaki</a></ul>
-							<ul><a id="link10" href="#">Ssaki</a></ul>
-						<li><a id="link11" href="#">Podsumomowanie</a></li>
+						<li><a id="link1" href="#wpro">Wprowadzenie</a></li>
+						<li><a id="link2" href="#bezk">Bezkręgowce</a></li>
+							<ul><a id="link3" href="#paje">Pajęczaki</a></ul>
+							<ul><a id="link4" href="#owad">Owady</a></ul>
+							<ul><a id="link5" href="#miec">Mięczaki</a></ul>
+						<li><a id="link6" href="#kreg">Kręgowce</a></li>
+							<ul><a id="link7" href="#ryby">Ryby</a></ul>
+							<ul><a id="link8" href="#plaz">Płazy i gady</a></ul>
+							<ul><a id="link9" href="#ptak">Ptaki</a></ul>
+							<ul><a id="link10" href="#ssak">Ssaki</a></ul>
+						<li><a id="link11" href="#pods">Podsumomowanie</a></li>
 
 					</ul>
 
@@ -173,9 +151,9 @@
 
 					<div class="container px-0">
 						<div class="gallery" style="margin-left: auto; margin-right: auto;">
-						<a href="./img/Fauna/Attulus.jpg" data-lightbox='mygallery' data-title="Skoczek lilipuci (fot. Adrian Truchta)"><img src="./img/Fauna/Attulus.jpg"></a>
-						<a href="./img/Fauna/Drassyllus lutetianus.png" data-lightbox='mygallery' data-title="Drassyllus lutetianus"><img src="./img/Fauna/Drassyllus lutetianus.png"></a>
-						<a href="./img/Fauna/Ero.jpg" data-lightbox='mygallery' data-title="Guzoń garbusek (fot. Sebastian Nowosad)"><img src="./img/Fauna/Ero.jpg"></a>
+						<a href="./img/Fauna/Attulus.jpg" data-lightbox='mygallery' data-title="Skoczek lilipuci (fot. Adrian Truchta)"><img src="./img/Fauna/Attulus low.jpg"></a>
+						<a href="./img/Fauna/Drassyllus lutetianus.png" data-lightbox='mygallery' data-title="Drassyllus lutetianus"><img src="./img/Fauna/Drassyllus lutetianus low.jpg"></a>
+						<a href="./img/Fauna/Ero.jpg" data-lightbox='mygallery' data-title="Guzoń garbusek (fot. Sebastian Nowosad)"><img src="./img/Fauna/Ero low.jpg"></a>
 						</div>
 					</div>  
 					<p class="podpis">Rzadkie w P/E pająki użytku ek. "Strumień Junikowski"(2012-2016): 1)Skoczek lilipuci(fot. Adrian Truchta), 2)Drassyllus lutetianus, 3)Guzoń Garbusek (fot. Sebastian Nowosad).</p>
@@ -197,9 +175,9 @@
 								
 					<div class="container px-0">
 						<div class="gallery">
-						<a href="./img/Fauna/slimak zaroslowy low.jpg" data-lightbox='mygallery' data-title="Ostrolot muszlowiak"><img src="./img/Fauna/Campaea margaritaria.jpg"></a>
+						<a href="./img/Fauna/Campaea margaritaria.jpg" data-lightbox='mygallery' data-title="Ostrolot muszlowiak"><img src="./img/Fauna/Campaea margaritaria low.jpg"></a>
 						<a href="./img/Fauna/wazka.jpg" data-lightbox='mygallery' data-title="Ważka czteroplama"><img src="./img/Fauna/wazka low.jpg"></a>
-						<a href="./img/Fauna/Trociniarka czerwica.jpg" data-lightbox='mygallery' data-title="Trociniarka czerwica(larwa)"><img src="./img/Fauna/Trociniarka czerwica.jpg"></a>
+						<a href="./img/Fauna/Trociniarka czerwica.jpg" data-lightbox='mygallery' data-title="Trociniarka czerwica(larwa)"><img src="./img/Fauna/Trociniarka czerwica low.jpg"></a>
 						</div>
 					</div>  
 					<p class="podpis">1) <a href="https://insektarium.net/lepidoptera-2/geometridae-miernikowcowate/campaea-margaritaria-ostrolot-muszlowiak/">Ostrolot muszlowiak</a> (fot. własne), 2)<a href="https://www.wazki.pl/wazki_libellula_quadrimaculata.html">Ważka czteroplama</a> (fot. własne), 3)Trociniarka czerwica(larwa) (fot. własne).</p>
@@ -238,12 +216,12 @@
 
 					<div class="container px-0">
 						<div class="gallery" style="margin-left: auto; margin-right: auto;">
-						<a href="./img/Fauna/slimak zaroslowy.JPG" data-lightbox='mygallery' data-title="Ślimak zaroślowy"><img src="./img/Fauna/slimak zaroslowy.JPG"></a>
-						<a href="./img/Fauna/biedronka.jpg" data-lightbox='mygallery' data-title="Biedronka"><img src="./img/Fauna/biedronka.jpg"></a>
-						<a href="./img/Fauna/czułaj jaworowiec.jpg" data-lightbox='mygallery' data-title="Czułaj jaworowiec"><img src="./img/Fauna/czułaj jaworowiec.jpg"></a>
+						<a href="./img/Fauna/slimak zaroslowy.JPG" data-lightbox='mygallery' data-title="Ślimak zaroślowy"><img src="./img/Fauna/slimak zaroslowy low.jpg"></a>
+						<a href="./img/Fauna/biedronka.jpg" data-lightbox='mygallery' data-title="Biedronka"><img src="./img/Fauna/biedronka low.jpg"></a>
+						<a href="./img/Fauna/turkuc podjadek.jpg" data-lightbox='mygallery' data-title="Turkuć podjadek"><img src="./img/Fauna/turkuc podjadek low.jpg"></a>
 						</div>
 					</div>  
-					<p class="podpis">1)Ślimak zaroślowy (fot. własne) 2)Biedronka (fot. własne) 3) <a href="https://insektarium.net/hemiptera/cicadellidae-skoczkowate/acericerus-heydenii-czulaj-jaworowiec/">Czułaj jaworowiec</a> (fot. własne)</p>
+					<p class="podpis">1)Ślimak zaroślowy (fot. własne) 2)Biedronka (fot. własne) 3) Turkuć podjadek (fot. własne)</p>
 
 					<p id="miec"><b>Mięczaki.</b> Badany obszar jest stosunkowo ubogi pod względem malakologicznym. Pomimo stosunkowo dużego zróżnicowania biotypów, na tym terenie odnotowano występowanie tylko 27 gatunków mięczaków, w tym jedynie 13 taksonów
 					stanowią ślimaki wodne i małże. Ślimaki lądowe reprezentowane były przez następujące gatunki: ślimaki – przydrożny Xerolenta obvia, zaroślowy Arianta arbustorum,
@@ -308,9 +286,9 @@
 					
 					<div class="container px-0">
 						<div class="gallery">
-						<a href="./img/Fauna/ropucha szara.JPG" data-lightbox='mygallery' data-title="Ampleksus u ropuchy szarej"><img src="./img/Fauna/ropucha szara.JPG"></a>
-						<a href="./img/Fauna/zaskroniec zwyczajny.jpg" data-lightbox='mygallery' data-title="Zaskroniec zwyczajny"><img src="./img/Fauna/zaskroniec zwyczajny.jpg"></a>
-						<a href="./img/Fauna/żaba jeziorkowa.JPG" data-lightbox='mygallery' data-title="Żaba jeziorkowa"><img src="./img/Fauna/żaba jeziorkowa.JPG"></a>
+						<a href="./img/Fauna/ropucha szara.JPG" data-lightbox='mygallery' data-title="Ampleksus u ropuchy szarej"><img src="./img/Fauna/ropucha szara low.jpg"></a>
+						<a href="./img/Fauna/zaskroniec zwyczajny.jpg" data-lightbox='mygallery' data-title="Zaskroniec zwyczajny"><img src="./img/Fauna/zaskroniec zwyczajny low.jpg"></a>
+						<a href="./img/Fauna/żaba jeziorkowa.JPG" data-lightbox='mygallery' data-title="Żaba jeziorkowa"><img src="./img/Fauna/żaba jeziorkowa low.jpg"></a>
 						</div>
 					</div>  
 					<p class="podpis">1)Ampleksus u ropuchy szarej(fot. M. Sosnowski), 2)Zaskroniec zwyczajny(fot. xulescu_g na licencji <a href="https://en.wikipedia.org/wiki/Creative_Commons">Creative Commons Attribution-Share Alike 2.0 Generic</a>), 3)Żaba jeziorkowa (fot. M. Sosnowski).</p>
@@ -339,9 +317,9 @@
 					
 					<div class="container px-0">
 						<div class="gallery" style="margin-left: auto; margin-right: auto;">
-						<a href="./img/Fauna/baczek.jpg" data-lightbox='mygallery' data-title="Bączek"><img src="./img/Fauna/baczek.jpg"></a>
-						<a href="./img/Fauna/lyska.jpg" data-lightbox='mygallery' data-title="Łyska"><img src="./img/Fauna/lyska.jpg"></a>
-						<a href="./img/Fauna/mewa.jpg" data-lightbox='mygallery' data-title="Mewa"><img src="./img/Fauna/mewa.jpg"></a>
+						<a href="./img/Fauna/baczek.jpg" data-lightbox='mygallery' data-title="Bączek"><img src="./img/Fauna/baczek low.jpg"></a>
+						<a href="./img/Fauna/lyska.jpg" data-lightbox='mygallery' data-title="Łyska"><img src="./img/Fauna/lyska low.jpg"></a>
+						<a href="./img/Fauna/mewa.jpg" data-lightbox='mygallery' data-title="Mewa"><img src="./img/Fauna/mewa low.jpg"></a>
 						</div>
 					</div>  
 					<p class="podpis">1)Bączek (fot. Łukasz Stemler), 2)Łyski (fot. Łukasz Stemler), 3)Mewa (fot. Łukasz Stemler).</p>
@@ -363,9 +341,9 @@
 					
 					<div class="container px-0">
 						<div class="gallery" style="margin-left: auto; margin-right: auto;">
-						<a href="./img/Fauna/labedz.jpg" data-lightbox='mygallery' data-title="Łabędź"><img src="./img/Fauna/labedz.jpg"></a>
-						<a href="./img/Fauna/trzciniak.jpg" data-lightbox='mygallery' data-title="Trzciniak"><img src="./img/Fauna/trzciniak.jpg"></a>
-						<a href="./img/Fauna/remiz.jpg" data-lightbox='mygallery' data-title="Remiz"><img src="./img/Fauna/remiz.jpg"></a>
+						<a href="./img/Fauna/labedz.jpg" data-lightbox='mygallery' data-title="Łabędź"><img src="./img/Fauna/labedz low.jpg"></a>
+						<a href="./img/Fauna/trzciniak.jpg" data-lightbox='mygallery' data-title="Trzciniak"><img src="./img/Fauna/trzciniak low.jpg"></a>
+						<a href="./img/Fauna/remiz.jpg" data-lightbox='mygallery' data-title="Remiz"><img src="./img/Fauna/remiz low.jpg"></a>
 						</div>
 					</div>  
 					<p class="podpis">1)Łabędź (fot. Łukasz Stemler), 2)Trzciniak (fot. Łukasz Stemler) 3)Remiz (fot. Łukasz Stemler)</p>
@@ -381,28 +359,27 @@
 					Na obszarze badań odnotowano występowanie gatunków należących do trzech
 					rzędów. Rząd: owadożerne Eulipotyphla reprezentowany jest przez jeża europejskiego Erinaceus europaeus, kreta Talpa europaea, ryjówkę aksamitną Sorex araneus
 					i zębiełka karliczka Crocidura suaveolens. Spośród rzędu gryzoni Rodentia, na badanym obszarze występują: wiewiórka pospolita Sciurus vulgaris, bóbr europejski
-					Castor fiber (ryc. 5), karczownik ziemnowodny  Arvicola amphibius, nornik zwyczajny Microtus arvalis, piżmak amerykański Ondatra zibethicus, myszarki (myszy):
-					polna  Apodemus agrarius, i  leśna  A. flavicolis, mysz domowa  Mus musculus oraz
+					Castor fiber, karczownik ziemnowodny  Arvicola amphibius, nornik zwyczajny Microtus arvalis, piżmak amerykański Ondatra zibethicus, myszarki (<b>myszy</b>):
+					<b>polna</b>  Apodemus agrarius, i  leśna  A. flavicolis, mysz domowa  Mus musculus oraz
 					szczur wędrowny Rattus norvegicus. 
 					
 					<div class="container px-0">
 						<div class="gallery" style="margin-left: auto; margin-right: auto;">
-						<a href="./img/Fauna/mysz polna.jpg" data-lightbox='mygallery' data-title="Mysz polna"><img src="./img/Fauna/mysz polna.jpg"></a>
-						<a href="./img/Fauna/wiewiorka.jpg" data-lightbox='mygallery' data-title="Wiewiórka"><img src="./img/Fauna/wiewiorka.jpg"></a>
-						<a href="./img/Fauna/dzik crop.jpg" data-lightbox='mygallery' data-title="Dzik"><img src="./img/Fauna/dzik crop.jpg"></a>
+						<a href="./img/Fauna/mysz polna.jpg" data-lightbox='mygallery' data-title="Mysz polna"><img src="./img/Fauna/mysz polna low.jpg"></a>
+						<a href="./img/Fauna/wiewiorka.jpg" data-lightbox='mygallery' data-title="Wiewiórka"><img src="./img/Fauna/wiewiorka low.jpg"></a>
+						<a href="./img/Fauna/dzik crop.jpg" data-lightbox='mygallery' data-title="Dzik"><img src="./img/Fauna/dzik crop low.jpg"></a>
 						</div>
 					</div>  
 					<p class="podpis">1)Mysz polna (fot. Łukasz Stemler), 2)Wiewiórka (fot. Łukasz Stemler) 3)Dzik (fot. Łukasz Stemler)</p>
 					
 					Podczas ostatnich badań obserwowano także
-					nutrię amerykańską Myocastor coypus, choć brak danych, aby ten gatunek utrzymywał na omawianym terenie stabilną i  trwałą populację. Rząd zajęczaki Lagomorpha reprezentuje zając szarak Lepus europaeus. Z rzędu parzystokopytnych
-					Arthiodactyla występuje dzik Sus scrofa oraz sarna Capreolus capreolus. Natomiast
+					nutrię amerykańską Myocastor coypus, choć brak danych, aby ten gatunek utrzymywał na omawianym terenie stabilną i  trwałą 
+					populację. Rząd zajęczaki Lagomorpha reprezentuje zając szarak Lepus europaeus. Z rzędu parzystokopytnych
+					Arthiodactyla występuje <b>dzik</b> Sus scrofa oraz sarna Capreolus capreolus. Natomiast
 					rząd drapieżnych Carnivora reprezentują: jenot Nyctereutes procyonoides, lis Vulpes
-					Ryc. 5. Ślady żerowania bobra europejskiego Castor fiber na Szachtach (fot. M. Sosnowski)
-					
 					vulpes, łasica Mustela nivalis i kuna domowa Martes foina. Spośród stwierdzonych
 					gatunków ssaków, ochronie ścisłej podlegają jedynie wszystkie żerujące na użytkach nietoperze, natomiast zębiełek, jeż, ryjówka, 
-					wiewiórka, bóbr, karczownik, myszarka leśna oraz łasica podlegają ochronie częściowej, a większość owadożernych chroni dodatkowo 
+					<b>wiewiórka</b>, bóbr, karczownik, myszarka leśna oraz łasica podlegają ochronie częściowej, a większość owadożernych chroni dodatkowo 
 					Konwencja Berneńska (Kluza-Wieloch i in. 2006).</p>
 					<h3 id="pods">Podsumowanie</h3>
 					<p>Użytki ekologiczne „Kopanina  I”  i  „Kopanina  II” zostały utworzone przede
@@ -419,13 +396,13 @@
 					Autorzy serdecznie dziękują wszystkim osobom których dane zostały wykorzystane w niniejszym opracowaniu – Piotrowi Klimaszykowi, Bogusławowi Bałuce, Pawłowi Sienkiewiczowi, Marii Urbańskiej i Pawłowi Śliwie oraz innym, niewymienionym z nazwiska,
 					których dane składają się na obecną wiedzę o opisywanym terenie.</p>
 
-				<p><a href="/źródła.html">Źródła</a>
-				</p>
+				<h4><a href="źródła.html">Źródła</a></h4>
+
 			</div>	
 		</div>	
 	</div>
 
-	<div class="container-md px-2">
+	<div class="conti">
 		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-1 border-top">
 			<div class="col-md-4 d-flex align-items-center">
 			  <!--<a href="/" class="mb-3 me-0 mb-md-0 text-body-secondary text-decoration-none lh-1">
@@ -436,12 +413,45 @@
 		
 			<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
 			  <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/mikes_photo_travels/" target="blank"><i class="fa fa-instagram" style="font-size:20px"></i></a></li>
-			  <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=1395851416" target="blank"><i class="fa fa-facebook" style="font-size:20px"></i></a></li>
+			  <!-- <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=1395851416" target="blank"><i class="fa fa-facebook" style="font-size:20px"></i></a></li> -->
 			  <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/channel/UC6K-2vhM8gc7_C1kbUyUh0A" target="_blank"><i class="fa fa-youtube" style="font-size:20px"></i>
 			  </a></li>
 			</ul>
 		  </footer>
 	</div>
+
+	<script>
+	
+		// jQuery(function($)
+		// {
+		// 	//zresetuj scrolla
+		// 	$.scrollTo(0); 
+			
+		// 	$('#link1').click(function() { $.scrollTo($('#wpro'), 200); });
+		// 	$('#link2').click(function() { $.scrollTo($('#bezk'), 200); });
+		// 	$('#link3').click(function() { $.scrollTo($('#paje'), 200); });
+		// 	$('#link4').click(function() { $.scrollTo($('#owad'), 200); });
+		// 	$('#link5').click(function() { $.scrollTo($('#miec'), 200); });
+		// 	$('#link6').click(function() { $.scrollTo($('#kreg'), 200); });
+		// 	$('#link7').click(function() { $.scrollTo($('#ryby'), 200); });
+		// 	$('#link8').click(function() { $.scrollTo($('#plaz'), 200); });
+		// 	$('#link9').click(function() { $.scrollTo($('#ptak'), 200); });
+		// 	$('#link10').click(function() { $.scrollTo($('#ssak'), 200); });
+		// 	$('#link11').click(function() { $.scrollTo($('#pods'), 200); });
+		// 	$('.scrollup').click(function() { $.scrollTo($('body'), 300); });
+		// }
+		// );
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		}
+		
+		);
+		
+	</script>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>

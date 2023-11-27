@@ -7,16 +7,19 @@
 	<meta name="Description" content="Przejdź się po szachtach, zajrzyj w każdy kąt i obejrzyć najlepsze ujęcia z każdej pory roku!" />
 	<meta name="Keywords" content="szachty, poznań, stawy, glinianki, wieża widokowa, natura, ptaki, zieleń, natura, spacer, rezerwat, zachód słońca, wschód słońca, fotograria" /> 
 	<meta name="author" content="Michał Sosnowski" />
+	<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="./css/lightbox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="./css/lightbox.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
 	<script src="./js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="js/jquery.scrollTo.min.js"></script>
-	<link rel="stylesheet" href="./css/style.css">
+	<!-- <script src="js/jquery.scrollTo.min.js"></script> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
 
     <style>
 
@@ -29,8 +32,8 @@
 			text-indent: 1.5em;
 		}
 
-		h3,h4{
-			margin-top: 10px;
+		h3,h4,h5{
+			margin: 20px 0 10px;
 		}
 
 		h2,h3,h4{
@@ -45,59 +48,76 @@
 
 	<a href="#" class="scrollup" style="display: inline;"><img src="img/up.png" alt="scroll" width="50px" style="border-radius: 10%;"></a>
 
-	<div class="container-md px-2">
-		<header class="d-flex flex-wrap justify-content-start py-3 mb-4 border-bottom">
-		  <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-			<span class="fs-4"><b><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16">
-				<path d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 0-.998 1.03l.01.091c.012.077.029.176.054.296.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a4.997 4.997 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1zM2 9l.03-.002.091-.01a4.99 4.99 0 0 0 .296-.054c.241-.049.542-.122.887-.213a60.59 60.59 0 0 0 2.314-.676L5.762 8l-.144-.045a60.59 60.59 0 0 0-2.314-.676 16.705 16.705 0 0 0-.887-.213 4.99 4.99 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2zm7 5-.002-.03a5.005 5.005 0 0 0-.064-.386 16.398 16.398 0 0 0-.213-.888 60.582 60.582 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a4.996 4.996 0 0 0-.064.386L7 14a1 1 0 1 0 2 0zm-5.696-2.134.025-.017a5.001 5.001 0 0 0 .303-.248c.184-.164.408-.377.661-.629A60.614 60.614 0 0 0 5.96 9.23l.103-.111-.147.033a60.88 60.88 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5.063 5.063 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027c-.01.02-.021.048-.036.084a5.09 5.09 0 0 0-.102.283c-.078.233-.165.53-.258.875a60.62 60.62 0 0 0-.572 2.342l-.033.147.11-.102a60.848 60.848 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5.001 5.001 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196.017.025a4.996 4.996 0 0 0 .248.303c.164.184.377.408.629.661A60.597 60.597 0 0 0 6.77 5.96l.111.102-.033-.147a60.602 60.602 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5.006 5.006 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1zm9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a60.619 60.619 0 0 0-2.342-.572l-.147-.033.102.111a60.73 60.73 0 0 0 1.667 1.742c.253.252.477.465.66.629a4.946 4.946 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-			  </svg>Szachty</b></span>
-		  </a>
-	
-		  <ul class="nav nav-underline"> <!--nav nav-pills-->
-			<li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">STRONA GŁÓWNA</a></li><!--nav-link active -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Przyroda</a>
-				<ul class="dropdown-menu">
-					<li><a href="flora.html"class="dropdown-item">Flora</a></li>
-					<li><a href="zbiorowiskarosl.html" class="dropdown-item">Zbiorowiska roślinne</a></li>
-					<li><a class="dropdown-item" href="fauna.html">Zwierzęta</a></li>
-					<li><a class="dropdown-item" href="zagrozenia.html">Ochrona Szacht</a></li>
-				</ul>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Galerie</a>
-				<ul class="dropdown-menu">
-				  <li><a class="dropdown-item" href="wiosna.html">Wiosenna</a></li>
-				  <li><a class="dropdown-item" href="lato.html">Letnia</a></li>
-				  <li><a class="dropdown-item" href="jesien.html">Jesienna</a></li>
-				  <li><a class="dropdown-item" href="zima.html">Zimowa</a></li>
-				</ul>
-			  </li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Historia</a>
-				<ul class="dropdown-menu">
-				  <li><a class="dropdown-item" href="przemysl ceramiczny.html">Przemysł ceramiczny</a></li>
-				  <li><a class="dropdown-item" href="geologia.html">Geologia</a></li>
-				</ul>
-			  </li>
-			<li class="nav-item"><a href="dojazd.html" class="nav-link">Dojazd</a></li>  
-			<li class="nav-item"><a href="o mnie.html" class="nav-link">O mnie</a></li>
-		  </ul>
-		</header>
-	</div>
+    <nav class="navbar fixed-top navbar-expand-md navbar-light" aria-label="Fourth navbar example" style="background-color: #F4C7AB;">
+        <div class="container-fluid">
+            <a href="index.html" class="d-flex align-items-center mb-0 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <span class="fs-3"><b><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16" style="padding-bottom: 4px;">
+                    <path d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 0-.998 1.03l.01.091c.012.077.029.176.054.296.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a4.997 4.997 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1zM2 9l.03-.002.091-.01a4.99 4.99 0 0 0 .296-.054c.241-.049.542-.122.887-.213a60.59 60.59 0 0 0 2.314-.676L5.762 8l-.144-.045a60.59 60.59 0 0 0-2.314-.676 16.705 16.705 0 0 0-.887-.213 4.99 4.99 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2zm7 5-.002-.03a5.005 5.005 0 0 0-.064-.386 16.398 16.398 0 0 0-.213-.888 60.582 60.582 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a4.996 4.996 0 0 0-.064.386L7 14a1 1 0 1 0 2 0zm-5.696-2.134.025-.017a5.001 5.001 0 0 0 .303-.248c.184-.164.408-.377.661-.629A60.614 60.614 0 0 0 5.96 9.23l.103-.111-.147.033a60.88 60.88 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5.063 5.063 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027c-.01.02-.021.048-.036.084a5.09 5.09 0 0 0-.102.283c-.078.233-.165.53-.258.875a60.62 60.62 0 0 0-.572 2.342l-.033.147.11-.102a60.848 60.848 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5.001 5.001 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196.017.025a4.996 4.996 0 0 0 .248.303c.164.184.377.408.629.661A60.597 60.597 0 0 0 6.77 5.96l.111.102-.033-.147a60.602 60.602 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5.006 5.006 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1zm9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a60.619 60.619 0 0 0-2.342-.572l-.147-.033.102.111a60.73 60.73 0 0 0 1.667 1.742c.253.252.477.465.66.629a4.946 4.946 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                  </svg>Szachty</b></span>
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
-	<div class="container-md px-2 mb-5">
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">STRONA GŁÓWNA</a></li><!--nav-link active -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Przyroda</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="flora.html">Flora</a></li>
+                        <li><a class="dropdown-item" href="zbiorowiskarosl.html">Zbiorowiska roślinne</a></li>
+                        <li><a class="dropdown-item" href="fauna.html">Zwierzęta</a></li>
+                        <li><a class="dropdown-item" href="zagrozenia.html">Ochrona Szacht</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Galerie</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="wiosna.html">Wiosenna</a></li>
+                      <li><a class="dropdown-item" href="lato.html">Letnia</a></li>
+                      <li><a class="dropdown-item" href="jesien.html">Jesienna</a></li>
+                      <li><a class="dropdown-item" href="zima.html">Zimowa</a></li>
+					  <li><a class="dropdown-item" href="zachody.html">Zachody słońca</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Historia</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="przemysl ceramiczny.html">Przemysł ceramiczny</a></li>
+                      <li><a class="dropdown-item" href="geologia.html">Geologia</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item"><a href="dojazd.html" class="nav-link">Dojazd</a></li>  
+                <li class="nav-item"><a href="o mnie.html" class="nav-link">O mnie</a></li>
+            </ul>
+            </div>
+        </div>
+        </nav>
+
+
+	<div class="conti" style="margin-top: 80px;">
 		<div class="calosc">
 			<div class="spislewa item">
 				<div class="spistresci">
 					<ul>
-						<li><a id="link1" href="#">Wstęp</a></li>
-						<li><a id="link2" href="#">Zagrożenia</a></li>
-							<ul><a id="link3" href="#">Procesy urbanizacyjne</a></ul>
-							<ul><a id="link4" href="#">Śmiecenie</a></ul>
-							<ul><a id="link5" href="#">Eutrofizacja</a></ul>
-						<li><a id="link6" href="#">Ochrona georóżnorodności i bioróżnorodności</a></li>
-						<li><a id="link7" href="#">Podsumomowanie</a></li>
+						<li><a id="link1" href="#wste">Wstęp</a></li>
+						<li><a id="link2" href="#zagr">Zagrożenia</a></li>
+							<ul>
+								<li><a id="link3" href="#proc">Procesy urbanizacyjne</a></li>
+								<li><a id="link4" href="#smie">Śmiecenie</a></li>
+								<li><a id="link5" href="#eutr">Eutrofizacja</a></li>
+									<ul>
+										<li><a id="link6" href="#wply">Wpływ działalności człowieka na chemizm wód Junikowskiego Strumienia</a></ul></li>
+									 	
+								
+							
+							
+									</ul>
+						<li><a id="link7" href="#wlas">Właściwe gospodarowanie zasobami wodnymi i związane z tym użytkowanie ziemi</a></li>
+						<li><a id="link8" href="#ochr">Ochrona georóżnorodności i bioróżnorodności</a></li>
+						<li><a id="link9" href="#kszt">Kształtowanie aktywności społeczno-gospodarczej oraz rekreacji</a></li>
+						<li><a id="link10" href="#pods">Podsumomowanie</a></li>
 
 					</ul>
 
@@ -109,7 +129,7 @@
 					wymagane są działania na polu ochrony przyrody. Poniżej postaram się przybliżyć niektóre zagrożenia, przed którymi dziś stoją Szachty, 
 					a także rozwiązania, które mogą zostać wdrożone, posiłkując się fragmentami publikacji naukowej.</p>
 			
-				<h3 id="wstep">Wstęp</h3>
+				<h3 id="wste">Wstęp</h3>
 				<p style="text-align: justify;">'Zlewnia Junikowskiego Strumienia reprezentuje typ małej zlewni nizinnej, w  której młodoglacjalny krajobraz modelowany przez 
 					procesy rzeczne podlega obecnie różnokierunkowej presji w wyniku działalności człowieka. Istotne zmiany w rzeźbie terenu, glebach, 
 					stosunkach wodnych oraz w strukturze pokrycia terenu i  użytkowaniu ziemi w  środkowej części zlewni spowodowane zostały m.in. 
@@ -138,7 +158,7 @@
 					W ostatnim czasie Szachty stały się miejscem bardziej popularnym, głównie od momentu wybudowania wiezy widokowej, pomostu oraz rozbudowania 
 					ścieżek asfaltowych wraz z infrastrukturą(ławki, pojemniki na śmieci), co zmieniło charakter tego miejsca z dzikiego i rzadko 
 					odwiedzanego, na bardziej popularne, a nawet zatłoczone w weekendy. Można różnie oceniać tą zmianę, jednak Szachty dalej posiadają ogromną 
-					wartość przyrodniczą i rekreacyjną, co czyni je pożądanym miejscem zarówno na niedzielny wypad, jak i miejsce do zamieszkania. 
+					wartość przyrodniczą i rekreacyjną, co czyni je pożądanym miejscem zarówno na weekendowy relaks, jak i miejsce do zamieszkania. 
 					W 2021 lokalnej społeczności udało się powstrzymać plany miasta, aby zabudowania mieszkalne docierały aż pod 
 					wieżę widokową. Niestety od strony północno wschodniej - Świerczewa - zabudowa postępuje. Zrozumiała jest chęć mieszkania przy tak 
 					atrakcyjnym terenie. Jednak ważne jest, aby teren Szacht i wokół nich pozostał jak najbardziej dziki oraz aby wszelkie plany dalszego 
@@ -154,8 +174,8 @@
 					Świerczewa oraz południowego zachodu(za wieżą). Kilka dzików, małe stadko saren, a także bobrów i niezliczone inne gatunki owadów i zwierząt upodobało sobie to miejsce. Ogromne znaczenie 
 					<a href="https://ochronaprzyrody.gdos.gov.pl/files/artykuly/5450/WWD_2019_Broszura_icon_1.pdf">mokradeł</a> - które umiejscowione są w północno-wschodniej części Szacht(od Świerczewa) - w walce ze zmianami klimatu jest również 
 					szeroko opisana w literaturze. Można tam upatrzyć wiewiórki, a także wiele ptactwa, w tym najpiękniejsze łabędzie, dzięcioły, bączki 
-					czy trzciniaki i wiele innych. Wiele badań wskazuje na 
-					pozytywny wpływ zieleni, w szczególności lasów na psychikę ludzką. Czasem wystarczy spędzić wśród drzew 20 minut, aby podładować 
+					czy trzciniaki i wiele innych. Nikogo nie trzeba przekonywać o 
+					pozytywnym wpływie zieleni, w szczególności lasów na psychikę ludzką. Czasem wystarczy spędzić wśród drzew 20 minut, aby podładować 
 					baterie. Powszechnie występująca w mieście betonoza nie może dostarczyć tej usługi. Dlatego ważne jest, aby pozostawić ten teren 
 					atrakcyjnym dla większej ilości ludzi, nie tylko dla tych, którzy zamieszkują lub zamierzają zamieszkać w pobliżu. Rozwijając zabudowę 
 					mieszkalną pojedyncze osoby zyskają piękny widok z okna i bliskość natury, jednak Szachty będą pomału zanikać dla wszystkich. Dlatego 
@@ -191,12 +211,61 @@
 					znajdujący się w glebie nie jest pierwiastkiem silnie mobilnym. Silne opady deszczu mogą łatwo wypłukiwać azot z powierzchniowej 
 					warstwy gleby oraz z nawozów, przy czym do zbiornika mogą być też wniesione znaczne ilości fosforu.(wikipedia)</p>
 					
-					<p>W przypadku Szacht nie jest do końca zbadane, co powoduje eutrofizację i jaki jest jej wpływ na organizmy żyjące w 
-					zbiornikach(niski poziom eutrofizacji może być początkowo korzystny dla ryb), jednak można podejrzewać, że okoliczne regularnie 
-					obsadzane pola nie pozostają bez wpływu. Współczesna produkcja kukurydzy oraz pszenicy wymaga używania znacznych
-					ilości nawozów sztucznych. Podczas deszczu nawozy mogą spływać do zbiorników. Wzrost emisji tlenków azotu
-					przez ludzkość natomiast wpływa na większą zawartość tego pierwiastka w deszczu. 
-					Eutrofizacja jest najbardziej widoczna w okresie wiosenno-letnim, kiedy to rozrost bakterii, glonów i wodorostów jest znaczny. Następstwami tego 
+					<p>W przypadku Szacht dokonywano licznych badań nad naturalnymi i antropogenicznymi wpływami na jakość wody(wody 
+					Strumienia Junikowkiego), które wpływają potem na poziom eutrofizacji. Poniżej postaram się przedstawić najważniejsze fragmenty 
+					dotyczące chemizmu wód Szacht, czerpiąc z rozdziału 7 pt.: </p>
+					<h5 id="wply">Wpływ działalności człowieka na chemizm wód Junikowskiego Strumienia</h5>
+					
+					<p>Na poziom pierwiastków biogennych oraz zanieczyszczeń wpływa szereg czynników, ponieważ poszczególne elementy środowiska 
+					przyrodniczego oraz miejskiego są powiązane, dlatego stan czy ingerencja w jedną ze sfer powoduje skutki w innych sferach. </p>
+					
+					<p>Do punktowych ognisk zanieczyszczeń zalicza się oczyszczalnie ścieków komunalnych i przemysłowych, składowiska odpadów oraz 
+					magazyny substancji niebezpiecznych (składowiska paliw: płynnych, stałych, gazowych). Największy wpływ na jakość wód
+					powierzchniowych mają zrzuty ścieków bytowych z systemów kanalizacyjnych gospodarstw domowych. Ścieki komunalne wnoszą do wód 
+					powierzchniowych znaczące ładunki substancji biogennych (głównie związki azotu i fosforu) i zanieczyszczeń mikrobiologicznych.</p>
+					<p>Opady atmosferyczne (mokra depozycja) wraz z gazami i aerozolami stanowią obszarowe ognisko zanieczyszczeń, które wypływa na jakość 
+					wód i gleb oraz	funkcjonowanie ekosystemów. Zrzuty ścieków deszczowych do sieci rzecznej przy znacznym zanieczyszczeniu powietrza i wód 
+					opadowych w Poznaniu, przyczyniają się także do degradacji wód powierzchniowych. Na podstawie prowadzonego
+					monitoringu wód opadowych w Stacji Bazowej ZMŚP Poznań-Morasko, w zlewni Różanego Strumienia (PMŚ ZMŚP 2022) należy wskazać, że wody
+					opadowe	dostarczają anionów siarczanowych, azotanowych i chlorkowych, a z kationów
+					jony amonowe i wapniowe (Kruszyk, Chudzińska, 2020). Głównym ogniskiem
+					zanieczyszczeń wód opadowych w Poznaniu, w skali regionalnej są emisje z przemysłu paliwowo-energetycznego, a lokalnie emisje liniowe, 
+					związane z przebiegiem szlaków komunikacyjnych oraz punktowe z sektora komunalno-bytowego.</p>
+					<p>Istotnym ogniskiem obszarowych zanieczyszczeń wód powierzchniowych są
+					spływy powierzchniowe i śródpokrywowe z terenów miejskich i rolniczych. Powodują one zanieczyszczenie wód substancjami ropopochodnymi, substancjami
+					biogennymi (związki azotu i fosforu), zanieczyszczeniami mikrobiologicznymi
+					(gnojowica) oraz pestycydami. Ponadto do tego typu ognisk zanieczyszczeń można zaliczyć wysypiska i składowiska odpadów, które są 
+					przemywane wodami opadowymi i poprzez odcieki zasilają wody powierzchniowe i podziemne.</p>
+					<p>W zlewni Junikowskiego Strumienia występują różne kategorie użytkowania
+					terenu: obszary o zabudowie mieszkaniowej, przemysłowo-składowej, obszary
+					leśne i łąkowe oraz ciągi komunikacyjne. Każda z tych form użytkowania wiąże się z  obecnością różnych ognisk zanieczyszczeń, które mają wpływ na jakość wody w Junikowskim Strumieniu i jego dopływach. W roku 1941 w zlewni
+					Junikowskiego Strumienia 78% powierzchni miało przypisaną funkcję rolniczą,
+					natomiast 8% zajmowała zabudowa miejska (Dziadura 2018). Intensywny rozwój aglomeracji poznańskiej zmienił krajobraz i funkcje tego obszaru nieustannie go przekształcając. Grunty orne zlokalizowane są głównie w  zachodniej
+					części zlewni, w górnej części zlewni Skórzyny, w zlewniach Plewianki i Kotówki. Funkcjonujące gospodarstwa rolne zajmują się przede wszystkim produkcją
+					warzyw i  roślin ozdobnych (rośliny doniczkowe, kwiaty cięte) oraz szkółkarstwem. W mniejszym stopniu prowadzona jest uprawa zbóż, ziemniaków, a także hodowla zwierząt gospodarskich, w  tym koni. Struktura użytków rolnych
+					ulega co kilka lat przebudowie, w zależności od koniunktury na rynku. Ten typ
+					zagospodarowania zlewni wiąże się z  dostawą do wód zanieczyszczeń obszarowych jakie stanowią wymywane składniki nawozów mineralnych, gnojowicy
+					oraz pestycydy.</p>
+
+					<p>Poniżej ul. Grunwaldzkiej (Poznań) zanieczyszczenia przemysłowe i komunalne
+					sprawiły, że wody cieku były klasyfikowane jako pozaklasowe. Joniak i in. (2010)
+					oraz Gołdyn i in. (2019) podsumowali stan wód cieku jako mocno zanieczyszczone na całej długości. Wskazali, że okresowo (zwłaszcza latem) notuje się duże
+					zanieczyszczenie bakteriologiczne, a przez niemal cały rok nadmierne obciążenie
+					wody przez związki azotu i fosforu.</p>
+
+					<p>Stan środowiska przyrodniczego aglomeracji poznańskiej polepsza się, wpłynęły na to działania proekologiczne oraz likwidacja lub modernizacja zakładów
+					produkcyjnych najbardziej degradujących środowisko, także tych zlokalizowanych w zlewni Junikowskiego Strumienia. Mimo korzystnych zmian, w Poznaniu
+					i Luboniu nadal występują zagrożenia lokalne związane z przekraczającym normy
+					zanieczyszczeniem wód powierzchniowych oraz zanieczyszczeniem atmosfery
+					i gleb, które stanowią zarazem ogniska zanieczyszczeń wód powierzchniowych</p>
+					<p><i style="font-size: small;">Rozdział 7 (s. 124-156) autorstwa Małgorzaty Mazurek, Joanny Biegały,
+						Mirosława Makohonienko oraz Joanny Gadzińska opublikowany w książce pt. 
+					<a href="https://wngig.amu.edu.pl/__data/assets/pdf_file/0018/410634/srodowisko-geograficzne-zlewni-junikowskiego-strumienia_.pdf" target="_blank">
+					Środowisko geograficzne zlewni Junikowskiego Strumienia</a> pod red. <b>Małgorzaty Mazurek i Dawida Abramowicza</b> (Bogucki Wydawnictwo Naukowe, Poznań, 2022).</i></p>
+					
+					<br>
+					<p>Eutrofizacja jest najbardziej widoczna w okresie wiosenno-letnim, kiedy to rozrost bakterii, glonów i wodorostów jest znaczny. W ostatnich 
+						latach(2022-23) na Szachtach przyczyniły się do tego susze i spadek poziomu wody. Następstwami tego 
 					zjawiska jest:
 					<br>a) masowy rozwój organizmów fitoplanktonowych, powodujących w powierzchniowej warstwie wody tzw. zakwity i zmniejszających 
 					jej przezroczystość, 
@@ -212,13 +281,69 @@
 					wody, ulatniać się i zatruwać atmosferę w okolicy.</p>
 					<p>Najskuteczniejszą metodą walki z procesem eutrofizacji jest ograniczenie antropogenicznego dopływu biogenów do wód – kompostowanie 
 					odchodów zamiast odprowadzania ich do ujścia kanalizacyjnego, redukcja zawartości fosforanów w środkach piorących używanych w 
-					gospodarstwach domowych, oraz ograniczanie stosowania nawozów sztucznych w rolnictwie.</p>
-					<p>W ostatnich latach daje się zauważyć zwiększone zjawisko eutrofizacji w Szachtach, jednak jego rzeczywisty wpływ na ogranizmy żywe w 
-					zbiornikach nie został zbadany. Konieczne zmiany, które pomogły by zahamować to 
-					zjawisko powinno pochodzić od zarówno polityków(prawo), rolników, jak i prywatnych gospodarstw. Pośrednio wszyscy mamy wpływ na to, jak 
-					produkowana jest żywność. Możemy wybierać tą ekologiczną, nienawożoną chemicznie i najmniej przetworzoną. Działania o zasięgu globalnym, 
-					które pozwoliłyby na ograniczenie emisji pierwiastków azotowych lezą natomiast w gestii polityków oraz koncernów, na których pośrednio - 
-					jednak w niewielkim stopniu -	wszyscy mamy wpływ poprzez oddane w urnie głosy. </p>
+					gospodarstwach domowych, oraz ograniczanie stosowania nawozów sztucznych w rolnictwie. W szerszym zakresie natomiast należałoby 
+					ograniczyć emisję pierwiastków biogennych do atmosfery, które wracają do wód w postaci deszczu(emisje paliwowe/przemysłowe).</p>
+					<!-- <p>W ostatnich latach daje się zauważyć zwiększone zjawisko eutrofizacji w Szachtach. Konieczne zmiany, które pomogły by zahamować to 
+					zjawisko powinno pochodzić od zarówno od prywatnych godpodarstw(ścieki), rolników(nawożenie) oraz polityków(prawo). Pośrednio wszyscy mamy wpływ na to, jak 
+					produkowana jest żywność. Możemy wybierać tą ekologiczną, nienawożoną chemicznie i najmniej przetworzoną. Działania o zasięgu miejskim i bardziej globalnym, 
+					które pozwoliłyby na ograniczenie emisji pierwiastków azotowych i fosforowych lezą natomiast w gestii polityków oraz koncernów, na których pośrednio również 
+					mamy wpływ - jednak w niewielkim stopniu - poprzez oddane w urnie głosy. </p> -->
+
+					<h3 id="wlas">Właściwe gospodarowanie zasobami wodnymi i związane z tym
+					użytkowanie ziemi</h3>
+
+					<p>W  przypadku zlewni Junikowskiego Strumienia potrzebna jest dyskusja nad
+					wskazaniem priorytetów w  ramach użytkowania ziemi oraz gospodarowania
+					zasobami wodnymi. Silne obecnie uszczelnienie powierzchni przepuszczalnych
+					i biologicznie czynnych spowodowało zmiany w lokalnym obiegu wody, a tym
+					samym w bilansie wodnym, które związane są m.in. z ograniczeniem infiltracji
+					oraz retencji wód opadowych i  roztopowych, natomiast zwiększeniem spływu
+					powierzchniowego z  terenów zabudowanych, co w  konsekwencji prowadzi do
+					zmniejszenia zasobności wodnej cieków. W efekcie skanalizowania zlewni i intensywnego zrzutu ścieków rejestrowany jest wzrost odpływu siecią kanalizacyjną, jak również wzrost odpływu Junikowskiego Strumienia i niektórych jego dopływów, co z punktu widzenia działań związanych ze zwiększaniem zasobności
+					wodnej zlewni uznać można za „korzystny skutek urbanizacji”, natomiast z punktu widzenia osiągnięcia i utrzymania dobrego stanu i potencjału ekologicznego
+					wód, jako istotny czynnik degradacji jakości wód.</p>
+					<p>W celu poprawy stosunków wodnych i ochrony wód w zlewni oraz zachowania wielofunkcyjnej roli doliny Junikowskiego Strumienia, m.in. jako korytarza
+					ekologicznego, niezbędne jest opracowanie zintegrowanej strategii gospodarowania zasobami wodnymi. Strategia ta powinna wykorzystywać zarówno naturalne
+					możliwości środowiska przyrodniczego zlewni, jak i w szerszym zakresie miasta
+					Poznania, oraz jako wspomagające – środki techniczne. Podejście zintegrowane
+					dodatkowo powinno uwzględniać współpracę interesariuszy na różnych poziomach podejmowania decyzji oraz prowadzenia działań 
+					zapobiegawczych i  naprawczych zmierzających do ograniczenia antropopresji w zlewni.</p>
+					<p>Kolejnym wyzwaniem w  zlewni Junikowskiego Strumienia są postępujące
+					zmiany klimatu i  ich skutki, które mogą wpłynąć na stan zasobów wodnych.
+					Wzrost częstości występowania okresów niedoboru wody oraz jej nadmiaru,
+					przejawiających się w  występowaniu powodzi miejskich i  ich skutkach w  formie podtopień, wskazuje na konieczność wprowadzenia działań zwiększających
+					efektywne retencjonowanie wody w  strukturach zlewni miejskiej. Oczekiwane
+					efekty w  zakresie przewidywania i  łagodzenia skutków ekstremalnych zjawisk
+					pogodowych i hydrologicznych oraz ograniczenia czynnika presji mogą przynieść
+					rozwiązania uwzględniające opracowanie i wdrożenie lokalnego systemu monitoringu ilości i jakości wody. Obecnie Junikowski Strumień, jako jednolita część
+					wód rzecznych, jest kontrolowany w ramach Państwowego Monitoringu Środowiska, natomiast brakuje systemu pomiarów przepływów i stanów wód powierzchniowych oraz wód podziemnych. Dla lepszego rozpoznania i obserwacji zmian
+					w zasobności wodnej Junikowskiego Strumienia i jego dopływów oraz zbiorników Szacht, należałoby wprowadzić np. telemetryczny system rejestracji danych
+					meteorologicznych i  hydrologicznych. Niekontrolowane zanieczyszczenie wód
+					powierzchniowych różnego typu substancjami i odpadami, wynikające z traktowania cieków jako odbiorników ścieków z całej zlewni, wymaga podjęcia działań prowadzących do inwentaryzacji i  kontroli źródeł zanieczyszczeń oraz ich
+					ograniczania czy likwidacji. Zapobieganie zanieczyszczeniom wód oraz działania
+					służące poprawie ich jakości powinny być prowadzone w całej zlewni Junikowskiego Strumienia, a nie ograniczać się tylko do koryt cieków i ich najbliższego
+					sąsiedztwa.</p>
+					<p>W  zlewni Junikowskiego Strumienia podejmowane powinno być, podobnie
+					jak w innych miastach, planowanie przestrzenne wsparte na analizach warunków
+					gospodarowania wodami opadowymi, co może w konsekwencji umożliwić maksymalne wykorzystanie potencjału retencyjnego terenów zieleni. Stąd też istotne
+					jest dążenie do rozwoju w zlewni błękitno-zielonej infrastruktury i przechwytywania wody w każdy możliwy sposób.</p>
+					<p>Zwiększenie w  zlewni Junikowskiego Strumienia powierzchni biologicznie
+					czynnej, a także wprowadzenie do realizacji systemów gromadzenia wody, pozwoliłoby zaoszczędzić wodę i przygotować się na okresy bezopadowe zgodnie
+					z ideą zintegrowanego zarządzania wodą miejską i projektowania urbanistycznego
+					wrażliwego na wodę. Stwarza to również wyraźne możliwości dla rozwoju Poznania w sposób zrównoważony i inspirowany ekosystemami. Mając na uwadze fakt,
+					że doliny Junikowskiego Strumienia i jego dopływów są obszarami o wysokich
+					walorach przyrodniczych, rekreacyjnych i edukacyjnych, warto zaplanować, jeśli
+					jest to wykonalne przy obecnym zagospodarowaniu terenu, rewitalizację cieków,
+					która wiązałaby się m.in. z tworzeniem stref buforowych wzdłuż koryt rzecznych.</p>
+					<p>Osiągnięcie wielu istotnych założeń w zakresie zintegrowanego zarządzania
+					zasobami wodnymi w zlewni Junikowskiego Strumienia, zgodnych z realizacją
+					celów środowiskowych Ramowej Dyrektywy Wodnej oraz wizja projektowania
+					urbanistycznego wrażliwego na wodę mogą okazać się skuteczne, gdy opracowanie wspólnej polityki, a także wdrażanie preferowanych podejść będą właściwie
+					koordynowane. Szybka urbanizacja stawia przed urbanistami, urzędnikami i specjalistami z branży wodnej ogromne wyzwania. Przewiduje się, że tempo zmian
+					będzie kontynuowane, dlatego należałoby zwiększyć w  zlewni Junikowskiego
+					Strumienia intensywność działań, które zapewnią, że woda będzie kluczowym
+					elementem w uczynieniu tej strefy miasta (z korzyścią dla całej aglomeracji poznańskiej) zdrowszą, przyjazną dla mieszkańców i bardziej odporną na zmiany
+					klimatu i antropopresję.</p>
 
 					<h3 id="ochr">Ochrona georóżnorodności i bioróżnorodności</h3>
 					<p><img class="obraz" src="img/bioróżnorodność.jpg" alt="bioróżnorodność" style="margin: 7px 0 10px 10px; border-radius: 5%; float: right;" />Oprócz priorytetów w  zakresie gospodarowania zasobami wodnymi i  związanym z  tym zagospodarowaniem terenu, za istotne zadanie uznaje się ochronę
@@ -233,8 +358,8 @@
 					zróżnicowanie środowiska geograficznego w obrębie projektowanego Geoparku
 					Morasko. Taka sugestia została już wcześniej zasygnalizowana przez Zwolińskiego i in. (2017). Wstępne obliczenia różnymi metodami wskazują, że wartość geostanowiska Szachty mieści się w przedziale od 49 do 76%, co kwalifikuje je jako
 					średnie i/lub dobre geostanowisko pod względem georóżnorodności obejmującej wartości geologiczne, geomorfologiczne, hydrograficzne i geoturystyczne. Ta
-					szansa dla Szacht winna być wykorzystana w niedalekiej przyszłości.
-					Dawne wyrobiska, obecnie zróżnicowane morfometrycznie zbiorniki wodne
+					szansa dla Szacht winna być wykorzystana w niedalekiej przyszłości.</p>
+					<p>Dawne wyrobiska, obecnie zróżnicowane morfometrycznie zbiorniki wodne
 					o wysokich brzegach, pozostałe groble niewyeksploatowanego surowca mogłyby zostać wyeksponowane w  postaci profilów geologicznych, ukazujących pokłady iłów warwowych. Stanowiska takie zwiększają lokalną georóżnorodność,
 					ale wymagają odpowiedniego przygotowania i udostępnienia. Od czasu ustania
 					eksploatacji na Szachtach zachodzą spontaniczne procesy sukcesji biocenotycznej, w  której udział biorą rodzime gatunki flory i  fauny. Stawy stanowią również cenną ostoję ornitologiczną, co zwiększa lokalne zasoby bioróżnorodności.
@@ -242,8 +367,8 @@
 					przyrodniczą, także ze względu na wzajemnie powiązane elementy abiotyczne
 					i biotyczne, ale podkreślić należy również znaczenie historyczne (obiekty poprzemysłowe, pozostałości eksploatacji surowców ceramicznych i ich rola w rozwoju
 					Poznania), wartości estetyczne (kompleks zbiorników wodnych z seminaturalną
-					roślinnością) i społeczno-ekonomiczne (znaczenie dla rekreacji i edukacji).
-					Natomiast w zakresie różnorodności biologicznej istotnym zagadnieniem jest
+					roślinnością) i społeczno-ekonomiczne (znaczenie dla rekreacji i edukacji).</p>
+					<p>Natomiast w zakresie różnorodności biologicznej istotnym zagadnieniem jest
 					intensyfikacja działań ochronnych na obszarach cennych przyrodniczo, którymi
 					są dawne użytki ekologiczne „Strumień Junikowski”, „Kopanina I” oraz „Kopanina II”. O znaczeniu tych obiektów jako ostoi różnorodności biologicznej na terenie aglomeracji poznańskiej świadczy występowanie na obszarze dawnego użytku
 					ekologicznego „Strumień Junikowski” zinwentaryzowanych w 2016 r. 395 taksonów grzybów wielkoowocnikowych (10 gatunków i odmian niepodawanych dotychczas z terenu Polski oraz 79 taksonów nienotowanych dotąd z Wielkopolski),
@@ -252,16 +377,16 @@
 					tam wówczas dziewięć siedlisk przyrodniczych o zasięgu krajowym i 19 biotopów
 					rzadkich i zagrożonych w Wielkopolsce. Większość z nich to zbiorowiska naturalne lub seminaturalne. Spośród fauny bezkręgowców wykazano 161 gatunków pająków (w tym 23 gatunki rzadkie w Europie i Polsce), a kręgowce reprezentowało
 					pięć gatunków ryb, osiem chronionych gatunków płazów i gadów, 85 w większości
-					chronionych gatunków ptaków oraz sześć chronionych gatunków ssaków.
-					Najcenniejsze walory przyrodnicze dawnych użytków ekologicznych „Kopanina I” i „Kopanina II” (zinwentaryzowanych w 2006 i 2016 r.) to bogactwo
+					chronionych gatunków ptaków oraz sześć chronionych gatunków ssaków.</p>
+					<p>Najcenniejsze walory przyrodnicze dawnych użytków ekologicznych „Kopanina I” i „Kopanina II” (zinwentaryzowanych w 2006 i 2016 r.) to bogactwo
 					
 					fitoplanktonu w zbiornikach wodnych (113 taksonów), występowanie 54 gatunków mszaków, ponad 540 gatunków roślin naczyniowych (w tym kilku gatunków chronionych, 140 gatunków roślin rzadkich i zagrożonych w Wielkopolsce
 					i w Poznaniu oraz 57 drzew o obwodach pomnikowych). Stwierdzono także 65
 					zespołów roślinnych, w tym 20 zbiorowisk rzadkich i ginących w kraju i w Wielkopolsce. Walorem opisywanych terenów jest też ich bogactwo faunistyczne. Bezkręgowce są reprezentowane przez owady, z wieloma gatunkami chrząszczy, motyli i ważek oraz przez liczne pajęczaki. Na terenie dawnych użytków występują
 					23 wodne i lądowe gatunki ślimaków i cztery małże. Do kręgowców, z których
 					większość objęta jest ochroną gatunkową, należy 14 gatunków ryb, 10 gatunków
-					płazów, dwa gatunki gadów, 23 gatunki ptaków oraz 13 gatunków ssaków.
-					Warto przy tym zauważyć, że ewentualna ochrona prawna, którą powinny być
+					płazów, dwa gatunki gadów, 23 gatunki ptaków oraz 13 gatunków ssaków.</p>
+					<p>Warto przy tym zauważyć, że ewentualna ochrona prawna, którą powinny być
 					ponownie objęte tereny trzech dawnych użytków ekologicznych nie zabezpiecza
 					w pełni ochrony licznych, często cennych gatunków grzybów, roślin i zwierząt
 					i ich siedlisk, a także zbiorowisk roślinnych, które występują też poza granicami
@@ -270,8 +395,8 @@
 					pozostałymi obszarami mniej cennymi przyrodniczo, które pełniłyby funkcję
 					łączników (korytarzy ekologicznych) zapewniających właściwe funkcjonowanie
 					całego kompleksu, jako cennego elementu południowo-zachodniego klina zieleni
-					miasta Poznania. W ten sposób tereny najcenniejsze pod względem przyrodniczym (dawne użytki ekologiczne) przestałyby być odizolowanymi wyspami.
-					W opracowywanych dokumentach planistycznych (studium, miejscowe plany
+					miasta Poznania. W ten sposób tereny najcenniejsze pod względem przyrodniczym (dawne użytki ekologiczne) przestałyby być odizolowanymi wyspami.</p>
+					<p>W opracowywanych dokumentach planistycznych (studium, miejscowe plany
 					zagospodarowania przestrzennego) w zakresie zagospodarowania przestrzennego w zlewni Junikowskiego Strumienia rekomenduje się, jeśli jest to możliwe,
 					rozszerzenie terenów wyłączonych z  zabudowy, a  także zwiększenie terenów
 					cennych przyrodniczo uwzględniających dawne użytki ekologiczne o tereny aktualnie mające znaczenie dla zachowania różnorodności biologicznej. Biorąc pod
@@ -281,6 +406,40 @@
 					Jednocześnie rekomenduje się podjęcie działań na rzecz uchwalenia miejscowych
 					planów zagospodarowania przestrzennego na terenach o funkcji mieszkaniowej,
 					dla których dotąd planów nie uchwalono (osiedle Kwiatowe, południowo-wschodnia część osiedli Junikowo, Górczyn, część obszaru gminy Przeźmierowo), a także rozważenie w tych planach powiększenia terenów biologicznie czynnych.</p>
+					
+					<!-- <h3 id="kszt">Kształtowanie aktywności społeczno-gospodarczej oraz rekreacji</h3>
+					<p>Szeroki zestaw korzyści płynących ze środowiska geograficznego zlewni Junikowskiego Strumienia, a zwłaszcza Szacht, wynika z łączenia się na tym obszarze
+					
+					społeczno-ekonomicznej aktywności człowieka z występowaniem ekosystemów
+					o charakterze naturalnym lub półnaturalnym, którego geneza jest związana z renaturalizacją krajobrazu po zaprzestaniu eksploatacji surowców ceramicznych.
+					Równocześnie wzrost aktywności człowieka w najbardziej wartościowych przyrodniczo częściach zlewni Junikowskiego Strumienia jest obecnie zasadniczym
+					czynnikiem sprawczym przemian środowiska, prowadząc do zmian jego potencjału w  zakresie dostarczania poszczególnych pożytków ekosystemowych dla
+					mieszkańców.</p>
+					<p>Mając na uwadze możliwości wykorzystania i rozwoju funkcji edukacyjnych
+					zlewni Junikowskiego Strumienia, za ważne należy uznać opracowanie spójnej
+					koncepcji w zakresie edukacji przyrodniczej (geograficznej, ekologicznej, biologicznej). W ramach tego zadania zaleca się zaprojektowanie przebiegu geograficznej ścieżki dydaktycznej na terenie Lasku Marcelińskiego, z zachowaniem dbałości
+					o stan, aktualności i estetyki tablic edukacyjnych. Biorąc pod uwagę wzrastający
+					ruch spacerowiczów w Lasku Marcelińskim oraz dynamiczny rozwój budownictwa mieszkaniowego w jego sąsiedztwie, właściwie przygotowana infrastruktura
+					edukacyjna powinna w atrakcyjny sposób, zgodny z obecną wiedzą, przedstawiać
+					środowisko geograficzne środkowej części doliny Junikowskiego Strumienia oraz
+					sprzyjać kształtowaniu świadomości ekologicznej mieszkańców. W tym celu warto zaplanować koordynację interdyscyplinarnych działań edukacyjnych łączących
+					georóżnorodność z bioróżnorodnością, jednocześnie pełniących funkcję integrującą społeczności lokalne – mieszkańców, środowiska szkolne i akademickie oraz
+					administrację publiczną.</p>
+					<p>Duże zmiany w zakresie aktywności społeczno-gospodarczej i rekreacji zachodzą w ostatnich latach na terenie Szacht, gdzie pierwotnie, po zaprzestaniu
+					eksploatacji surowców ceramicznych, nie przeprowadzono prac rekultywacyjnych. Równocześnie postępowała degradacja wód powierzchniowych. Samoczynna renaturalizacja przyczyniła się do podniesienia walorów krajobrazowych
+					terenu, powodując ponowny wzrost zainteresowania Szachtami skutkujący ich
+					planowym zagospodarowaniem. W efekcie doprowadzono do rekreacyjnego zagospodarowania terenu, udostępniając go tym samym mieszkańcom i turystom.
+					Dostrzeżone abiotyczne walory środowiska geograficznego Szacht, w tym budowa geologiczna oraz ślady działalności wydobywczej, świadcząc o georóżnorodności obszaru, stanowią jedno z bardziej interesujących miejsc w Poznaniu.
+					<p>Debata na temat przyszłości Szacht angażuje wiele grup społecznych o zróżnicowanych poglądach dotyczących poziomu i charakteru zagospodarowania oraz
+					ochrony tego obszaru. Podejmowane decyzje planistyczne i zarządcze, odnoszące
+					się do dalszego rozwoju Szacht, powinny: (1) być oparte na dobrym rozpoznaniu
+					struktur i procesów w środowisku geograficznym oraz oddziaływań między nimi;
+					(2) gwarantować dostarczanie przez Szachty zestawu pożytków dla człowieka,
+					który byłby najszerzej akceptowany społecznie, w tym korzyści gospodarczych,
+					ekologicznych i kulturowych; wymaga to uwzględnienia interakcji między tymi
+					pożytkami – ich wzajemnego wzmacniania lub konkurowania ze sobą; (3) brać
+					pod uwagę rolę Szacht jako części klinów zieleni miasta Poznania oraz łącznika
+					miejskich terenów zieleni z przyrodniczym otoczeniem miasta.</p> -->
 
 					<h3 id="pods">Podsumowanie</h3>
 					<p>Przygotowana książka, będąca efektem interdyscyplinarnych zainteresowań środowiska naukowego, dowodzi ważnej roli małej zlewni Junikowskiego Strumienia w aglomeracji poznańskiej, ale równocześnie motywuje do podejmowania kolejnych działań (administracyjnych, planistycznych, naukowych, edukacyjnych,
@@ -300,24 +459,19 @@
 						zbiorników na Szachtach, sprzątają „dzikie” wysypiska odpadów czy reagują na
 						negatywne zjawiska w zlewni (m.in. poprzez media społecznościowe).</p>
 
-				<p class="fragment"><I style="font-size: small;">"Ochrona georóżnorodności..." oraz "Podsumowanie" to fragmenty rozdziału 23 autorstwa Dawida Abramowicza, Małgorzaty Mazurek, Renaty Graf, Małgorzaty Stępniewskiej i Doroty Wrońskiej-Pilarek 
+				<p class="fragment"><I style="font-size: small;">"Właściwe...", "Ochrona georóżnorodności...", "Kształtowanie..." oraz "Podsumowanie" to fragmenty rozdziału 23 autorstwa Dawida Abramowicza, Małgorzaty Mazurek, Renaty Graf, Małgorzaty Stępniewskiej i Doroty Wrońskiej-Pilarek 
 				pt. "Współczesne i przyszłe wyzwania w zlewni Junikowskiego Strumienia" (s. 421-423, 425) opublikowanego w książce pt. Środowisko geograficzne 
-				zlewni Junikowskiego Strumienia pod red. Małgorzaty Mazurek i Dawida Abramowicza (Bogucki Wydawnictwo Naukowe, Poznań, 2022).</i></p>
+				zlewni Junikowskiego Strumienia pod red. Małgorzaty Mazurek i Dawida Abramowicza (Bogucki Wydawnictwo Naukowe, Poznań, 2022).</i></p>	
 				
-				<h4>Źródła:</h4>
-				<p>
-					<a href="https://wngig.amu.edu.pl/__data/assets/pdf_file/0018/410634/srodowisko-geograficzne-zlewni-junikowskiego-strumienia_.pdf">Środowisko geograficzne zlewni Junikowskiego Strumienia.</a><br>
-					<a href="https://pl.wikipedia.org/wiki/Eutrofizacja">Eutrofizacja</a><br>
-					<a href="https://szachty.pl/">https://szachty.pl/</a><br>
-					<a href="https://www.swedishfreak.com/nature/alle-mans-ratt/">Allemansratten</a></p>
-				
-				<h4 style="font-family: 'Libre Baskerville', serif; margin-top: 10px;"><i>Zachęcam więc odwiedzających, aby korzystając z Szacht przyświecała im 
+				<h4 style="font-family: 'Libre Baskerville', serif; margin-top: 10px; margin: 25px 0;"><i>Zachęcam więc odwiedzających, aby korzystając z Szacht przyświecała im 
 					idea "prawa wszystkich ludzi", co pozwoli naturze trwać, a kolejnym odwiedzającym również się z nich cieszyć ;)</i></h4>
+
+				<h4><a href="źródła.html">Źródła.</a></h4>
 			</div>
 		</div>
     </div>
 
-	<div class="container-md px-2">
+	<div class="container-lg px-2">
 		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-1 border-top">
 			<div class="col-md-4 d-flex align-items-center">
 			  <!--<a href="/" class="mb-3 me-0 mb-md-0 text-body-secondary text-decoration-none lh-1">
@@ -328,7 +482,7 @@
 		
 			<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
 			  <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/mikes_photo_travels/" target="blank"><i class="fa fa-instagram" style="font-size:20px"></i></a></li>
-			  <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=1395851416" target="blank"><i class="fa fa-facebook" style="font-size:20px"></i></a></li>
+			  <!-- <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=1395851416" target="blank"><i class="fa fa-facebook" style="font-size:20px"></i></a></li> -->
 			  <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/channel/UC6K-2vhM8gc7_C1kbUyUh0A" target="_blank"><i class="fa fa-youtube" style="font-size:20px"></i>
 			  </a></li>
 			</ul>
@@ -337,21 +491,24 @@
 
 	<script>
 	
-		jQuery(function($)
-		{
-			//zresetuj scrolla
-			$.scrollTo(0); 
+		// jQuery(function($)
+		// {
+		// 	//zresetuj scrolla
+		// 	$.scrollTo(0); 
 			
-			$('#link1').click(function() { $.scrollTo($('#wpro'), 200); });
-			$('#link2').click(function() { $.scrollTo($('#zagr'), 200); });
-			$('#link3').click(function() { $.scrollTo($('#proc'), 200); });
-			$('#link4').click(function() { $.scrollTo($('#smie'), 200); });
-			$('#link5').click(function() { $.scrollTo($('#eutr'), 200); });
-			$('#link6').click(function() { $.scrollTo($('#ochr'), 200); });
-			$('#link7').click(function() { $.scrollTo($('#pods'), 200); });
-			$('.scrollup').click(function() { $.scrollTo($('body'), 300); });
-		}
-		);
+		// 	$('#link1').click(function() { $.scrollTo($('#wpro'), 200); });
+		// 	$('#link2').click(function() { $.scrollTo($('#zagr'), 200); });
+		// 	$('#link3').click(function() { $.scrollTo($('#proc'), 200); });
+		// 	$('#link4').click(function() { $.scrollTo($('#smie'), 200); });
+		// 	$('#link5').click(function() { $.scrollTo($('#eutr'), 200); });
+		// 	$('#link6').click(function() { $.scrollTo($('#wply'), 200); });
+		// 	$('#link7').click(function() { $.scrollTo($('#wlas'), 200); });
+		// 	$('#link8').click(function() { $.scrollTo($('#ochr'), 200); });
+		// 	$('#link9').click(function() { $.scrollTo($('#pods'), 200); });
+		// 	$('#link10').click(function() { $.scrollTo($('#kszt'), 200); });
+		// 	$('.scrollup').click(function() { $.scrollTo($('body'), 300); });
+		// }
+		// );
 		
 		//pokaż podczas przewijania
 		$(window).scroll(function()

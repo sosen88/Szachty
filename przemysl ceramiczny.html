@@ -7,29 +7,21 @@
 	<meta name="Description" content="Przejdź się po szachtach, zajrzyj w każdy kąt i obejrzyć najlepsze ujęcia z każdej pory roku!" />
 	<meta name="Keywords" content="szachty, poznań, stawy, glinianki, wieża widokowa, natura, ptaki, zieleń, natura, spacer, rezerwat, zachód słońca, wschód słońca, fotograria" /> 
 	<meta name="author" content="Michał Sosnowski" />
+	<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
+	<meta http-equiv="Pragma" content="no-cache">
+	<meta name="viewport" content="width=device-width, initial-scale=1"/>
+	<link rel="stylesheet" type="text/css" href="./css/lightbox.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville&display=swap" rel="stylesheet">
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-	<link rel="stylesheet" type="text/css" href="./css/lightbox.min.css">
+	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
 	<script src="./js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="js/jquery.scrollTo.min.js"></script>
-	<link rel="stylesheet" href="./css/style.css">
+	<!-- <script src="js/jquery.scrollTo.min.js"></script> -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+	<link rel="stylesheet" href="css/style.css">
 
     <style>
-
-	        .obraz{
-            float: left;
-			width: 100%;
-        }
-
-		@media (min-width: 768px) {
-			.obraz{
-				width: 400px;
-			}
-		}
 
         p{
             text-align: justify;
@@ -42,8 +34,8 @@
 
 
 
-		h2{
-			text-align: left;
+		h3,h4{
+			margin: 20px 0 10px;
 		}
 
 		h2,h3,h4{
@@ -57,6 +49,33 @@
 			flex-wrap: wrap;
 		}
 
+		.obraz-horiz {
+			width: 100%;
+			border-radius: 5%;
+			padding: 10px 0;
+		}
+
+		.obraz-verti {
+			width: 50%;
+			border-radius: 5%;
+			padding: 5px;
+			float: right;
+			padding: 10px 0 10px 15px;
+		}
+
+		@media only screen and (min-width: 768px){
+			.obraz-horiz{
+				width: 600px;
+				float: left;
+				padding: 10px 10px 10px 0;
+			}
+
+			.obraz-verti{
+				width: 300px;
+				float: right;
+				
+			}
+		}
 
     </style>
 </head>
@@ -65,69 +84,79 @@
 
 	<a href="#" class="scrollup" style="display: inline;"><img src="img/up.png" alt="scroll" width="50px" style="border-radius: 10%;"></a>
 	
-	<div class="container-md px-2">
-		<header class="d-flex flex-wrap justify-content-start py-3 mb-4 border-bottom">
-		  <a href="index.html" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-			<span class="fs-4"><b><svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16">
-				<path d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 0-.998 1.03l.01.091c.012.077.029.176.054.296.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a4.997 4.997 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1zM2 9l.03-.002.091-.01a4.99 4.99 0 0 0 .296-.054c.241-.049.542-.122.887-.213a60.59 60.59 0 0 0 2.314-.676L5.762 8l-.144-.045a60.59 60.59 0 0 0-2.314-.676 16.705 16.705 0 0 0-.887-.213 4.99 4.99 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2zm7 5-.002-.03a5.005 5.005 0 0 0-.064-.386 16.398 16.398 0 0 0-.213-.888 60.582 60.582 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a4.996 4.996 0 0 0-.064.386L7 14a1 1 0 1 0 2 0zm-5.696-2.134.025-.017a5.001 5.001 0 0 0 .303-.248c.184-.164.408-.377.661-.629A60.614 60.614 0 0 0 5.96 9.23l.103-.111-.147.033a60.88 60.88 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5.063 5.063 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027c-.01.02-.021.048-.036.084a5.09 5.09 0 0 0-.102.283c-.078.233-.165.53-.258.875a60.62 60.62 0 0 0-.572 2.342l-.033.147.11-.102a60.848 60.848 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5.001 5.001 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196.017.025a4.996 4.996 0 0 0 .248.303c.164.184.377.408.629.661A60.597 60.597 0 0 0 6.77 5.96l.111.102-.033-.147a60.602 60.602 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5.006 5.006 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1zm9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a60.619 60.619 0 0 0-2.342-.572l-.147-.033.102.111a60.73 60.73 0 0 0 1.667 1.742c.253.252.477.465.66.629a4.946 4.946 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
-			  </svg>Szachty</b></span>
-		  </a>
-	
-		  <ul class="nav nav-underline"> <!--nav nav-pills-->
-			<li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">Strona główna</a></li><!--nav-link active -->
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Przyroda</a>
-				<ul class="dropdown-menu">
-					<li><a href="flora.html"class="dropdown-item">Flora</a></li>
-					<li><a href="zbiorowiskarosl.html" class="dropdown-item">Zbiorowiska roślinne</a></li>
-					<li><a class="dropdown-item" href="fauna.html">Zwierzęta</a></li>
-					<li><a class="dropdown-item" href="zagrozenia.html">Ochrona Szacht</a></li>
-				</ul>
-			</li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Galerie</a>
-				<ul class="dropdown-menu">
-				  <li><a class="dropdown-item" href="wiosna.html">Wiosenna</a></li>
-				  <li><a class="dropdown-item" href="lato.html">Letnia</a></li>
-				  <li><a class="dropdown-item" href="jesien.html">Jesienna</a></li>
-				  <li><a class="dropdown-item" href="zima.html">Zimowa</a></li>
-				</ul>
-			  </li>
-			<li class="nav-item dropdown">
-				<a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Historia</a>
-				<ul class="dropdown-menu">
-				  <li><a class="dropdown-item" href="przemysl ceramiczny.html">Przemysł ceramiczny</a></li>
-				  <li><a class="dropdown-item" href="geologia.html">Geologia</a></li>
-				</ul>
-			  </li>
-			<li class="nav-item"><a href="dojazd.html" class="nav-link">Dojazd</a></li>  
-			<li class="nav-item"><a href="o mnie.html" class="nav-link">O mnie</a></li>
-		  </ul>
-		</header>
-	</div>
+	<nav class="navbar fixed-top navbar-expand-md navbar-light" aria-label="Fourth navbar example">
+        <div class="container-fluid">
+            <a href="index.html" class="d-flex align-items-center mb-0 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
+                <span class="fs-3"><b><svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-flower1" viewBox="0 0 16 16" style="padding-bottom: 4px;">
+                    <path d="M6.174 1.184a2 2 0 0 1 3.652 0A2 2 0 0 1 12.99 3.01a2 2 0 0 1 1.826 3.164 2 2 0 0 1 0 3.652 2 2 0 0 1-1.826 3.164 2 2 0 0 1-3.164 1.826 2 2 0 0 1-3.652 0A2 2 0 0 1 3.01 12.99a2 2 0 0 1-1.826-3.164 2 2 0 0 1 0-3.652A2 2 0 0 1 3.01 3.01a2 2 0 0 1 3.164-1.826zM8 1a1 1 0 0 0-.998 1.03l.01.091c.012.077.029.176.054.296.049.241.122.542.213.887.182.688.428 1.513.676 2.314L8 5.762l.045-.144c.248-.8.494-1.626.676-2.314.091-.345.164-.646.213-.887a4.997 4.997 0 0 0 .064-.386L9 2a1 1 0 0 0-1-1zM2 9l.03-.002.091-.01a4.99 4.99 0 0 0 .296-.054c.241-.049.542-.122.887-.213a60.59 60.59 0 0 0 2.314-.676L5.762 8l-.144-.045a60.59 60.59 0 0 0-2.314-.676 16.705 16.705 0 0 0-.887-.213 4.99 4.99 0 0 0-.386-.064L2 7a1 1 0 1 0 0 2zm7 5-.002-.03a5.005 5.005 0 0 0-.064-.386 16.398 16.398 0 0 0-.213-.888 60.582 60.582 0 0 0-.676-2.314L8 10.238l-.045.144c-.248.8-.494 1.626-.676 2.314-.091.345-.164.646-.213.887a4.996 4.996 0 0 0-.064.386L7 14a1 1 0 1 0 2 0zm-5.696-2.134.025-.017a5.001 5.001 0 0 0 .303-.248c.184-.164.408-.377.661-.629A60.614 60.614 0 0 0 5.96 9.23l.103-.111-.147.033a60.88 60.88 0 0 0-2.343.572c-.344.093-.64.18-.874.258a5.063 5.063 0 0 0-.367.138l-.027.014a1 1 0 1 0 1 1.732zM4.5 14.062a1 1 0 0 0 1.366-.366l.014-.027c.01-.02.021-.048.036-.084a5.09 5.09 0 0 0 .102-.283c.078-.233.165-.53.258-.874a60.6 60.6 0 0 0 .572-2.343l.033-.147-.11.102a60.848 60.848 0 0 0-1.743 1.667 17.07 17.07 0 0 0-.629.66 5.06 5.06 0 0 0-.248.304l-.017.025a1 1 0 0 0 .366 1.366zm9.196-8.196a1 1 0 0 0-1-1.732l-.025.017a4.951 4.951 0 0 0-.303.248 16.69 16.69 0 0 0-.661.629A60.72 60.72 0 0 0 10.04 6.77l-.102.111.147-.033a60.6 60.6 0 0 0 2.342-.572c.345-.093.642-.18.875-.258a4.993 4.993 0 0 0 .367-.138.53.53 0 0 0 .027-.014zM11.5 1.938a1 1 0 0 0-1.366.366l-.014.027c-.01.02-.021.048-.036.084a5.09 5.09 0 0 0-.102.283c-.078.233-.165.53-.258.875a60.62 60.62 0 0 0-.572 2.342l-.033.147.11-.102a60.848 60.848 0 0 0 1.743-1.667c.252-.253.465-.477.629-.66a5.001 5.001 0 0 0 .248-.304l.017-.025a1 1 0 0 0-.366-1.366zM14 9a1 1 0 0 0 0-2l-.03.002a4.996 4.996 0 0 0-.386.064c-.242.049-.543.122-.888.213-.688.182-1.513.428-2.314.676L10.238 8l.144.045c.8.248 1.626.494 2.314.676.345.091.646.164.887.213a4.996 4.996 0 0 0 .386.064L14 9zM1.938 4.5a1 1 0 0 0 .393 1.38l.084.035c.072.03.166.064.283.103.233.078.53.165.874.258a60.88 60.88 0 0 0 2.343.572l.147.033-.103-.111a60.584 60.584 0 0 0-1.666-1.742 16.705 16.705 0 0 0-.66-.629 4.996 4.996 0 0 0-.304-.248l-.025-.017a1 1 0 0 0-1.366.366zm2.196-1.196.017.025a4.996 4.996 0 0 0 .248.303c.164.184.377.408.629.661A60.597 60.597 0 0 0 6.77 5.96l.111.102-.033-.147a60.602 60.602 0 0 0-.572-2.342c-.093-.345-.18-.642-.258-.875a5.006 5.006 0 0 0-.138-.367l-.014-.027a1 1 0 1 0-1.732 1zm9.928 8.196a1 1 0 0 0-.366-1.366l-.027-.014a5 5 0 0 0-.367-.138c-.233-.078-.53-.165-.875-.258a60.619 60.619 0 0 0-2.342-.572l-.147-.033.102.111a60.73 60.73 0 0 0 1.667 1.742c.253.252.477.465.66.629a4.946 4.946 0 0 0 .304.248l.025.017a1 1 0 0 0 1.366-.366zm-3.928 2.196a1 1 0 0 0 1.732-1l-.017-.025a5.065 5.065 0 0 0-.248-.303 16.705 16.705 0 0 0-.629-.661A60.462 60.462 0 0 0 9.23 10.04l-.111-.102.033.147a60.6 60.6 0 0 0 .572 2.342c.093.345.18.642.258.875a4.985 4.985 0 0 0 .138.367.575.575 0 0 0 .014.027zM8 9.5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+                  </svg>Szachty</b></span>
+              </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample04" aria-controls="navbarsExample04" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
 
-    <div class="container-md px-2 mb-5">
+            <div class="collapse navbar-collapse" id="navbarsExample04">
+            <ul class="navbar-nav ms-auto mb-2 mb-md-0">
+                <li class="nav-item"><a href="index.html" class="nav-link" aria-current="page">STRONA GŁÓWNA</a></li><!--nav-link active -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Przyroda</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="flora.html">Flora</a></li>
+                        <li><a class="dropdown-item" href="zbiorowiskarosl.html">Zbiorowiska roślinne</a></li>
+                        <li><a class="dropdown-item" href="fauna.html">Zwierzęta</a></li>
+                        <li><a class="dropdown-item" href="zagrozenia.html">Ochrona Szacht</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Galerie</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="wiosna.html">Wiosenna</a></li>
+                      <li><a class="dropdown-item" href="lato.html">Letnia</a></li>
+                      <li><a class="dropdown-item" href="jesien.html">Jesienna</a></li>
+                      <li><a class="dropdown-item" href="zima.html">Zimowa</a></li>
+					  <li><a class="dropdown-item" href="zachody.html">Zachody słońca</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Historia</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="przemysl ceramiczny.html">Przemysł ceramiczny</a></li>
+                      <li><a class="dropdown-item" href="geologia.html">Geologia</a></li>
+                    </ul>
+                  </li>
+                <li class="nav-item"><a href="dojazd.html" class="nav-link">Dojazd</a></li>  
+                <li class="nav-item"><a href="o mnie.html" class="nav-link">O mnie</a></li>
+            </ul>
+            
+            <!-- <form>
+                <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+            </form> -->
+            </div>
+        </div>
+    </nav>
+
+    <div class="conti" style="margin-top: 80px;">
 		<div class="calosc">
 			<div class="spislewa item">
 				<div class="spistresci">
 					<ul>
-						<li><a id="link1" href="#">Wstęp</a></li>
-						<li><a id="link2" href="#">Wprowadzenie</a></li>
-						<li><a id="link3" href="#">Festung Posen i „odkrycie" doliny Junikowskiego Strumienia – faza I</a></li>
+						<!-- <li><a id="link1" href="#">Wstęp</a></li> -->
+						<li><a id="link2" href="#wpro">Wprowadzenie</a></li>
+						<li><a id="link3" href="#fest">Festung Posen i „odkrycie" doliny Junikowskiego Strumienia – faza I</a></li>
 						
 							<ul>
-								<li><a id="link4" href="#">Cegielnia „królewska” w Żabikowie</a></li>
-								<li><a id="link5" href="#">Cegielnia Rudnicze, Eduard Ephraim i Zygmunt Szymański</a></li>
-								<li><a id="link6" href="#">Cegielnia Moritza Victora w Fabianowie</a></li>
-								<li><a id="link7" href="#">Cegielnie żabikowskie– Krombachowie, Fechnerowie i Suwalski</a></li>
-								<li><a id="link8" href="#">Cegielnia Hugo Kindlera w Świerczewie</a></li>
-								<li><a id="link9" href="#">Cegielnia Górczyn</a></li>
-								<li><a id="link10" href="#">Cegielnia Kotowo</a></li>
-								<li><a id="link11" href="#">Warunki pracy i strajki robotników cegielni</a></li>
+								<li><a id="link4" href="#krol">Cegielnia „królewska” w Żabikowie</a></li>
+								<li><a id="link5" href="#rudn">Cegielnia Rudnicze, Eduard Ephraim i Zygmunt Szymański</a></li>
+								<li><a id="link6" href="#mori">Cegielnia Moritza Victora w Fabianowie</a></li>
+								<li><a id="link7" href="#zabi">Cegielnie żabikowskie– Krombachowie, Fechnerowie i Suwalski</a></li>
+								<li><a id="link8" href="#hugo">Cegielnia Hugo Kindlera w Świerczewie</a></li>
+								<li><a id="link9" href="#gorc">Cegielnia Górczyn</a></li>
+								<li><a id="link10" href="#koto">Cegielnia Kotowo</a></li>
+								<li><a id="link11" href="#waru">Warunki pracy i strajki robotników cegielni</a></li>
 							</ul>
-						<li><a id="link12" href="#">Cegielnie w zlewni Junikowskiego Strumienia w czasie II wojny światowej – faza II</a></li>
-						<li><a id="link13" href="#">Powojenne dzieje cegielni w dolinie Junikowskiego Strumienia – faza III</a></li>
-						<li><a id="link14" href="#">Podsumowanie</a></li>
+						<li><a id="link12" href="#cegi">Cegielnie w zlewni Junikowskiego Strumienia w czasie II wojny światowej – faza II</a></li>
+						<li><a id="link13" href="#powo">Powojenne dzieje cegielni w dolinie Junikowskiego Strumienia – faza III</a></li>
+						<li><a id="link14" href="#pods">Podsumowanie</a></li>
 					</ul>
 				</div>
 			</div>
@@ -196,7 +225,7 @@
 				i modernizowano system umocnień (Biesiadka i in. 2006).</p>
 
 				<h4 id="krol">Cegielnia „królewska” w Żabikowie</h4>
-				<p>Cegielnia w  Żabikowie (ryc.  1), określana „królewską”, rozpoczęła wydobycie
+				<p><img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 1.png" alt="ceg-zabikowo"/>Cegielnia w  Żabikowie (ryc.  1), określana „królewską”, rozpoczęła wydobycie
 				surowca w 1832 r. Znajdowała się ona w okolicy dzisiejszego zbiegu ulic Puszkina
 				i Powstańców Wielkopolskich, w pobliżu Junikowskiego Strumienia. Technologia wydobycia surowca i  produkcji cegły była jeszcze dość prymitywna. Glinę
 				wydobywano ręcznie i taczkami transportowano na teren fabryki. Tam surowiec
@@ -205,7 +234,7 @@
 				kształtował cegły. Półfabrykaty odstawiano do wysuszenia, pozostawiając je na
 				ubitym i wysypanym piaskiem placu lub w zadaszonych szopach, tzw. suszarniach. Proces ten trwał od 15 do 30 dni. Ostatnim stadium produkcji było wypalenie cegły w piecu (ryc. 2). Żabikowska cegielnia korzystała z ośmiu pieców
 				polnych zwanych mielerzami (Bidermann 1901, s. 1179).</p>
-				<p>Piec tego typu układano z surowych, wysuszonych kształtek na rzucie kwadratu w formie piramidy. Wnętrze poprzecinane było siecią kanałów paleniskowych
+				<p><img class="obraz-verti" src="img/Przemysl ceramiczny/Ryc 2.png" alt="ceg-zabikowo"/>Piec tego typu układano z surowych, wysuszonych kształtek na rzucie kwadratu w formie piramidy. Wnętrze poprzecinane było siecią kanałów paleniskowych
 				i szczelin tworzących rodzaj rusztu, który wypełniony był materiałami palnymi,
 				takimi jak: drewno, torf, a potem węgiel brunatny i kamienny. Gdy mielerz był
 				już gotowy, rozpalano ogień we wszystkich paleniskach i utrzymywano go od 4
@@ -224,7 +253,7 @@
 				Oficjalna wizytacja mogła świadczyć,
 				że cegielnia w dolinie Junikowskiego
 				Strumienia była uznana za zakład
-				wzorcowy. Wojskowy inżynier nadzorujący budowę poznańskich fortyfikacji, generał dywizji Moritz von
+				wzorcowy. <img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 3.png" alt="ceg-zabikowo"/>Wojskowy inżynier nadzorujący budowę poznańskich fortyfikacji, generał dywizji Moritz von
 				Prittwitz und Gaffron, oszacował, że
 				w trzech cegielniach: na Wierzbaku,
 				Ratajach oraz w Żabikowie w latach
@@ -232,12 +261,7 @@
 				125 mln sztuk cegły. Prawdopodobnie z tego materiału wzniesiono dużą
 				część tzw. twierdzy poligonalnej,
 				która została rozebrana na przełomie
-				Ryc. 1. Cegielnia „królewska” na mapie z lat 1860–1862
-				Źródło: Urmesstischblatt arkusz 1997 Posen Süd, na podstawie Maćkowiak (2006).
-				Ryc. 2. Piec mielerzowy do wypału cegieł
-				w  cegielni Rothaus, dziś Osiny koło
-				Opola
-				Fot. Urs Zimmermann, przed 1916 r.
+				
 				
 				XIX i XX w. Do dzisiaj cegłę z Żabikowa, sygnowaną literą „Z”, można dostrzec
 				w  budynku Śluzy Katedralnej na Ostrowie Tumskim wybudowanej w  1839  r.
@@ -248,13 +272,10 @@
 				brak informacji na temat ich właścicieli. Sądząc po liczbie suszarni, które ustawiano równolegle w jednym rzędzie, największe wydobycie prowadzono w cegielni żabikowskiej, gdzie zaznaczono ich aż dziewięć. Na zdecydowanie mniejszą
 				skalę produkowano cegły w Kotowie (3 suszarnie), Fabianowie (3 suszarnie) oraz
 				Junikowie (4 suszarnie).
-				Ryc. 3. Pierwsze cegielnie w dolinie Junikowskiego Strumienia na mapie z lat 40. XIX w.
-				1 – cegielnia tzw. „królewska” w Żabikowie, 2 – cegielnia w Kotowie, 3 – cegielnia w Junikowie, 4 –
-				cegielnia w Fabianowie
-				Źródło: Plan Poznania i okolic sprzed 1900 r., ze zbiorów PTPN w serwisie CYRYL.</p>
+				</p>
 				
 				<h4 id="rudn">Cegielnia Rudnicze, Eduard Ephraim i Zygmunt Szymański</h4>
-				<p></p>Pierwszą rozpoznaną cegielnią prywatną w zlewni Junikowskiego Strumienia był
+				<p>Pierwszą rozpoznaną cegielnią prywatną w zlewni Junikowskiego Strumienia był
 				zakład Edwarda Ephraima. Wcześniejszym właścicielem folwarku w Rudniczu był
 				emerytowany ksiądz Ignacy Cwojdziński, który popadł w  konflikt z  miejscową
 				ludnością poprzez częste wezwania policji w  związku z  zakłócaniem porządku
@@ -263,7 +284,7 @@
 				z powodu braku dowodów skazano ich tylko na pięć lat więzienia za inne wykroczenia. Na miejscu zbrodni do dzisiaj stoi krzyż (Czabański 2013, s. 58–59).
 				Niedługo po tej tragedii 150-hektarowy majątek, obejmujący dwór z parkiem, zakupił poznański przedsiębiorca żydowskiego pochodzenia Edward Ephraim. Od
 				1840 r. prowadził on kaflarnię i fabrykę pieców, a jego sklep firmowy mieścił się
-				na Wildzie, przy ul. Lipowej 2. W ofercie firmy znajdowały się popularne wśród
+				na Wildzie, przy ul. Lipowej 2. <p><img class="obraz-verti" src="img/Przemysl ceramiczny/Ryc 4.png" alt="ceg-rudnicze"/>W ofercie firmy znajdowały się popularne wśród
 				mieszkańców Poznania piece kaflowe
 				w  najróżniejszych formach i  kształtach (ryc.  4). Działalność ta pozwoliła przedsiębiorcy na zakup folwarku
 				oraz rozszerzenie oferty o  produkcję
@@ -271,59 +292,55 @@
 				jego wnuk Leo Ephraim, który prowadził firmę aż do 1920  r. (Goszczyńska 2004, s.  98–99). Po odzyskaniu
 				przez Polskę niepodległości, Ephraim opuścił Rudnicze, przenosząc się
 				na niemieckie Pomorze, do Lęborka.
-				W czasie pobytu w Rudniczu Ephraim znacznie udoskonalił proces technologiczny wypalania cegły. Wydaje
+				W czasie pobytu w Rudniczu Ephraim znacznie udoskonalił proces technologiczny wypalania cegły. 
+				<img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 5.png" alt="ceg-rudnicze"/>Wydaje
 				się, że jako pierwszy z fabrykantów na
 				omawianym terenie wykorzystał piec
 				kręgowy (pierścieniowy), zwany od nazwiska wynalazcy hoffmanowskim (ryc. 5).
 				Piec ten, opatentowany w 1858 r., umożliwiał nieprzerwane (wcześniejsze zakłady
-				pracowały sezonowo od kwietnia do października) i kontrolowane wypalanie. Innowacja polegała na ułożeniu komór palnych w okręgu lub owalu, wokół centralnie
+				pracowały sezonowo od kwietnia do października) i kontrolowane wypalanie. 
+				
+				Innowacja polegała na ułożeniu komór palnych w okręgu lub owalu, wokół centralnie
 				umieszczonego pieca z kominem. Półfabrykaty w komorach palnych umieszczano
 				w formie kwadratowych bloków, a wejścia do nich zamurowywano. Piec opalany
 				od góry węglem mógł osiągnąć temperaturę nawet 1000°C. Dzięki piecowi Hoffmana proces technologiczny znacznie się skrócił, gdyż czas wypalania zajmował
 				jedynie 2–3 dni (Piech 2001, s. 243–246). Jednorazowo piec na Rudniczu mógł
-				pomieścić 360 tys. cegieł, co przynosiło roczny wynik około 7–8 mln sztuk (Krokowicz 2013). Warto dodać, że w piecu hoffmanowskim wykorzystywano również strychy nad paleniskiem jako miejsce do suszenia półfabrykatów. Poznański
+				pomieścić 360 tys. cegieł, co przynosiło roczny wynik około 7–8 mln sztuk (Krokowicz 2013). 
+				<img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 6.png" alt="ceg-rudnicze"/>
+				Warto dodać, że w piecu hoffmanowskim wykorzystywano również strychy nad paleniskiem jako miejsce do suszenia półfabrykatów. Poznański
 				przedsiębiorca udoskonalił również technologię wydobycia i transportu surowca.
-				Ryc. 4. Reklama prasowa cegielni Rudnicze
-				Edwarda Ephraima
-				Źródło: Zduńskie powieści (2020).
-				
-				Ryc. 5. Piec kręgowy (tzw. hoffmanowski) na terenie cegielni Rudnicze na zdjęciu z okresu międzywojennego
-				Źródło: Fundacja Co pozostało?
-				Ryc. 6. Koparka parowa i kolejka linowa w Rudniczu
-				Źródło: Fundacja Co Pozostało?
-				
-				Najwartościowszy i najgłębiej położony surowiec ilasty wydobywano specjalną koparką parową (ryc. 6), której dziesięciometrowe ramię wybierało urobek i wsypywało go do wagonetek kolejki linowej (Krokowicz 2013, s. 116). Gotowy produkt
+				<p>Najwartościowszy i najgłębiej położony surowiec ilasty wydobywano specjalną koparką parową (ryc. 6), której dziesięciometrowe ramię wybierało urobek i wsypywało go do wagonetek kolejki linowej (Krokowicz 2013, s. 116). Gotowy produkt
 				z cegielni dostarczano do bocznicy kolejowej w okolicy Junikowa łączącej Poznań
 				z Frankfurtem nad Odrą.</p>
 				<p>O olbrzymiej skali produkcji cegły w Rudniczu świadczy liczba suszarni, które
-				powstały przy zakładzie. Na mapie z 1919 r. (ryc. 7) można doliczyć się przynajmniej 25 budynków. Bez wątpienia wiele poznańskich kamienic z przełomu XIX
+				powstały przy zakładzie.<img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 7.png" alt="ceg-rudnicze"/>
+				Na mapie z 1919 r. (ryc. 7) można doliczyć się przynajmniej 25 budynków. Bez wątpienia wiele poznańskich kamienic z przełomu XIX
 				i XX w. wzniesionych zostało z cegieł z charakterystycznym stemplem z inicjałami właściciela „E.E” (ryc. 8). Prawdopodobnie z najstarszego wyrobiska w Rudniczu uczyniono w  parku dworskim staw o  charakterystycznym wydłużonym
 				kształcie, a w kolejnym wyrobisku powstał zbiornik zwany Starą Babą (Komorowska 2020). W następnym etapie wydobycia, już w XX w., wzdłuż linii kolejki
 				linowej powstawały wyrobiska, zamienione następnie na stawy: Kachlarski, Głęboki Dół oraz Karpętaj (por. rozdz. 6).</p>
 				<p>Po emigracji Ephraimów majątek wraz z cegielnią zakupił nauczyciel, filolog,
 				doktor filozofii, a zarazem przedsiębiorca i aktywny działacz społeczny, Zygmunt
-				Szymański (ryc. 9). Urodzony w Ostrowie Wielkopolskim w 1871 r., Szymański
+				Szymański (ryc. 9). <img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 8.png" alt="ceg-rudnicze" />Urodzony w Ostrowie Wielkopolskim w 1871 r., Szymański
 				po ukończeniu studiów we Wrocławiu wyjechał do Galicji, gdzie pracował jako
-				Ryc. 7. Cegielnie Rudnicze i Junikowo na mapie topograficznej z 1919 r., kolorem niebieskim zaznaczono Junikowski Strumień
-				Źródło: Messtischblatt Posen-Sud 1919, Archiwum Map Zachodniej Polski.
+			
 			
 				nauczyciel. W  1919  r. przeniósł się
 				wraz z rodziną do Poznania, gdzie zajął się nauczaniem języka francuskiego w Gimnazjum im. Karola Marcinkowskiego (Krokowicz 2013, s. 117).</p>
 				<p>Wkrótce zakupił majątek Józefat koło Brodnicy na Pomorzu, który w 1922 r. został zniszczony przez
 				pożar. W efekcie Szymański sprzedał
 				nieruchomość i kupił 150-hektarowy
-				majątek Rudnicze. Zmodernizowana
-				przez niego cegielnia, mimo kryzysu gospodarczego, utrzymała status
+				majątek Rudnicze. 
+				Zmodernizowana
+				przez niego cegielnia, mimo kryzysu gospodarczego, 
+				utrzymała status
 				jednego z  największych zakładów
 				w zlewni Junikowskiego Strumienia,
 				zatrudniając około 100 pracowników.
+				<img class="obraz-verti" src="img/Przemysl ceramiczny/Ryc 9.png" alt="ceg-rudnicze"/>
 				W  czasach kryzysu, mimo niewypłacalności firmy, właścicielowi udało się utrzymać produkcję i stan zatrudnienia. W tym celu rozparcelował część
 				majątku, a  działki, na tzw. odrobek, udostępnione zostały pracownikom wraz
-				Ryc. 8. Cegły produkowane w cegielni w Rudniczu sygnowane były pieczęcią z inicjałami
-				właściciela Edwarda Ephraima
-				Źródło: wikipedia/Rudnicze(Poznań).
-				Ryc. 9. Doktor Zygmunt Szymański, właściciel cegielni od 1923 r.
-				Źródło: Fundacja Co Pozostało?
+				
+
 			
 				z materiałami budowlanymi niezbędnymi do wzniesienia domów. W ten sposób
 				powstało osiedle Rudnicze. Jego mieszkańcy na cześć Zygmunta Szymańskiego
@@ -361,9 +378,10 @@
 				zmarł 5 lutego 1906 r., miesiąc po wmurowaniu kamienia węgielnego nowej synagogi. Była to duża strata dla poznańskiej gminy oraz całej inwestycji. Rodzina
 				Victora Moritza wsparła inwestycję synagogi, ofiarując 12 tys. marek, pokrywając
 				w części koszty budowy i wykończenia wnętrza (Witkowski 2020). Być może rodzina zapewniła również dostawę cegieł z zakładu produkcyjnego w Fabianowie.</p>
-				<p>Cegielnia w Fabianowie prowadziła produkcję na podobną skalę jak ta w Junikowie. Na mapie z 1919 r. (ryc. 10) dostrzec można około dwunastu suszarni. Wydobycie surowca prowadzono w wyrobisku w pobliżu ulicy Głogowskiej,
-				Ryc. 10. Cegielnie Fabianowo i Kotowo na mapie topograficznej z 1919 r.
-				Źródło: Messtischblatt Posen-Sud 1919, Archiwum Map Zachodniej Polski.
+				<p>Cegielnia w Fabianowie prowadziła produkcję na podobną skalę jak ta w Junikowie. 
+					<img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 10.png" alt="ceg-moritza"/>
+				Na mapie z 1919 r. (ryc. 10) dostrzec można około dwunastu suszarni. Wydobycie surowca prowadzono w wyrobisku w pobliżu ulicy Głogowskiej,
+			
 				
 				w którym później powstał Staw Nowakowskiego. Transport cegieł z Fabianowa
 				odbywał się kolejką linową przebiegającą przez teren fabryki w  Rudniczu, do
@@ -386,9 +404,11 @@
 				dziś w najbliższej okolicy. Należy sądzić, że w sprawie tych odkrywek w kwietniu 1916 r. Krombach wystąpił na drodze sądowej przeciwko swemu sąsiadowi
 				Augustowi Cieszkowskiemu (młodszemu). Przedsiębiorca prosił o zezwolenie na
 				przekopanie przez jego teren rowu odwadniającego, który odprowadzałby wodę
-				opadową z wyrobiska gliny do Junikowskiego Strumienia (Malepszak 1999). Warto odnotować, że jedno z wyrobisk powstało na południe od zakładu, z drugiej
+				opadową z wyrobiska gliny do Junikowskiego Strumienia (Malepszak 1999). 
+				Warto odnotować, że jedno z wyrobisk powstało na południe od zakładu, z drugiej
 				strony dzisiejszej ulicy Powstańców Wielkopolskich, gdzie obecnie znajduje się
-				staw. W 1919 r. Krombachowie posiadali około pięciu suszarni, co sytuowało ich
+				staw. <img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 11.png" alt="ceg-zabikowskie"/>
+				W 1919 r. Krombachowie posiadali około pięciu suszarni, co sytuowało ich
 				wśród mniejszych producentów działających w dolinie Junikowskiego Strumienia
 				(ryc. 11, nr 1). Transport cegły odbywał się kolejką wąskotorową wzdłuż dzisiejszej ulicy Stefana Okrzei do linii kolejowej Poznań–Wrocław.</p>
 				<p>Kryzys gospodarczy lat 20. XX w. i związana z nim zapaść gospodarcza mocno dały się we znaki właścicielom żabikowskiej cegielni. W 1927 r. zadłużeni
@@ -398,22 +418,19 @@
 				a  produkcja prawdopodobnie została wstrzymana (Jaruszkiewicz, Leonarczyk
 				1994, s. 12).</p>
 				<p>Na przełomie XIX i XX w. w Żabikowie powstała kolejna cegielnia. Utworzył ją pochodzący z  Lubonia sztukator i  przedsiębiorca Bolesław Richelieu.
-				
 				Prawdopodobnie zaraz po powrocie z  Berlina w  1902  r. założył, drugą obok
 				Krombacha, cegielnię (Adressbuch Posen 1903, s.  25). Prowadził on również
 				firmę sztukatorską współpracującą z przedsiębiorstwem budowlanym architekta
 				Paula Pitta (ryc. 12).</p>
-				<p>Richelieu uważany był za jednego z najlepszych sztukatorów w Poznaniu. Jego
-				dzieła zdobią wiele kamienic Jeżyc, Łazarza i Wildy. Flagowe dzieło artysty stanowi jego dom u zbiegu ulic Grunwaldzkiej i Stolarskiej, który ozdobiony został
+				<p>Richelieu uważany był za jednego z najlepszych sztukatorów w Poznaniu. 
+					<img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 12.png" alt="ceg-zabikowskie"/>
+				Jego dzieła zdobią wiele kamienic Jeżyc, Łazarza i Wildy. Flagowe dzieło artysty stanowi jego dom u zbiegu ulic Grunwaldzkiej i Stolarskiej, który ozdobiony został
 				fantastyczną dekoracją zwierzęcą i  roślinną (Skuratowicz 1991, s.  351). Prawdopodobnie kilka lat po uruchomieniu produkcji cegły, Richelieu zrezygnował
 				Ryc. 11. Cegielnie w Żabikowie na mapie topograficznej z 1919 r.
 				1 – Krombacha, 2 – Suwalskiego, 3 – Fechnera
 				Źródło: Messtischblatt Posen-Sud 1919, Archiwum Map Zachodniej Polski.
-				Ryc. 12. Cegielnia Bolesława Richelieu na ogłoszeniu z księgi adresowej miasta Poznania
-				z 1903 r.
-				Źródło: Wielkopolska Biblioteka Cyfrowa.
-				Poznańskie Szachty, czyli 150 lat przemysłu ceramicznego w zlewni Junikowskiego Strumienia
-				363
+			
+				<img class="obraz-verti" src="img/Przemysl ceramiczny/Ryc 13.png" alt="ceg-zabikowskie"/>
 				z  prowadzenia zakładu. Nowym
 				właścicielem cegielni został kolega z  branży, kupiec, architekt i  kamienicznik z  Łazarza, Jan Suwalski
 				(ryc. 13). Od 1907 r. produkcja materiałów budowlanych odbywała się pod
@@ -435,18 +452,11 @@
 				bydła, Otto Fechner z  Poznania,
 				a później w latach 1923–1926 interes przejął jego syn Richard, który prowadził
 				firmę do wybuchu II wojny światowej. Cegielnia Fechnera (ryc. 14) znajdowała
-				się na zachód od fabryki Krombachów, przy ul. Źródlanej. W tym miejscu wznosi
-				Ryc. 13. Portret Jana Suwalskiego, jednego
-				z właścicieli cegielni w Żabikowie
-				Źródło: Kronika Miasta Poznania 1998, R. 66, 3,
-				Święty Łazarz.
-				Ryc. 14. Cegielnia Fechnerów w Żabikowie w 1949 r., widok z ulicy Kościuszki
-				Źródło: Wieści Lubońskie 2019, 4, 341.
-				Michał Hirsch
-				364
-				się obecnie osiedle Spółdzielni Mieszkaniowej „Lubonianka”. Surowiec do produkcji cegieł w zakładzie Fechnerów pozyskiwano z wyrobiska zlokalizowanego
+				się na zachód od fabryki Krombachów, przy ul. Źródlanej. 
+				W tym miejscu wznosi się obecnie osiedle Spółdzielni Mieszkaniowej „Lubonianka”. Surowiec do produkcji cegieł w zakładzie Fechnerów pozyskiwano z wyrobiska zlokalizowanego
 				po drugiej stronie Junikowskiego Strumienia, w miejscu obecnego Wzgórza im.
-				Jana Pawła II. Przedsiębiorstwo było jednym z mniejszych w okolicy. Na mapie
+				Jana Pawła II. <img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 14.png" alt="ceg-zabikowskie"/>
+				Przedsiębiorstwo było jednym z mniejszych w okolicy. Na mapie
 				z 1919 r. (ryc. 11, nr 3) można zauważyć jedynie cztery suszarnie. Transport gotowego produktu odbywał się za pomocą wozów konnych. W stajniach Fechnera
 				utrzymywano 22 konie, które obsługiwało ośmiu furmanów: sześć par zaprzęgano do wozów transportowych do rozwożenia cegieł, a trzy pary dostarczały
 				węgiel z rampy w Luboniu do cegielnianego pieca. Jednym z furmanów transportujących cegły na place budowy był Ignacy Cybulski. Według wspomnień Cybulskiego w jednym miesiącu zakład był w stanie wyprodukować pół miliona cegieł.
@@ -455,7 +465,7 @@
 				<h4 id="hugo">Cegielnia Hugo Kindlera w Świerczewie</h4>
 				<p>Jak podał do wiadomości „Postęp”, 26 czerwca 1896 r. architekt i budowniczy
 				Hugo Kindler z Poznania uruchomił cegielnię w Świerczewie (ryc. 14), która powstała w zakupionym przez niego folwarku o powierzchni 139 ha (Postęp 1896).
-				Właściciel zakładu był polskim posłem do sejmu (niem. Landstagu) w Berlinie,
+				<img class="obraz-verti" src="img/Przemysl ceramiczny/Ryc 15.png" alt="ceg-hugo"/>Właściciel zakładu był polskim posłem do sejmu (niem. Landstagu) w Berlinie,
 				członkiem Korporacji Budowniczych Poznańskich „Strzecha” oraz loży „wolnomyślicieli”. Jako typowy architekt-przedsiębiorca tego czasu, Kindler inwestował
 				zarobione pieniądze w nieruchomości. Był właścicielem kilku kamieniec w Poznaniu. Do najokazalszych należał dom architekta przy ulicy Wielkiej 9, a także
 				kamienice przy ulicy Działyńskich 1 (tam znajdowało się biuro architekta) czy
@@ -471,12 +481,13 @@
 				z  pozoru nieprzystające do siebie
 				funkcje – industrialne zabudowania
 				cegielni z  9-hektarowym parkiem
-				krajobrazowym (ryc. 16). Oprócz budynków produkcyjnych, w skład rozległego założenia wchodziły też dom
+				krajobrazowym (ryc. 16). 
+				<img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 16.png" alt="ceg-hugo"/>Oprócz budynków produkcyjnych, w skład rozległego założenia wchodziły też dom
 				właściciela, znajdujący się przy ulicy
 				Leszczyńskiej, a w głębi działki dom
 				gościnny, budynki mieszkalne dla
 				pracowników oraz stajnia, wozownia
-				Ryc. 15. Nekrolog Hugona Kindlera z  Kuriera Poznańskiego z dn. 14.08.1930 r.
+				
 			
 				i spichlerz (Matusik 1997, Goszczyńska 2004, s. 118–121, Pazder, Dolczewska
 				2008, s. 170). Prawdopodobnie stawy znajdujące się najbliżej cegielni, takie jak
@@ -484,7 +495,7 @@
 				dzisiejszych stawów: stawu Pod Parkiem oraz stawu Pod Stajnią. Sądząc po pięciu
 				budynkach suszarni, które można zauważyć na mapie z 1919 r. (ryc. 15), w Świerczewie produkcja odbywała się na znacznie mniejszą skalę niż w Rudniczu, Junikowie czy Fabianowie.</p>
 				<h4 id="gorc">Cegielnia Górczyn</h4>
-				<p>Rok po rozpoczęciu działalności przez Hugona Kindlera, w sąsiednim Górczynie
+				<p><img class="obraz-verti" src="img/Przemysl ceramiczny/Ryc 17.png" alt="ceg-gorczyn"/>Rok po rozpoczęciu działalności przez Hugona Kindlera, w sąsiednim Górczynie
 				zakład uruchomił kolejny poznański budowniczy Ludwik Frankiewicz (ryc. 17),
 				który był również właścicielem cegielni przy ulicy Gnieźnieńskiej na Głównej.
 				Urodzony 27 sierpnia 1858 r., po ukończeniu studiów z zakresu architektury i kilkuletniej praktyce jako architekt miejski w Warszawie, w 1883 r. powrócił do Poznania. Nad Wartą Frankiewicz rozpoczął działalność jako przedsiębiorca budowlany. Do jego samodzielnych realizacji należą kamienice: przy ulicy Ogrodowej 11
@@ -492,10 +503,9 @@
 				z Gustavem Kartmannem wzniósł całą pierzeję ulicy Strzeleckiej (numery 5–45).
 				Do 1906 r. zaprojektował on i wybudował w Poznaniu kilkaset budynków (Skuratowicz 1991, s. 242). Fabryka Frankiewicza produkowała cegły zwykłe, dziurawkę
 				(dętą) oraz elementy do sklepień i gzymsów (Album przemysłu 1906).
-				Ryc. 16. Cegielnia Hugo Kindlera w Świerczewie na mapie topograficznej z 1919 r.
-				Źródło: Messtischblatt Posen-Sud 1919, Archiwum Map Zachodniej Polski.</p>
+				</p>
 			
-				<p>Podkreślić należy działalność
+				<p><img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 18.png" alt="ceg-hugo"/>Podkreślić należy działalność
 				społeczną Frankiewicza, który brał
 				udział w  akcji kształcenia terminatorów i  czeladników budowlanych
 				zorganizowanej przez Jana Rakowicza. Był on również członkiem Miejskiej Komisji Budowlano-Finansowej
@@ -509,14 +519,8 @@
 				do poznańskiej strzechy budowlanej
 				oraz współpracowali z  Gustavem
 				Kartmannem przy budowie wielu
-				budynków w  Poznaniu. Cegielnia
-				Frankiewicza znajdowała się u zbiegu
-				Ryc. 17. Ludwik Frankiewicz, właściciel cegielni w Górczynie
-				Źródło: Album przemysłu i handlu… (1906).
-				Ryc. 18. Cegielnia górczyńska Ludwika Frankiewicza
-				Źródło: Album przemysłu i handlu… (1906).
-				Poznańskie Szachty, czyli 150 lat przemysłu ceramicznego w zlewni Junikowskiego Strumienia
-				367
+				budynków w  Poznaniu. 			
+				<img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 19.png" alt="ceg-hugo"/>Cegielnia Frankiewicza znajdowała się u zbiegu
 				dzisiejszych ulic Ostatniej i Leszczyńskiej (ryc. 18). Zakład w porównaniu z innymi działającymi w dolinie Junikowskiego Strumienia należał do mniejszych. Na
 				mapie z 1919 r. (ryc. 19) zidentyfikować można około czterech suszarni. Surowiec
 				pozyskiwano z wyrobiska w pobliżu zakładu, z którego powstał późniejszy staw
@@ -530,13 +534,11 @@
 				bardzo ambitne, lecz przerwała je wojna. W 1945 r. w dawnym budynku cegielni
 				ponownie urządzono kaplicę (www.chrystuskrol.oblaci.pl).</p>
 				<h4 id="koto">Cegielnia Kotowo</h4>
-				<p>W pobliżu wsi Kotowo wydobycie i produkcja cegieł prowadzone były już w latach
+				<p><img class="obraz-verti" src="img/Przemysl ceramiczny/Ryc 20.png" alt="ceg-kotowo"/>W pobliżu wsi Kotowo wydobycie i produkcja cegieł prowadzone były już w latach
 				40. XIX w. (ryc. 3, nr 2). W 1900 r., prawdopodobnie w miejscu starego zakładu,
 				wzniesiona została nowa cegielnia. Założycielem przedsiębiorstwa był urodzony
 				w 1861 r. w ziemiańskiej rodzinie w Odolanowie, Franciszek Glabisz (ryc. 20). Po
-				Ryc. 19. Cegielnia Górczyn, własność Ludwika Frankiewicza, na mapie topograficznej
-				z 1919 r.
-				Źródło: Messtischblatt Posen-Sud 1919, Archiwum Map Zachodniej Polski.
+			
 				
 				ukończeniu gimnazjum odbył on studia z zakresu farmacji w Berlinie. Po
 				powrocie do Wielkopolski nabył aptekę Pod Białym Orłem w Stęszewie,
@@ -547,26 +549,24 @@
 				Glabisz podkreślał, że jego fabryka
 				(ryc.  21, 22) stanowiła niezaprzeczalnie największe przedsiębiorstwo
 				wśród wszystkich polskich wytwórni cegły w  Księstwie Poznańskim.
-				Świadczyła o  tym liczba zatrudnionych pracowników, a także skala produkcji. W 1903 r. dla Glabisza pracowało 150 osób, produkowano rocznie
-				około 14 mln różnych wyrobów –
-				w tym od 10 do 12 mln sztuk cegły
-				Ryc. 20. Franciszek Glabisz
-				Źródło: Album przemysłu i handlu… (1906).
-				Ryc. 21. Cegielnia Franciszka Glabisza w Kotowie
-				Źródło: Album przemysłu i handlu… (1906).
-				Poznańskie Szachty, czyli 150 lat przemysłu ceramicznego w zlewni Junikowskiego Strumienia
-				369
-				zwykłej, 0,5 mln cegły dętej (tzw. dziurawki) oraz od 2 do 3 mln cegły klinkierowej i dachówek. Glabisz chwalił się, że tylko jeden z niemieckich zakładów mógł
-				się z nim mierzyć (Album przemysłu i handlu… 1906). Prawdopodobnie miał on na
+				Świadczyła o  tym liczba zatrudnionych pracowników, a także skala produkcji. 
+				<img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 21.png" alt="ceg-kotowo"/>
+				W 1903 r. dla Glabisza pracowało 150 osób, produkowano rocznie
+				około 14 mln różnych wyrobów – w tym od 10 do 12 mln sztuk cegły
+				zwykłej, 0,5 mln cegły dętej (tzw. dziurawki) oraz od 2 do 3 mln cegły klinkierowej i dachówek. 
+				Glabisz chwalił się, że tylko jeden z niemieckich zakładów mógł
+				się z nim mierzyć (Album przemysłu i handlu… 1906). 
+				Prawdopodobnie miał on na
 				myśli fabrykę należącą do Edwarda Ephraima w Rudniczu lub cegielnię Moritza
 				Victora w Fabianowie.</p>
-				<p>W Albumie przemysłu i handlu Wielkopolski, Prus i Śląska z 1906 r. właściciel
+				<p><img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 22.png" alt="ceg-kotowo"/>W Albumie przemysłu i handlu Wielkopolski, Prus i Śląska z 1906 r. właściciel
 				cegielni w  Kotowie zachwalał jakość surowca wydobywanego w  zlewni Junikowskiego Strumienia: „Dodać należy, iż cegła kotowska – jak i w ogóle cegła
 				wyrabiana z gliny, której bogate pokłady znajdują się tak na miejscu w Kotowie
 				jak i najbliższej jego okolicy – uważana ogólnie za najlepszą do budowy domów
 				mieszkalnych, ponieważ jest mocna, a przytem nie zatrzymuje w sobie wilgoci.
-				Surowy ten materyał częścią bardzo się też nadaje do wyrobu dachówek, a stąd
-				p. Glabisz tę gałąź traktuje jako swą specyalność, ku czemu też posiada stosowne
+				
+				Surowy ten materyał częścią bardzo się też nadaje do wyrobu dachówek, 
+				a stąd p. Glabisz tę gałąź traktuje jako swą specyalność, ku czemu też posiada stosowne
 				urządzenie fabryczne” (Album przemysłu i handlu… 1906).</p>
 				<p>Fabryka Glabisza (ryc. 21, 22) miała prawdopodobnie dwa piece typu Hoffmana oraz około dziewięciu suszarni. Pracowały one bez żadnej przerwy przez cały
 				rok – jak podkreślał właściciel – codziennie, równą liczbę godzin. Była to zasługa
@@ -574,8 +574,7 @@
 				produkcji pozyskiwano z wyrobiska w pobliżu fabryki, w miejscu którego powstał
 				zbiornik wodny noszący nazwę od zniekształconego nazwiska właściciela – Staw
 				Glabisia.
-				Ryc. 22. Cegielnia Kotowo na mapie topograficznej z 1919 r.
-				Źródło: Messtischblatt Posen-Sud 1919, Archiwum Map Zachodniej Polski.</p>
+				</p>
 			
 				<h4 id="waru">Warunki pracy i strajki robotników cegielni</h4>
 				<p>Warto odnotować fakt, że na przełomie XIX i XX w. dolina Junikowskiego Strumienia stała się miejscem organizowania się robotników z okolicznych zakładów.
@@ -607,7 +606,7 @@
 				a  związkami zawodowymi robotników: Centralnym Związkiem Robotników
 				Przemysłu Budowlanego, Drzewnego, Ceramicznego i  Pokrewnych Zawodów
 				w  Polsce (okręg Poznań) oraz Chrześcijańskim Zjednoczeniem Zawodowym
-				
+				<img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 23.png" alt="ceg-strajk"/>
 				Rzeczpospolitej Polskiej (okręg Poznań). W  wyniku zawartego porozumienia
 				ustalono stałe stawki godzinne dla pracowników cegielni zatrudnionych w wyżej
 				wymienionych zakładach.</p>
@@ -627,8 +626,7 @@
 				<p>W dniu 1 września 1939 r. z radia wystawionego przez majstra pracownicy cegielni Fechnera w Żabikowie dowiedzieli się o agresji Niemiec na Polskę. Kilka godzin
 				później musieli uciekać ze zbombardowanej fabryki. W efekcie spaliła się część
 				zakładu, który przez pewien czas był nieczynny. Richard Fechner pod patronatem
-				Ryc. 23. Wiadomość o wybuchu strajku pracowników cegielni poznańskich z „Kuriera
-				Poznańskiego” z 9 maja 1935 r.
+				
 				
 				nowej niemieckiej władzy wznowił produkcję, a nawet zmodernizował zakład. Po
 				zniszczeniach z września 1939 r. zamontowano nowe kotły parowe średnioprężne, a także zautomatyzowano pracę formowania surowca. Wykonano taśmociągi
@@ -654,7 +652,9 @@
 				zdecydowano, że inna katownia hitlerowska – Fort VII – zostanie przejęta przez
 				wojsko. Więźniów zatrzymanych w forcie postanowiono umieścić w Żabikowie.
 				Już w grudniu 1942 r. postawiono baraki na terenie dawnej cegielni Suwalskiego
-				(ok. 12 ha). Teren odgrodzono zasiekami z drutu kolczastego oraz otoczono wieżami strażniczymi. Prawdopodobnie część budynków po cegielni adaptowano na
+				(ok. 12 ha). 
+				<img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 24.png" alt="ceg-2wojnasw"/>
+				Teren odgrodzono zasiekami z drutu kolczastego oraz otoczono wieżami strażniczymi. Prawdopodobnie część budynków po cegielni adaptowano na
 				potrzeby obozu (ryc. 24). Placówka zyskała miano Więzienia Policji Bezpieczeństwa i Wychowawczego Obozu Pracy Poznań-Junikowo (niem. Polizeigefängnis der
 				Sicherhaitspolizei und Arbeitserziehungslager Posen-Lenzingen) (Bojarska 1965, s. 297–
 				307, Ziółkowska 2008). Liczba więźniów, którzy zatrzymani zostali w  obozie,
@@ -682,42 +682,41 @@
 				prowadzoną przed wojną przez spółkę Nowakowski W., wyliczono na ponad 600
 				tys. zł (Sakson, Skarzyński 2008, s. 266).</p>
 				<h3 id="powo">Powojenne dzieje cegielni w dolinie Junikowskiego Strumienia – faza III</h3>
-				<p>Jeszcze we wrześniu 1945 r. doktor Szymański rozpoczął odbudowę zniszczonej cegielni w Rudniczu, w której wkrótce uruchomił produkcję (ryc. 25). Przedsiębiorczy
-				Ryc. 24. Panorama obozu żabikowskiego wiosną 1945 r. W tle widoczne kominy cegielni
-				w Kotowie i Fabianowie
-				Źródło: Wieści Lubońskie 2003, 1(144).
-				
-				właściciel, wychodząc naprzeciw zapotrzebowaniu na historyczną cegłę,
+				<p><img class="obraz-verti" src="img/Przemysl ceramiczny/Ryc 25.png" alt="ceg-powojenne"/>	
+				Jeszcze we wrześniu 1945 r. doktor Szymański rozpoczął odbudowę zniszczonej cegielni w Rudniczu, w której wkrótce uruchomił produkcję (ryc. 25). 
+				Przedsiębiorczy	właściciel, wychodząc naprzeciw zapotrzebowaniu na historyczną cegłę,
 				która potrzebna była do rekonstrukcji
 				zabytków poznańskiego Starego Miasta – ukierunkował swój zakład do
-				wytwarzania takiego produktu. Cegła dostarczana przez Zygmunta Szymańskiego
-				różniła się od współczesnej przede wszystkim rozmiarem, a w zakładzie produkowano także różnego rodzaju historyczne kształtki. Materiały budowlane z Rudnicza posłużyły do odbudowy katedry i wielu innych zabytków Poznania. Mimo
+				wytwarzania takiego produktu. 
+				<img class="obraz-verti" src="img/Przemysl ceramiczny/Ryc 26.png" alt="ceg-powojenne" style="float: left; padding: 10px 10px 10px 0;"/>
+				Cegła dostarczana przez Zygmunta Szymańskiego
+				różniła się od współczesnej przede wszystkim rozmiarem, a w zakładzie produkowano także różnego rodzaju historyczne kształtki. 
+				
+				Materiały budowlane z Rudnicza posłużyły do odbudowy katedry i wielu innych zabytków Poznania. Mimo
 				to w 1950 r. cegielnia została upaństwowiona, przechodząc pod Zarząd Centralny
-				Przemysłu Terenowego Materiałów Budowlanych. Decyzja ta odbiła się na zdrowiu doktora Zygmunta Szymańskiego, który niespełna trzy lata później zmarł.
+				Przemysłu Terenowego Materiałów Budowlanych. 
+				Decyzja ta odbiła się na zdrowiu doktora Zygmunta Szymańskiego, który niespełna trzy lata później zmarł.
 				Został pochowany na cmentarzu górczyńskim w Poznaniu. Jego potomkowie, rodzina Komorowskich, do dzisiaj zamieszkują dworek w Rudniczym (Krokowicz
-				2013, s. 123–125). Podobnie potoczyły się losy sąsiedniej cegielni na Junikowie.
+				2013, s. 123–125). 
+			
+				<img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 27.png" alt="ceg-powojenne"/>Podobnie potoczyły się losy sąsiedniej cegielni na Junikowie.
 				Przedwojennemu właścicielowi, Michałowi Walczakowi, z  pewnością udało się
 				ponownie uruchomić produkcję (ryc. 26), lecz zarządzeniem Ministra Odbudowy z dnia 12 lipca 1947 r. znacjonalizowano cegielnię Junikowo (Monitor Polski
 				1947). W  wyniku upaństwowienia z  zakładu rozkradziono wszystkie maszyny,
 				a kolejne lata zamieniły w ruinę świetnie funkcjonującą fabrykę.</p>
-				<p>Nie ma informacji na temat wznowienia produkcji na Świerczewie przez Norberta Kindlera. Z  pewnością niedługo po wojnie cegielnia została znacjonalizowana. Działała ona do 1971 r., kiedy zniszczył ją pożar (Pazder, Dolczewska
+				Nie ma informacji na temat wznowienia produkcji na Świerczewie przez Norberta Kindlera. Z  pewnością niedługo po wojnie cegielnia została znacjonalizowana. Działała ona do 1971 r., kiedy zniszczył ją pożar (Pazder, Dolczewska
 				2008, s. 170). Ten sam los spotkał bez wątpienia zakłady Glabisza na Kotowie.
-				Państwo przejęło również żabikowski zakład Richarda Fechnera, który stał się
-				częścią Poznańskich Zakładów Ceramiki Budowlanej. W latach 50. XX w. zmodernizowano tamtejszą kotłownię i wybudowano magazyn opału. Po spaleniu się
+				<p>
+					Państwo przejęło również żabikowski zakład Richarda Fechnera, który stał się
+				częścią Poznańskich Zakładów Ceramiki Budowlanej. 
+				<img class="obraz-horiz" src="img/Przemysl ceramiczny/Ryc 28.png" alt="ceg-powojenne"/>
+				W latach 50. XX w. zmodernizowano tamtejszą kotłownię i wybudowano magazyn opału. Po spaleniu się
 				cegielni Świerczewo w 1971 r. zakład w Żabikowie połączono torami z wyrobiskiem gliny z tamtejszymi wyrobiskami. Wówczas prawdopodobnie najmocniej
 				eksploatowano tereny w miejscu obecnego Stawu Rozlanego, a także świerczewskich zbiorników: Śmierducha i stawu Pod Wierzbą. Zakład żabikowski działał
 				do 1978 r. Prawdopodobnie najdłużej, bo aż do lat 90. XX w., produkcja prowadzona była w upaństwowionej cegielni Junikowo. Ostatnim wyrobiskiem, które
 				zostało zalane po 1997 r., był Staw Baczkowski (ryc. 27, 28). Na tym zakończyła
 				się ponad 150-letnia historia przemysłu ceramicznego w zlewni Junikowskiego
 				Strumienia.</p>
-				Ryc. 25. Reklama cegielni Rudnicze z Głosu
-				Wielkopolskiego z 22 września 1945 r.
-				Ryc. 26. Ogłoszenie z  Głosu Wielkopolskiego z 19 lipca 1947 r.
-				
-				Ryc. 27. Zdjęcie satelitarne Szacht z sierpnia 1965 r.
-				Źródło: Amerykański satelita wywiadowczy Corona 98 (KH-4A 1023), wyk. 23.08.1965 r.
-				Ryc. 28. Zdjęcie satelitarne z 1997 r. Utworzony został Staw Rozlany, natomiast obecny
-				Staw Baczkowski wciąż pozostawał wyrobiskiem (fot. GEOPOZ)
 				
 				<h3 id="pods">Podsumowanie</h3>
 				<p>W trakcie działalności wydobywczej w dolinie Junikowskiego Strumienia, trwającej 150 lat, powstały 42 stawy różnej wielkości (por. rozdz. 6). W tym czasie wydobycie prowadzone było przez ponad 10 cegielni, które zatrudniały łącznie ponad
@@ -726,47 +725,11 @@
 				na Szachtach powstało wiele ważnych dla historii miasta budynków, poczynając
 				od Twierdzy Poznań przez szereg kamienic śródmieścia, aż po nową synagogę oraz
 				regotyzowaną katedrę poznańską. Rzec można, że jak szachty kopano głęboko, tak
-				Poznań rósł wysoko</p>
+				Poznań rósł wysoko.</p>
 			
 			</div>
 		</div>	
 	</div>
-
-	<script>
-	
-		jQuery(function($)
-		{
-			//zresetuj scrolla
-			$.scrollTo(0); 
-			
-			$('#link1').click(function() { $.scrollTo($('#wste'), 200); });
-			$('#link2').click(function() { $.scrollTo($('#wpro'), 200); });
-			$('#link3').click(function() { $.scrollTo($('#fest'), 200); });
-			$('#link4').click(function() { $.scrollTo($('#krol'), 200); });
-			$('#link5').click(function() { $.scrollTo($('#rudn'), 200); });
-			$('#link6').click(function() { $.scrollTo($('#mori'), 200); });;
-			$('#link7').click(function() { $.scrollTo($('#zabi'), 200); });
-			$('#link8').click(function() { $.scrollTo($('#hugo'), 200); });
-			$('#link9').click(function() { $.scrollTo($('#gorc'), 200); });
-			$('#link10').click(function() { $.scrollTo($('#koto'), 200); });
-			$('#link11').click(function() { $.scrollTo($('#waru'), 200); });
-			$('#link12').click(function() { $.scrollTo($('#cegi'), 200); });
-			$('#link13').click(function() { $.scrollTo($('#powo'), 200); });
-			$('#link14').click(function() { $.scrollTo($('#pods'), 200); });
-			$('.scrollup').click(function() { $.scrollTo($('body'), 200); });
-		}
-		);
-		
-		//pokaż podczas przewijania
-		$(window).scroll(function()
-		{
-			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
-			else $('.scrollup').fadeOut();
-		}
-		
-		);
-		
-	</script>
 
 	<div class="container-md px-2">
 		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-1 border-top">
@@ -779,12 +742,48 @@
 		
 			<ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
 			  <li class="ms-3"><a class="text-body-secondary" href="https://www.instagram.com/mikes_photo_travels/" target="blank"><i class="fa fa-instagram" style="font-size:20px"></i></a></li>
-			  <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=1395851416" target="blank"><i class="fa fa-facebook" style="font-size:20px"></i></a></li>
+			  <!-- <li class="ms-3"><a class="text-body-secondary" href="https://www.facebook.com/profile.php?id=1395851416" target="blank"><i class="fa fa-facebook" style="font-size:20px"></i></a></li> -->
 			  <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/channel/UC6K-2vhM8gc7_C1kbUyUh0A" target="_blank"><i class="fa fa-youtube" style="font-size:20px"></i>
 			  </a></li>
 			</ul>
 		  </footer>
 	</div>
+
+	<script>
+	
+		// jQuery(function($)
+		// {
+		// 	//zresetuj scrolla
+		// 	$.scrollTo(0); 
+			
+		// 	$('#link1').click(function() { $.scrollTo($('#wste'), 200); });
+		// 	$('#link2').click(function() { $.scrollTo($('#wpro'), 200); });
+		// 	$('#link3').click(function() { $.scrollTo($('#fest'), 200); });
+		// 	$('#link4').click(function() { $.scrollTo($('#krol'), 200); });
+		// 	$('#link5').click(function() { $.scrollTo($('#rudn'), 200); });
+		// 	$('#link6').click(function() { $.scrollTo($('#mori'), 200); });;
+		// 	$('#link7').click(function() { $.scrollTo($('#zabi'), 200); });
+		// 	$('#link8').click(function() { $.scrollTo($('#hugo'), 200); });
+		// 	$('#link9').click(function() { $.scrollTo($('#gorc'), 200); });
+		// 	$('#link10').click(function() { $.scrollTo($('#koto'), 200); });
+		// 	$('#link11').click(function() { $.scrollTo($('#waru'), 200); });
+		// 	$('#link12').click(function() { $.scrollTo($('#cegi'), 200); });
+		// 	$('#link13').click(function() { $.scrollTo($('#powo'), 200); });
+		// 	$('#link14').click(function() { $.scrollTo($('#pods'), 200); });
+		// 	$('.scrollup').click(function() { $.scrollTo($('body'), 200); });
+		// }
+		// );
+		
+		//pokaż podczas przewijania
+		$(window).scroll(function()
+		{
+			if($(this).scrollTop()>300) $('.scrollup').fadeIn();
+			else $('.scrollup').fadeOut();
+		}
+		
+		);
+		
+	</script>
 
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
 </body>
