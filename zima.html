@@ -3,9 +3,9 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Szachty - poznańskie glinianki</title>
-	<meta name="Description" content="Przepiękny kompleks stawów, parkowych alejek i torfowisk w południowej części Poznania." />
-	<meta name="Keywords" content="szachty, poznań, stawy, glinianki, galeria, zima, fotografia, zdjecia, natura, przyroda" /> 
+	<title>Szachty - Interaktywnie!</title>
+	<meta name="Description" content="Przejdź się po szachtach, zajrzyj w każdy kąt i obejrzyć najlepsze ujęcia z każdej pory roku!" />
+	<meta name="Keywords" content="szachty, poznań, stawy, glinianki, wieża widokowa, natura, ptaki, zieleń, natura, spacer, rezerwat, zachód słońca, wschód słońca, fotograria" /> 
 	<meta name="author" content="Michał Sosnowski" />
 	<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
 	<meta http-equiv="Pragma" content="no-cache">
@@ -17,7 +17,7 @@
 	<link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;1,400;1,700&display=swap" rel="stylesheet">
 	<script src="./js/lightbox-plus-jquery.min.js" type="text/javascript"></script>
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-	<script src="js/jquery.scrollTo.min.js"></script>
+	<!-- <script src="js/jquery.scrollTo.min.js"></script> -->
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
 	<link rel="stylesheet" href="css/style.css">
 
@@ -27,6 +27,23 @@
 			.gallery img{
 				width: 400px;
 			}
+		}
+
+    .video-container {
+			position: relative;
+			padding-bottom: 56.5%; /* 16:9 */
+			height: 0;
+			text-align: center; 
+			margin: 30px 5px 0;
+		}
+
+		.video-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 1%;
 		}
 
 	</style>
@@ -91,26 +108,46 @@
 		<p style="text-align: center; padding-bottom: 10px; font-weight: 500;">21/22 XII – 19/20 III</p>
  
       <div class="gallery">
-        <a href="./img/Zima/1.jpg" data-lightbox='mygallery'><img src="./img/Zima/1 low.jpg"></a>
-        <a href="./img/Zima/2.jpg" data-lightbox='mygallery'><img src="./img/Zima/2 low.jpg"></a>
-        <a href="./img/Zima/3.jpg" data-lightbox='mygallery'><img src="./img/Zima/3 low.jpg"></a>
+        <a href="./img/Zima/1.JPG" data-lightbox='mygallery'><img src="./img/Zima/1 low.jpg"></a>
+        <a href="./img/Zima/2.JPG" data-lightbox='mygallery'><img src="./img/Zima/2 low.jpg"></a>
+        <a href="./img/Zima/3.JPG" data-lightbox='mygallery'><img src="./img/Zima/3 low.jpg"></a>
         <a href="./img/Zima/4.jpg" data-lightbox='mygallery'><img src="./img/Zima/4 low.jpg"></a>
-        <a href="./img/Zima/5.jpg" data-lightbox='mygallery'><img src="./img/Zima/5 low.jpg"></a>
-        <a href="./img/Zima/6.jpg" data-lightbox='mygallery'><img src="./img/Zima/6 low.jpg"></a>
-        <a href="./img/Zima/7.jpg" data-lightbox='mygallery'><img src="./img/Zima/7 low.jpg"></a>
-        <a href="./img/Zima/8.jpg" data-lightbox='mygallery'><img src="./img/Zima/8 low.jpg"></a>
-        <a href="./img/Zima/9.JPG" data-lightbox='mygallery'><img src="./img/Zima/9 low.jpg"></a>
+        <a href="./img/Zima/5.JPG" data-lightbox='mygallery'><img src="./img/Zima/5 low.jpg"></a>
+        <a href="./img/Zima/6.JPG" data-lightbox='mygallery'><img src="./img/Zima/6 low.jpg"></a>
+        <a href="./img/Zima/7.JPG" data-lightbox='mygallery'><img src="./img/Zima/7 low.jpg"></a>
+        <a href="./img/Zima/8.JPG" data-lightbox='mygallery'><img src="./img/Zima/8 low.jpg"></a>
+        <a href="./img/Zima/9.JPG" data-lightbox='mygallery'><img src="./img/Zima/9 low.JPG"></a>
         <a href="./img/Zima/10.JPG" data-lightbox='mygallery'><img src="./img/Zima/10 low.jpg"></a>
         <a href="./img/Zima/11.JPG" data-lightbox='mygallery'><img src="./img/Zima/11 low.jpg"></a>
-        <a href="./img/Zima/12.JPG" data-lightbox='mygallery'><img src="./img/Zima/12 low.jpg"></a>
-        <a href="./img/Zima/13.JPG" data-lightbox='mygallery'><img src="./img/Zima/13 low.jpg"></a>
-        <a href="./img/Zima/14.jpg" data-lightbox='mygallery'><img src="./img/Zima/14 low.jpg"></a>
-        <a href="./img/Zima/15.jpg" data-lightbox='mygallery'><img src="./img/Zima/15 low.jpg"></a>
-
+        <a href="./img/Zima/12.JPG" data-lightbox='mygallery'><img src="./img/Zima/12 low.JPG"></a>
+        <a href="./img/Zima/13.JPG" data-lightbox='mygallery'><img src="./img/Zima/13 low.JPG"></a>
+        <a href="./img/Zima/14.JPG" data-lightbox='mygallery'><img src="./img/Zima/14 low.JPG"></a>
+        <a href="./img/Zima/15.JPG" data-lightbox='mygallery'><img src="./img/Zima/15 low.JPG"></a>
       </div>
 
      </div>
-   
+<!-- 
+     <div class="conti">	
+      <div class="video-container">
+        <iframe width="90vp" height="90vp" src="https://youtu.be/mWrioP5Ra7I?si=PHjm_v0fV_JQjWkJ" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen>
+        </iframe>
+      </div>
+      <h5 style="text-align: center; margin: 20px auto 20px;">Chcesz, aby Twoje zdjęcia znalazły się w galerii? Prześlij je na adres: <a href = "mailto: abc@example.com">poznanszachty@gmail.com</a>
+      </h5>
+    </div> -->
+
+
+    <div class="conti">	
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/DHkN2YfgNtI?si=KAiNWmLDJxN6SrwL" title="YouTube video player" 
+        frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen></iframe>
+      </div>
+      <h5 style="text-align: center; margin: 20px auto 20px;">Chcesz, aby Twoje zdjęcia znalazły się w galerii? Prześlij je na adres: <a href = "mailto: abc@example.com">poznanszachty@gmail.com</a>
+      </h5>
+    </div>
 	
 	<div class="contif">
 		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-1 border-top">
