@@ -3,9 +3,9 @@
 <head>
 
 	<meta charset="utf-8">
-	<title>Szachty - poznańskie glinianki</title>
-	<meta name="Description" content="Przepiękny kompleks stawów, parkowych alejek i torfowisk w południowej części Poznania." />
-	<meta name="Keywords" content="szachty, poznań, stawy, glinianki, galeria, zachody slonca, fotografia, zdjecia, natura, przyroda" /> 
+	<title>Szachty - Interaktywnie!</title>
+	<meta name="Description" content="Przejdź się po szachtach, zajrzyj w każdy kąt i obejrzyć najlepsze ujęcia z każdej pory roku!" />
+	<meta name="Keywords" content="szachty, poznań, stawy, glinianki, wieża widokowa, natura, ptaki, zieleń, natura, spacer, rezerwat, zachód słońca, wschód słońca, fotograria" /> 
 	<meta name="author" content="Michał Sosnowski" />
 	<meta http-equiv="Cache-control" content="no-cache, no-store, must-revalidate">
 	<meta http-equiv="Pragma" content="no-cache">
@@ -26,6 +26,23 @@
 			.gallery img{
 				width: 400px;
 			}
+		}
+
+    .video-container {
+			position: relative;
+			padding-bottom: 56.5%; /* 16:9 */
+			height: 0;
+			text-align: center; 
+			margin: 30px 5px 0;
+		}
+
+		.video-container iframe {
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			border-radius: 1%;
 		}
 	</style>
 
@@ -90,20 +107,33 @@
  
       <div class="container px-0">
         <div class="gallery">
-          <a href="./img/Zachody/1.jpg" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/1.jpg"></a>
-          <a href="./img/Zachody/2.jpg" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/2.jpg"></a>
-          <a href="./img/Zachody/3.jpg" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/3.jpg"></a>
-          <a href="./img/Zachody/4.jpg" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/4.jpg"></a>
-          <a href="./img/Zachody/5.JPG" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/5.JPG"></a>
-          <a href="./img/Zachody/6.JPG" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/6.JPG"></a>
-          <a href="./img/Zachody/7.JPG" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/7.JPG"></a>
-          <a href="./img/Zachody/8.JPG" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/8.JPG"></a>
-          <a href="./img/Zachody/9.JPG" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/9.JPG"></a>
-          <a href="./img/Zachody/10.JPG" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/10.JPG"></a>
-          <a href="./img/Zachody/11.JPG" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/11.JPG"></a>
-          <a href="./img/Zachody/12.jpg" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/12.jpg"></a>
+          <a href="./img/Zachody/1.jpg" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/1 low.jpg"></a>
+          <a href="./img/Zachody/2.jpg" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/2 low.jpg"></a>
+          <a href="./img/Zachody/3.jpg" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/3 low.jpg"></a>
+          <a href="./img/Zachody/4.jpg" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/4 low.jpg"></a>
+          <a href="./img/Zachody/5.JPG" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/5 low.jpg"></a>
+          <a href="./img/Zachody/6.JPG" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/6 low.jpg"></a>
+          <a href="./img/Zachody/7.JPG" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/7 low.jpg"></a>
+          <a href="./img/Zachody/8.JPG" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/8 low.jpg"></a>
+          <a href="./img/Zachody/9.JPG" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/9 low.jpg"></a>
+          <a href="./img/Zachody/10.JPG" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/10 low.jpg"></a>
+          <a href="./img/Zachody/11.JPG" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/11 low.jpg"></a>
+          <a href="./img/Zachody/12.jpg" data-lightbox='mygallery' data-title=""><img src="./img/Zachody/12 low.jpg"></a>
         </div>
     </div>
+
+    <div class="conti">	
+      <div class="video-container">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/3ewGj5wy4Xk?si=TW6tK5rvOdRVIAc_" title="YouTube video player" 
+    frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+    allowfullscreen></iframe>
+      </div>
+      <h5 style="text-align: center; margin: 20px auto 20px;">Chcesz, aby Twoje zdjęcia znalazły się w galerii? Prześlij je na adres: <a href = "mailto: abc@example.com">poznanszachty@gmail.com</a>
+      </h5>
+    </div>
+
+
+    
 	
 	<div class="contif">
 		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-1 border-top">
