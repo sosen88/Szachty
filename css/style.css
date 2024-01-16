@@ -27,7 +27,7 @@ body{
 }
 
 .contif{
-    width: min(95%, 1220px);
+    width: min(95%, 1240px);
     margin-inline: auto;
     margin-top: 20px;
 }
@@ -77,7 +77,7 @@ body{
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 5px;
+    gap: 15px;
     text-align: center;
     margin-top: 20px;
 }
