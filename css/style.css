@@ -23,7 +23,7 @@ body{
 }
 
 .conti{
-    width: min(90%, 1250px);
+    width: min(90%, 1240px);
     margin-inline: auto;
 }
 
@@ -128,7 +128,7 @@ body{
 }
 
 .content{
-    max-width: 920px;
+    max-width: 940px;
     padding: 0 10px;
 }
 
