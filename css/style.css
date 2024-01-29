@@ -1,6 +1,6 @@
 html{
     scroll-behavior: smooth;
-    scroll-padding-top: 62px;
+    scroll-padding-top: 63px;
 }
 
 *{
@@ -11,15 +11,18 @@ html{
 
 
 body{
-    /*background-color: #DEEDF0; */
     background-color: #FFF5EB;
+    /* background-image: url(img/207.jpg); */
     font-family: 'Lato', sans-serif;
     position: relative;
 }
 
 .navbar{
     /* background-color: #F4C7AB; */
-    background-color: #6B7AA1;
+    /* background-color: #8093c2; */
+    background-color:rgb(189, 163, 128);
+
+
 }
 
 .conti{
@@ -28,7 +31,7 @@ body{
 }
 
 .contif{
-    width: min(95%, 1240px);
+    width: min(98%, 1340px);
     margin-inline: auto;
     margin-top: 20px;
 }
@@ -44,7 +47,7 @@ body{
     position: relative;
     z-index: 1;
     top: 0;
-    background-color: #F4C7AB;
+    /* background-color: #F4C7AB; */
 }
 
 .nav-link{
@@ -95,6 +98,10 @@ body{
 .gallery img:hover{
     filter: grayscale(40%);
     transform: scale(1.01);
+}
+
+.gallery a{
+    cursor: zoom-in;
 }
 
 .podpis{
@@ -169,7 +176,8 @@ body{
 }
 
 a{
-    color: #707a56;
+    /* color: #7a8264; */
+    color: #11324D;
     text-decoration: none;
 }
 
@@ -207,14 +215,13 @@ a:hover{
 {
 	width: 40px;
 	height: 40px;
-	border-radius: 10%;
-  	line-height: 20px;
+    border-radius: 10%;
+    line-height: 20px;
 	text-decoration: none;
-/*	background: url("img/up.png") no-repeat 0px 0px; 
-    background-color: #FFF5EB; ciemniejszy - #F4C7AB*/
 	position: fixed;
-	right: 65px;
-	bottom: 65px;
+	right: 55px;
+	bottom: 55px;
+    z-index: 1;
 }
 
 .fragment{
@@ -234,3 +241,50 @@ hr{
     margin: 20px auto;
     color: grey;
 }
+
+.wpis{
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    
+}
+
+.starelista{
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 0;
+    background-color: white;
+    border-radius: 10px;
+}
+
+.question-input {
+    display: none;
+}
+
+.answer {
+    height: 0;
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.question-input:checked + .question-label + .answer {
+    height: auto;
+    padding: 0 0 5px 0;
+}
+
+
+/* ten kod zmienia karuzele na pierwszej stronie  
+p{
+    text-align: justify;
+    margin-bottom: 0;
+}
+
+h1, h2, h3, h4{
+    color: #3A4D39;
+}
+
+*/
